@@ -33,8 +33,16 @@
             this.bookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.howToDoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.testingServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sWLoadingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paperWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.keyLoadingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logonTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dispatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.serviceIssuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,9 +82,62 @@
             // 
             // productionToolStripMenuItem
             // 
+            this.productionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.howToDoToolStripMenuItem,
+            this.serviceIssuesToolStripMenuItem});
             this.productionToolStripMenuItem.Name = "productionToolStripMenuItem";
             this.productionToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.productionToolStripMenuItem.Text = "Production";
+            // 
+            // howToDoToolStripMenuItem
+            // 
+            this.howToDoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bookingToolStripMenuItem1,
+            this.testingServiceToolStripMenuItem,
+            this.sWLoadingToolStripMenuItem,
+            this.paperWorkToolStripMenuItem,
+            this.keyLoadingToolStripMenuItem,
+            this.logonTestToolStripMenuItem});
+            this.howToDoToolStripMenuItem.Name = "howToDoToolStripMenuItem";
+            this.howToDoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.howToDoToolStripMenuItem.Text = "How to do?";
+            // 
+            // bookingToolStripMenuItem1
+            // 
+            this.bookingToolStripMenuItem1.Name = "bookingToolStripMenuItem1";
+            this.bookingToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.bookingToolStripMenuItem1.Text = "Re-activate";
+            this.bookingToolStripMenuItem1.Click += new System.EventHandler(this.BookingToolStripMenuItem1_Click);
+            // 
+            // testingServiceToolStripMenuItem
+            // 
+            this.testingServiceToolStripMenuItem.Name = "testingServiceToolStripMenuItem";
+            this.testingServiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testingServiceToolStripMenuItem.Text = "Testing (Service)";
+            // 
+            // sWLoadingToolStripMenuItem
+            // 
+            this.sWLoadingToolStripMenuItem.Name = "sWLoadingToolStripMenuItem";
+            this.sWLoadingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sWLoadingToolStripMenuItem.Text = "S/W Loading";
+            // 
+            // paperWorkToolStripMenuItem
+            // 
+            this.paperWorkToolStripMenuItem.Name = "paperWorkToolStripMenuItem";
+            this.paperWorkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paperWorkToolStripMenuItem.Text = "Paper Work";
+            // 
+            // keyLoadingToolStripMenuItem
+            // 
+            this.keyLoadingToolStripMenuItem.Name = "keyLoadingToolStripMenuItem";
+            this.keyLoadingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.keyLoadingToolStripMenuItem.Text = "Key Loading";
+            // 
+            // logonTestToolStripMenuItem
+            // 
+            this.logonTestToolStripMenuItem.Name = "logonTestToolStripMenuItem";
+            this.logonTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logonTestToolStripMenuItem.Text = "Log-on Test";
             // 
             // dispatchToolStripMenuItem
             // 
@@ -89,6 +150,12 @@
             this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
             this.returnToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.returnToolStripMenuItem.Text = "Return";
+            // 
+            // serviceIssuesToolStripMenuItem
+            // 
+            this.serviceIssuesToolStripMenuItem.Name = "serviceIssuesToolStripMenuItem";
+            this.serviceIssuesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.serviceIssuesToolStripMenuItem.Text = "Service Issues";
             // 
             // IndexAdmin
             // 
@@ -117,5 +184,13 @@
         private System.Windows.Forms.ToolStripMenuItem productionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dispatchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem returnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem howToDoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bookingToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem testingServiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sWLoadingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem paperWorkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem keyLoadingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logonTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem serviceIssuesToolStripMenuItem;
     }
 }

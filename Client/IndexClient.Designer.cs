@@ -37,6 +37,12 @@
             this.timeSheetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToDoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reactivateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.testingServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sWLoadingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.keyLoadinfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logonTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timesheetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.dispatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.howToDoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.returnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +53,7 @@
             this.productionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dispatchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.returnsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,21 +85,21 @@
             // howToBookToolStripMenuItem
             // 
             this.howToBookToolStripMenuItem.Name = "howToBookToolStripMenuItem";
-            this.howToBookToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.howToBookToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.howToBookToolStripMenuItem.Text = "How to do?";
             this.howToBookToolStripMenuItem.Click += new System.EventHandler(this.HowToBookToolStripMenuItem_Click);
             // 
             // timeSheetToolStripMenuItem
             // 
             this.timeSheetToolStripMenuItem.Name = "timeSheetToolStripMenuItem";
-            this.timeSheetToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.timeSheetToolStripMenuItem.Text = "Time sheet";
+            this.timeSheetToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.timeSheetToolStripMenuItem.Text = "Timesheet";
             // 
             // awaitingToBookToolStripMenuItem
             // 
             this.awaitingToBookToolStripMenuItem.Name = "awaitingToBookToolStripMenuItem";
-            this.awaitingToBookToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.awaitingToBookToolStripMenuItem.Text = "Awaiting to book";
+            this.awaitingToBookToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.awaitingToBookToolStripMenuItem.Text = "Issues";
             // 
             // serviceToolStripMenuItem
             // 
@@ -105,22 +112,66 @@
             // timeSheetToolStripMenuItem1
             // 
             this.timeSheetToolStripMenuItem1.Name = "timeSheetToolStripMenuItem1";
-            this.timeSheetToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
-            this.timeSheetToolStripMenuItem1.Text = "Time sheet";
+            this.timeSheetToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.timeSheetToolStripMenuItem1.Text = "Timesheet";
             // 
             // productionToolStripMenuItem
             // 
             this.productionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToDoToolStripMenuItem});
+            this.howToDoToolStripMenuItem,
+            this.timesheetToolStripMenuItem2});
             this.productionToolStripMenuItem.Name = "productionToolStripMenuItem";
             this.productionToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.productionToolStripMenuItem.Text = "Production";
             // 
             // howToDoToolStripMenuItem
             // 
+            this.howToDoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reactivateToolStripMenuItem,
+            this.testingServiceToolStripMenuItem,
+            this.sWLoadingToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.keyLoadinfToolStripMenuItem,
+            this.logonTestToolStripMenuItem});
             this.howToDoToolStripMenuItem.Name = "howToDoToolStripMenuItem";
-            this.howToDoToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.howToDoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.howToDoToolStripMenuItem.Text = "How to do?";
+            // 
+            // reactivateToolStripMenuItem
+            // 
+            this.reactivateToolStripMenuItem.Name = "reactivateToolStripMenuItem";
+            this.reactivateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reactivateToolStripMenuItem.Text = "Re-activate";
+            // 
+            // testingServiceToolStripMenuItem
+            // 
+            this.testingServiceToolStripMenuItem.Name = "testingServiceToolStripMenuItem";
+            this.testingServiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testingServiceToolStripMenuItem.Text = "Testing (Service)";
+            // 
+            // sWLoadingToolStripMenuItem
+            // 
+            this.sWLoadingToolStripMenuItem.Name = "sWLoadingToolStripMenuItem";
+            this.sWLoadingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sWLoadingToolStripMenuItem.Text = "S/W Loading";
+            // 
+            // keyLoadinfToolStripMenuItem
+            // 
+            this.keyLoadinfToolStripMenuItem.Name = "keyLoadinfToolStripMenuItem";
+            this.keyLoadinfToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.keyLoadinfToolStripMenuItem.Text = "Key Loading";
+            // 
+            // logonTestToolStripMenuItem
+            // 
+            this.logonTestToolStripMenuItem.Name = "logonTestToolStripMenuItem";
+            this.logonTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logonTestToolStripMenuItem.Text = "Logon Test";
+            // 
+            // timesheetToolStripMenuItem2
+            // 
+            this.timesheetToolStripMenuItem2.Name = "timesheetToolStripMenuItem2";
+            this.timesheetToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.timesheetToolStripMenuItem2.Text = "Timesheet";
             // 
             // dispatchToolStripMenuItem
             // 
@@ -193,6 +244,12 @@
             this.returnsToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
             this.returnsToolStripMenuItem1.Text = "Return";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Text = "Paper Work";
+            // 
             // IndexClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +288,13 @@
         private System.Windows.Forms.ToolStripMenuItem productionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem dispatchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem returnsToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reactivateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem testingServiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sWLoadingToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem keyLoadinfToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logonTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timesheetToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 

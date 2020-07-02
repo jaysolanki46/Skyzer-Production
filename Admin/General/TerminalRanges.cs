@@ -69,7 +69,7 @@ namespace Skyzer_Production.Admin.General
         private void Serials()
         {
             conn.Open();
-            sql = "select r.Name as Range, s.Name as Name from Ranges r, Series s where r.Id = s.Range";
+            sql = "select r.Name as Range, s.Name as Name from Ranges r, Terminals s where r.Id = s.Range";
             adapter = new SqlDataAdapter(sql, conn);
             dbTable = new DataTable();
             adapter.Fill(dbTable);
@@ -96,7 +96,7 @@ namespace Skyzer_Production.Admin.General
         private void ButtonSeriesAdd_Click(object sender, EventArgs e)
         {
             conn.Open();
-            sql = "insert into Series (Range, Name) values (@range, @name)";
+            sql = "insert into Terminals (Range, Name) values (@range, @name)";
             cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@range", comboBoxRange.SelectedValue);
             cmd.Parameters.AddWithValue("@name", textBoxSeriesName.Text);
@@ -105,5 +105,31 @@ namespace Skyzer_Production.Admin.General
             Serials();
         }
 
+        private void Ranges_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonImageUpload_Click(object sender, EventArgs e)
+        {
+            String imageLocation = "";
+
+            try
+            {
+                OpenFileDialog dialog = new OpenFileDialog();
+                dialog.Filter = "Image Files(*.jpeg;*.bmp;*.png;*.jpg)|*.jpeg;*.bmp;*.png;*.jpg";
+
+                if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    imageLocation = dialog.FileName;
+                    pictureBoxTerminal.ImageLocation = imageLocation;
+
+                }
+            } catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+           
+        }
     }
 }

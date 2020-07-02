@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Skyzer_Production
 {
-    public partial class Index : Form
+    public partial class IndexClient : Form
     {
-        public Index()
+        public IndexClient()
         {
             InitializeComponent();
         }

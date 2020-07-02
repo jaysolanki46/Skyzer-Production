@@ -46,58 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Index.cs">
+    <Compile Include="Admin\General\TerminalRanges.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin\Index.Designer.cs">
-      <DependentUpon>Index.cs</DependentUpon>
+    <Compile Include="Admin\General\TerminalRanges.Designer.cs">
+      <DependentUpon>TerminalRanges.cs</DependentUpon>
     </Compile>
-    <Compile Include="Booking\How.cs">
+    <Compile Include="Admin\IndexAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Booking\How.Designer.cs">
-      <DependentUpon>How.cs</DependentUpon>
+    <Compile Include="Admin\IndexAdmin.Designer.cs">
+      <DependentUpon>IndexAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dispatch\How.cs">
+    <Compile Include="Client\IndexClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dispatch\How.Designer.cs">
-      <DependentUpon>How.cs</DependentUpon>
+    <Compile Include="Client\IndexClient.Designer.cs">
+      <DependentUpon>IndexClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Index.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Index.Designer.cs">
-      <DependentUpon>Index.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Production\How.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Production\How.Designer.cs">
-      <DependentUpon>How.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Init\DBOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\How.cs">
-      <SubType>Form</SubType>
+    <Compile Include="SkyzerProductionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SkyzerProductionDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Service\How.Designer.cs">
-      <DependentUpon>How.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Admin\Index.resx">
-      <DependentUpon>Index.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\General\TerminalRanges.resx">
+      <DependentUpon>TerminalRanges.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Booking\How.resx">
-      <DependentUpon>How.cs</DependentUpon>
+    <EmbeddedResource Include="Admin\IndexAdmin.resx">
+      <DependentUpon>IndexAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dispatch\How.resx">
-      <DependentUpon>How.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Index.resx">
-      <DependentUpon>Index.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Production\How.resx">
-      <DependentUpon>How.cs</DependentUpon>
+    <EmbeddedResource Include="Client\IndexClient.resx">
+      <DependentUpon>IndexClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,9 +90,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Service\How.resx">
-      <DependentUpon>How.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,12 +99,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="SkyzerProductionDataSet.xsc">
+      <DependentUpon>SkyzerProductionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SkyzerProductionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SkyzerProductionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SkyzerProductionDataSet.xss">
+      <DependentUpon>SkyzerProductionDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FAQ\" />
+    <Folder Include="Admin\Production\" />
+    <Folder Include="Client\Booking\" />
+    <Folder Include="Client\Dispatch\" />
+    <Folder Include="Client\FAQ\" />
+    <Folder Include="Client\Production\" />
+    <Folder Include="Client\Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

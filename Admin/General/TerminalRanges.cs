@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,14 +96,30 @@ namespace Skyzer_Production.Admin.General
 
         private void ButtonSeriesAdd_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            sql = "insert into Terminals (Range, Name) values (@range, @name)";
-            cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@range", comboBoxRange.SelectedValue);
-            cmd.Parameters.AddWithValue("@name", textBoxSeriesName.Text);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            Serials();
+
+            try
+            {
+                string image = pictureBoxTerminal.ImageLocation;
+                Bitmap bmp = new Bitmap(image);
+                FileStream fs = new FileStream(image, FileMode.Open, FileAccess.Read);
+                byte[] bimage = new byte[fs.Length];
+                fs.Read(bimage, 0, Convert.ToInt32(fs.Length));
+                fs.Close();
+
+                conn.Open();
+                sql = "insert into Terminals (Range, Name, ImagePath) values (@range, @name, @imagePath)";
+                cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@range", comboBoxRange.SelectedValue);
+                cmd.Parameters.AddWithValue("@name", textBoxSeriesName.Text);
+                cmd.Parameters.AddWithValue("@imagePath", SqlDbType.Image).Value = bimage;
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                Serials();
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void Ranges_Click(object sender, EventArgs e)
@@ -130,6 +147,11 @@ namespace Skyzer_Production.Admin.General
                 MessageBox.Show(ex.ToString());
             }
            
+        }
+
+        private void Terminals_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -44,6 +44,7 @@
             this.terminalConfigurarionsFunctionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dispatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@
             this.serviceToolStripMenuItem,
             this.productionToolStripMenuItem,
             this.dispatchToolStripMenuItem,
-            this.returnToolStripMenuItem});
+            this.returnToolStripMenuItem,
+            this.fAQToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -145,6 +147,7 @@
             this.ToolStripMenuItemLogonTest.Name = "ToolStripMenuItemLogonTest";
             this.ToolStripMenuItemLogonTest.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemLogonTest.Text = "Log-on Test";
+            this.ToolStripMenuItemLogonTest.Click += new System.EventHandler(this.ToolStripMenuItemLogonTest_Click);
             // 
             // ToolStripMenuItemServiceIssue
             // 
@@ -169,6 +172,12 @@
             this.returnToolStripMenuItem.Name = "returnToolStripMenuItem";
             this.returnToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.returnToolStripMenuItem.Text = "Return";
+            // 
+            // fAQToolStripMenuItem
+            // 
+            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.fAQToolStripMenuItem.Text = "FAQ";
             // 
             // IndexAdmin
             // 
@@ -206,5 +215,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemLogonTest;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemServiceIssue;
         private System.Windows.Forms.ToolStripMenuItem terminalConfigurarionsFunctionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
     }
 }

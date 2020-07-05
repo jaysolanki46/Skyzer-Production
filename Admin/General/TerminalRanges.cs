@@ -32,7 +32,6 @@ namespace Skyzer_Production.Admin.General
             conn = db.getConn();
             Ranges();
             Serials();
-            FillComboBoxRanges();
         }
 
         private void Ranges_Load(object sender, EventArgs e)
@@ -81,16 +80,19 @@ namespace Skyzer_Production.Admin.General
 
         private void FillComboBoxRanges()
         {
-            comboBoxRange.DataSource = null;
             conn.Open();
             sql = "select * from Ranges";
             cmd = new SqlCommand(sql, conn);
             dbTable = new DataTable();
             dbTable.Load(cmd.ExecuteReader());
+            DataRow row = dbTable.NewRow();
+            row["Id"] = -1;
+            row["Name"] = "--Select--";
+            dbTable.Rows.InsertAt(row, 0);
+
             comboBoxRange.DataSource = dbTable;
             comboBoxRange.ValueMember = "Id";
             comboBoxRange.DisplayMember = "Name";
-            
             conn.Close();
         }
 
@@ -151,7 +153,12 @@ namespace Skyzer_Production.Admin.General
 
         private void Terminals_Click(object sender, EventArgs e)
         {
+            comboBoxRange.Text = "--Select--";
+        }
 
+        private void ComboBoxRange_DropDown(object sender, EventArgs e)
+        {
+            FillComboBoxRanges();
         }
     }
 }

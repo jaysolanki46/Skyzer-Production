@@ -66,5 +66,12 @@ namespace Skyzer_Production.Admin
             keyload.MdiParent = this;
             keyload.Show();
         }
+
+        private void ToolStripMenuItemLogonTest_Click(object sender, EventArgs e)
+        {
+            LogOnTesting logOn = new LogOnTesting();
+            logOn.MdiParent = this;
+            logOn.Show();
+        }
     }
 }

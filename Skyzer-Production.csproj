@@ -64,6 +64,12 @@
     <Compile Include="Admin\Production\KeyLoading.Designer.cs">
       <DependentUpon>KeyLoading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Production\LogOnTesting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Production\LogOnTesting.Designer.cs">
+      <DependentUpon>LogOnTesting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Production\PaperWork.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Production\KeyLoading.resx">
       <DependentUpon>KeyLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Production\LogOnTesting.resx">
+      <DependentUpon>LogOnTesting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Production\PaperWork.resx">
       <DependentUpon>PaperWork.cs</DependentUpon>

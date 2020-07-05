@@ -58,11 +58,29 @@
     <Compile Include="Admin\IndexAdmin.Designer.cs">
       <DependentUpon>IndexAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Production\KeyLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Production\KeyLoading.Designer.cs">
+      <DependentUpon>KeyLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Production\PaperWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Production\PaperWork.Designer.cs">
+      <DependentUpon>PaperWork.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Production\ReActivate.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin\Production\ReActivate.Designer.cs">
       <DependentUpon>ReActivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Production\SWLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Production\SWLoading.Designer.cs">
+      <DependentUpon>SWLoading.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Production\Testing.cs">
       <SubType>Form</SubType>
@@ -90,8 +108,17 @@
     <EmbeddedResource Include="Admin\IndexAdmin.resx">
       <DependentUpon>IndexAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Production\KeyLoading.resx">
+      <DependentUpon>KeyLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Production\PaperWork.resx">
+      <DependentUpon>PaperWork.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Production\ReActivate.resx">
       <DependentUpon>ReActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Production\SWLoading.resx">
+      <DependentUpon>SWLoading.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Production\Testing.resx">
       <DependentUpon>Testing.cs</DependentUpon>

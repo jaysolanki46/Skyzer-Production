@@ -45,5 +45,26 @@ namespace Skyzer_Production.Admin
             testing.MdiParent = this;
             testing.Show();
         }
+
+        private void ToolStripMenuItemSWLoading_Click(object sender, EventArgs e)
+        {
+            SWLoading swLoading = new SWLoading();
+            swLoading.MdiParent = this;
+            swLoading.Show();
+        }
+
+        private void ToolStripMenuItemPaperWork_Click(object sender, EventArgs e)
+        {
+            PaperWork paperWork = new PaperWork();
+            paperWork.MdiParent = this;
+            paperWork.Show();
+        }
+
+        private void ToolStripMenuItemKeyLoading_Click(object sender, EventArgs e)
+        {
+            KeyLoading keyload = new KeyLoading();
+            keyload.MdiParent = this;
+            keyload.Show();
+        }
     }
 }

@@ -41,6 +41,7 @@
             this.ToolStripMenuItemKeyLoading = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemLogonTest = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemServiceIssue = new System.Windows.Forms.ToolStripMenuItem();
+            this.terminalConfigurarionsFunctionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dispatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.returnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -85,7 +86,8 @@
             // 
             this.productionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.howToDoToolStripMenuItem,
-            this.ToolStripMenuItemServiceIssue});
+            this.ToolStripMenuItemServiceIssue,
+            this.terminalConfigurarionsFunctionsToolStripMenuItem});
             this.productionToolStripMenuItem.Name = "productionToolStripMenuItem";
             this.productionToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.productionToolStripMenuItem.Text = "Production";
@@ -100,7 +102,7 @@
             this.ToolStripMenuItemKeyLoading,
             this.ToolStripMenuItemLogonTest});
             this.howToDoToolStripMenuItem.Name = "howToDoToolStripMenuItem";
-            this.howToDoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.howToDoToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
             this.howToDoToolStripMenuItem.Text = "How to do?";
             // 
             // ToolStripMenuItemReActrivation
@@ -122,18 +124,21 @@
             this.ToolStripMenuItemSWLoading.Name = "ToolStripMenuItemSWLoading";
             this.ToolStripMenuItemSWLoading.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemSWLoading.Text = "S/W Loading";
+            this.ToolStripMenuItemSWLoading.Click += new System.EventHandler(this.ToolStripMenuItemSWLoading_Click);
             // 
             // ToolStripMenuItemPaperWork
             // 
             this.ToolStripMenuItemPaperWork.Name = "ToolStripMenuItemPaperWork";
             this.ToolStripMenuItemPaperWork.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemPaperWork.Text = "Paper Work";
+            this.ToolStripMenuItemPaperWork.Click += new System.EventHandler(this.ToolStripMenuItemPaperWork_Click);
             // 
             // ToolStripMenuItemKeyLoading
             // 
             this.ToolStripMenuItemKeyLoading.Name = "ToolStripMenuItemKeyLoading";
             this.ToolStripMenuItemKeyLoading.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemKeyLoading.Text = "Key Loading";
+            this.ToolStripMenuItemKeyLoading.Click += new System.EventHandler(this.ToolStripMenuItemKeyLoading_Click);
             // 
             // ToolStripMenuItemLogonTest
             // 
@@ -144,8 +149,14 @@
             // ToolStripMenuItemServiceIssue
             // 
             this.ToolStripMenuItemServiceIssue.Name = "ToolStripMenuItemServiceIssue";
-            this.ToolStripMenuItemServiceIssue.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemServiceIssue.Size = new System.Drawing.Size(258, 22);
             this.ToolStripMenuItemServiceIssue.Text = "Service Issues";
+            // 
+            // terminalConfigurarionsFunctionsToolStripMenuItem
+            // 
+            this.terminalConfigurarionsFunctionsToolStripMenuItem.Name = "terminalConfigurarionsFunctionsToolStripMenuItem";
+            this.terminalConfigurarionsFunctionsToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
+            this.terminalConfigurarionsFunctionsToolStripMenuItem.Text = "Terminal Configurations/Functions";
             // 
             // dispatchToolStripMenuItem
             // 
@@ -194,5 +205,6 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemKeyLoading;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemLogonTest;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemServiceIssue;
+        private System.Windows.Forms.ToolStripMenuItem terminalConfigurarionsFunctionsToolStripMenuItem;
     }
 }

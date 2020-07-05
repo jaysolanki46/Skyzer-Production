@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Skyzer_Production.Admin.Production
 {
-    public partial class Testing : Form
+    public partial class PaperWork : Form
     {
         private DBOperations db;
         private SqlConnection conn;
@@ -23,15 +23,26 @@ namespace Skyzer_Production.Admin.Production
         private DataTable dbTable;
         private SqlDataReader reader;
         DataSet ds;
-
         private String fileLocation = "";
-        public Testing()
+
+        public PaperWork()
         {
             InitializeComponent();
             db = new DBOperations();
             conn = new SqlConnection();
             conn = db.getConn();
             FillComboBoxRanges();
+        }
+
+        private void PaperWork_Load(object sender, EventArgs e)
+        {
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            labelDivider.AutoSize = false;
+            labelDivider.Height = 2;
+            labelDivider.BorderStyle = BorderStyle.Fixed3D;
+            labelDivider.Text = "------------------------------------------------------------------------------------------------------------------";
+
+            comboBoxRange.Text = "--Select--";
         }
 
         private void FillComboBoxRanges()
@@ -69,7 +80,6 @@ namespace Skyzer_Production.Admin.Production
             conn.Close();
         }
 
-      
         private void ComboBoxTerminal_Leave(object sender, EventArgs e)
         {
             byte[] getImg = new byte[0];
@@ -91,20 +101,14 @@ namespace Skyzer_Production.Admin.Production
             conn.Close();
         }
 
-        private void Testing_Load(object sender, EventArgs e)
-        {
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            labelDivider.AutoSize = false;
-            labelDivider.Height = 2;
-            labelDivider.BorderStyle = BorderStyle.Fixed3D;
-            labelDivider.Text = "------------------------------------------------------------------------------------------------------------------";
-
-            comboBoxRange.Text = "--Select--";
-        }
-
         private void ComboBoxTerminal_DropDown(object sender, EventArgs e)
         {
             FillComboBoxTerminal(comboBoxRange.SelectedValue);
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void ButtonFileUpload_Click(object sender, EventArgs e)
@@ -127,6 +131,32 @@ namespace Skyzer_Production.Admin.Production
             }
         }
 
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        private void clear()
+        {
+            comboBoxRange.SelectedIndex = 0;
+            comboBoxTerminal.SelectedIndex = -1;
+            if (pictureBoxTerminal.Image != null)
+            {
+                pictureBoxTerminal.Image.Dispose();
+                pictureBoxTerminal.Image = null;
+            }
+
+            richTextBoxInitNote.Text = "";
+            richTextBoxTaskTime.Text = "";
+            richTextBoxCall.Text = "";
+            richTextBoxHistory.Text = "";
+            richTextBoxParts.Text = "";
+            richTextBoxNitro.Text = "";
+            richTextBoxEndNote.Text = "";
+            labelFileName.Text = "";
+            fileLocation = "";
+        }
+
         private void ButtonSave_Click(object sender, EventArgs e)
         {
             try
@@ -141,13 +171,15 @@ namespace Skyzer_Production.Admin.Production
                     stream.Close();
 
                     conn.Open();
-                    sql = "insert into ProductionTesting values (@termial, @autoTest, @manualTest, @initNote, @performe, @endNote, @fileName, @fileUploadPath)";
+                    sql = "insert into ProductionPaperWork values (@termial, @initNote, @taskTime, @call, @history, @parts, @nitro, @endNote, @fileName, @fileUploadPath)";
                     cmd = new SqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@termial", comboBoxTerminal.SelectedValue);
-                    cmd.Parameters.AddWithValue("@autoTest", checkBoxAutoTest.Checked);
-                    cmd.Parameters.AddWithValue("@manualTest", checkBoxManualTest.Checked);
                     cmd.Parameters.AddWithValue("@initNote", richTextBoxInitNote.Text);
-                    cmd.Parameters.AddWithValue("@performe", richTextBoxPerforme.Text);
+                    cmd.Parameters.AddWithValue("@taskTime", richTextBoxTaskTime.Text);
+                    cmd.Parameters.AddWithValue("@call", richTextBoxCall.Text);
+                    cmd.Parameters.AddWithValue("@history", richTextBoxHistory.Text);
+                    cmd.Parameters.AddWithValue("@parts", richTextBoxParts.Text);
+                    cmd.Parameters.AddWithValue("@nitro", richTextBoxNitro.Text);
                     cmd.Parameters.AddWithValue("@endNote", richTextBoxEndNote.Text);
                     cmd.Parameters.AddWithValue("@fileName", Path.GetFileName(fileLocation));
                     cmd.Parameters.Add("@fileUploadPath", SqlDbType.Binary, file.Length).Value = file;
@@ -157,14 +189,16 @@ namespace Skyzer_Production.Admin.Production
                 else
                 {
                     conn.Open();
-                    sql = "insert into ProductionReActivation (Terminal, AutoTest, ManualTest, InitNote, Performe, EndNote)" +
-                        " values (@termial, @autoTest, @manualTest, @initNote, @performe, @endNote)";
+                    sql = "insert into ProductionPaperWork (Terminal, InitNote, TaskTime, Call, History, Parts, Nitro, EndNote)" +
+                        " values (@termial, @initNote, @taskTime, @call, @history, @parts, @nitro, @endNote)";
                     cmd = new SqlCommand(sql, conn);
                     cmd.Parameters.AddWithValue("@termial", comboBoxTerminal.SelectedValue);
-                    cmd.Parameters.AddWithValue("@autoTest", checkBoxAutoTest.Checked);
-                    cmd.Parameters.AddWithValue("@manualTest", checkBoxManualTest.Checked);
                     cmd.Parameters.AddWithValue("@initNote", richTextBoxInitNote.Text);
-                    cmd.Parameters.AddWithValue("@performe", richTextBoxPerforme.Text);
+                    cmd.Parameters.AddWithValue("@taskTime", richTextBoxTaskTime.Text);
+                    cmd.Parameters.AddWithValue("@call", richTextBoxCall.Text);
+                    cmd.Parameters.AddWithValue("@history", richTextBoxHistory.Text);
+                    cmd.Parameters.AddWithValue("@parts", richTextBoxParts.Text);
+                    cmd.Parameters.AddWithValue("@nitro", richTextBoxNitro.Text);
                     cmd.Parameters.AddWithValue("@endNote", richTextBoxEndNote.Text);
                     cmd.ExecuteNonQuery();
                     conn.Close();
@@ -177,30 +211,6 @@ namespace Skyzer_Production.Admin.Production
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        private void clear()
-        {
-            checkBoxAutoTest.Checked = false;
-            checkBoxManualTest.Checked = true;
-            comboBoxRange.SelectedIndex = 0;
-            comboBoxTerminal.SelectedIndex = -1;
-            if (pictureBoxTerminal.Image != null)
-            {
-                pictureBoxTerminal.Image.Dispose();
-                pictureBoxTerminal.Image = null;
-            }
-
-            richTextBoxInitNote.Text = "";
-            richTextBoxPerforme.Text = "";
-            richTextBoxEndNote.Text = "";
-            labelFileName.Text = "";
-            fileLocation = "";
-        }
-
-        private void ButtonCancel_Click(object sender, EventArgs e)
-        {
-            clear();
         }
     }
 }

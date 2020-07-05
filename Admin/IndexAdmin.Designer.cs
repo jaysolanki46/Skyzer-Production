@@ -110,42 +110,42 @@
             // ToolStripMenuItemReActrivation
             // 
             this.ToolStripMenuItemReActrivation.Name = "ToolStripMenuItemReActrivation";
-            this.ToolStripMenuItemReActrivation.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemReActrivation.Size = new System.Drawing.Size(159, 22);
             this.ToolStripMenuItemReActrivation.Text = "Re-activate";
             this.ToolStripMenuItemReActrivation.Click += new System.EventHandler(this.BookingToolStripMenuItem1_Click);
             // 
             // ToolStripMenuItemTestingService
             // 
             this.ToolStripMenuItemTestingService.Name = "ToolStripMenuItemTestingService";
-            this.ToolStripMenuItemTestingService.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemTestingService.Size = new System.Drawing.Size(159, 22);
             this.ToolStripMenuItemTestingService.Text = "Testing (Service)";
             this.ToolStripMenuItemTestingService.Click += new System.EventHandler(this.TestingServiceToolStripMenuItem_Click);
             // 
             // ToolStripMenuItemSWLoading
             // 
             this.ToolStripMenuItemSWLoading.Name = "ToolStripMenuItemSWLoading";
-            this.ToolStripMenuItemSWLoading.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemSWLoading.Size = new System.Drawing.Size(159, 22);
             this.ToolStripMenuItemSWLoading.Text = "S/W Loading";
             this.ToolStripMenuItemSWLoading.Click += new System.EventHandler(this.ToolStripMenuItemSWLoading_Click);
             // 
             // ToolStripMenuItemPaperWork
             // 
             this.ToolStripMenuItemPaperWork.Name = "ToolStripMenuItemPaperWork";
-            this.ToolStripMenuItemPaperWork.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemPaperWork.Size = new System.Drawing.Size(159, 22);
             this.ToolStripMenuItemPaperWork.Text = "Paper Work";
             this.ToolStripMenuItemPaperWork.Click += new System.EventHandler(this.ToolStripMenuItemPaperWork_Click);
             // 
             // ToolStripMenuItemKeyLoading
             // 
             this.ToolStripMenuItemKeyLoading.Name = "ToolStripMenuItemKeyLoading";
-            this.ToolStripMenuItemKeyLoading.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemKeyLoading.Size = new System.Drawing.Size(159, 22);
             this.ToolStripMenuItemKeyLoading.Text = "Key Loading";
             this.ToolStripMenuItemKeyLoading.Click += new System.EventHandler(this.ToolStripMenuItemKeyLoading_Click);
             // 
             // ToolStripMenuItemLogonTest
             // 
             this.ToolStripMenuItemLogonTest.Name = "ToolStripMenuItemLogonTest";
-            this.ToolStripMenuItemLogonTest.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemLogonTest.Size = new System.Drawing.Size(159, 22);
             this.ToolStripMenuItemLogonTest.Text = "Log-on Test";
             this.ToolStripMenuItemLogonTest.Click += new System.EventHandler(this.ToolStripMenuItemLogonTest_Click);
             // 
@@ -178,6 +178,7 @@
             this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
             this.fAQToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
             this.fAQToolStripMenuItem.Text = "FAQ";
+            this.fAQToolStripMenuItem.Click += new System.EventHandler(this.FAQToolStripMenuItem_Click);
             // 
             // IndexAdmin
             // 

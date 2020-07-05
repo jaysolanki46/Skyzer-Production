@@ -32,6 +32,7 @@ namespace Skyzer_Production.Admin.General
             conn = db.getConn();
             Ranges();
             Serials();
+            Departments();
         }
 
         private void Ranges_Load(object sender, EventArgs e)
@@ -159,6 +160,30 @@ namespace Skyzer_Production.Admin.General
         private void ComboBoxRange_DropDown(object sender, EventArgs e)
         {
             FillComboBoxRanges();
+        }
+
+        private void ButtonAddDepartment_Click(object sender, EventArgs e)
+        {
+            conn.Open();
+            sql = "insert into FAQDepartments (name) values (@name)";
+            cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@name", textBoxDepartmentName.Text);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+            Departments();
+        }
+
+        private void Departments()
+        {
+            conn.Open();
+            sql = "select * from FAQDepartments";
+            adapter = new SqlDataAdapter(sql, conn);
+            dbTable = new DataTable();
+            adapter.Fill(dbTable);
+            dataGridViewFAQDepartment.AutoGenerateColumns = false;
+            dataGridViewFAQDepartment.DataSource = dbTable;
+            conn.Close();
         }
     }
 }

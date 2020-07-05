@@ -73,5 +73,12 @@ namespace Skyzer_Production.Admin
             logOn.MdiParent = this;
             logOn.Show();
         }
+
+        private void FAQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FAQ fAQ = new FAQ();
+            fAQ.MdiParent = this;
+            fAQ.Show();
+        }
     }
 }

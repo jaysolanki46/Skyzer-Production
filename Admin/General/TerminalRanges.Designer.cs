@@ -51,18 +51,29 @@
             this.labelSeriesName = new System.Windows.Forms.Label();
             this.labelRange = new System.Windows.Forms.Label();
             this.comboBoxRange = new System.Windows.Forms.ComboBox();
+            this.tabPageFAQs = new System.Windows.Forms.TabPage();
+            this.dataGridViewFAQDepartment = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.buttonAddDepartment = new System.Windows.Forms.Button();
+            this.textBoxDepartmentName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuTabs.SuspendLayout();
             this.ranges.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRanges)).BeginInit();
             this.terminals.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTerminal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeries)).BeginInit();
+            this.tabPageFAQs.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFAQDepartment)).BeginInit();
             this.SuspendLayout();
             // 
             // menuTabs
             // 
             this.menuTabs.Controls.Add(this.ranges);
             this.menuTabs.Controls.Add(this.terminals);
+            this.menuTabs.Controls.Add(this.tabPageFAQs);
             this.menuTabs.Location = new System.Drawing.Point(145, 68);
             this.menuTabs.Name = "menuTabs";
             this.menuTabs.SelectedIndex = 0;
@@ -77,7 +88,7 @@
             this.ranges.Controls.Add(this.labelRangeName);
             this.ranges.Location = new System.Drawing.Point(4, 22);
             this.ranges.Name = "ranges";
-            this.ranges.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.ranges.Padding = new System.Windows.Forms.Padding(3);
             this.ranges.Size = new System.Drawing.Size(806, 434);
             this.ranges.TabIndex = 0;
             this.ranges.Text = "Ranges";
@@ -156,7 +167,7 @@
             this.terminals.Controls.Add(this.comboBoxRange);
             this.terminals.Location = new System.Drawing.Point(4, 22);
             this.terminals.Name = "terminals";
-            this.terminals.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.terminals.Padding = new System.Windows.Forms.Padding(3);
             this.terminals.Size = new System.Drawing.Size(806, 434);
             this.terminals.TabIndex = 1;
             this.terminals.Text = "Terminals";
@@ -278,6 +289,79 @@
             this.comboBoxRange.TabIndex = 0;
             this.comboBoxRange.DropDown += new System.EventHandler(this.ComboBoxRange_DropDown);
             // 
+            // tabPageFAQs
+            // 
+            this.tabPageFAQs.Controls.Add(this.dataGridViewFAQDepartment);
+            this.tabPageFAQs.Controls.Add(this.buttonAddDepartment);
+            this.tabPageFAQs.Controls.Add(this.textBoxDepartmentName);
+            this.tabPageFAQs.Controls.Add(this.label2);
+            this.tabPageFAQs.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFAQs.Name = "tabPageFAQs";
+            this.tabPageFAQs.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFAQs.Size = new System.Drawing.Size(806, 434);
+            this.tabPageFAQs.TabIndex = 2;
+            this.tabPageFAQs.Text = "FAQs Department";
+            this.tabPageFAQs.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewFAQDepartment
+            // 
+            this.dataGridViewFAQDepartment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFAQDepartment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewButtonColumn1,
+            this.dataGridViewButtonColumn2});
+            this.dataGridViewFAQDepartment.Location = new System.Drawing.Point(194, 166);
+            this.dataGridViewFAQDepartment.Name = "dataGridViewFAQDepartment";
+            this.dataGridViewFAQDepartment.RowHeadersVisible = false;
+            this.dataGridViewFAQDepartment.Size = new System.Drawing.Size(303, 160);
+            this.dataGridViewFAQDepartment.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "name";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Department";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "Edit";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Text = "Edit";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "Delete";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Text = "Delete";
+            this.dataGridViewButtonColumn2.UseColumnTextForButtonValue = true;
+            // 
+            // buttonAddDepartment
+            // 
+            this.buttonAddDepartment.Location = new System.Drawing.Point(541, 78);
+            this.buttonAddDepartment.Name = "buttonAddDepartment";
+            this.buttonAddDepartment.Size = new System.Drawing.Size(75, 23);
+            this.buttonAddDepartment.TabIndex = 5;
+            this.buttonAddDepartment.Text = "+ Add";
+            this.buttonAddDepartment.UseVisualStyleBackColor = true;
+            this.buttonAddDepartment.Click += new System.EventHandler(this.ButtonAddDepartment_Click);
+            // 
+            // textBoxDepartmentName
+            // 
+            this.textBoxDepartmentName.Location = new System.Drawing.Point(194, 78);
+            this.textBoxDepartmentName.Name = "textBoxDepartmentName";
+            this.textBoxDepartmentName.Size = new System.Drawing.Size(312, 20);
+            this.textBoxDepartmentName.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(147, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Name: ";
+            // 
             // TerminalRanges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +381,9 @@
             this.terminals.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTerminal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeries)).EndInit();
+            this.tabPageFAQs.ResumeLayout(false);
+            this.tabPageFAQs.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFAQDepartment)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,5 +413,13 @@
         private System.Windows.Forms.PictureBox pictureBoxTerminal;
         private System.Windows.Forms.Button buttonImageUpload;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage tabPageFAQs;
+        private System.Windows.Forms.DataGridView dataGridViewFAQDepartment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
+        private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
+        private System.Windows.Forms.Button buttonAddDepartment;
+        private System.Windows.Forms.TextBox textBoxDepartmentName;
+        private System.Windows.Forms.Label label2;
     }
 }

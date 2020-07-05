@@ -38,5 +38,12 @@ namespace Skyzer_Production.Admin
             reActivate.Show();
 
         }
+
+        private void TestingServiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Testing testing = new Testing();
+            testing.MdiParent = this;
+            testing.Show();
+        }
     }
 }

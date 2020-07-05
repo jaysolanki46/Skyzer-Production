@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Skyzer_Production.Admin.Production
 {
-    public partial class ReActivate : Form
+    public partial class Testing : Form
     {
         private DBOperations db;
         private SqlConnection conn;
@@ -23,9 +23,9 @@ namespace Skyzer_Production.Admin.Production
         private DataTable dbTable;
         private SqlDataReader reader;
         DataSet ds;
-        private String fileLocation = "";
 
-        public ReActivate()
+        private String fileLocation = "";
+        public Testing()
         {
             InitializeComponent();
             db = new DBOperations();
@@ -34,19 +34,8 @@ namespace Skyzer_Production.Admin.Production
             FillComboBoxRanges();
         }
 
-        private void ReActivate_Load(object sender, EventArgs e)
-        {
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            labelDivider.AutoSize = false;
-            labelDivider.Height = 2;
-            labelDivider.BorderStyle = BorderStyle.Fixed3D;
-            labelDivider.Text = "------------------------------------------------------------------------------------------------------------------";
-
-            comboBoxRange.Text = "--Select--";
-        }
-
         private void FillComboBoxRanges()
-        {             
+        {
 
             conn.Open();
             sql = "select * from Ranges";
@@ -57,7 +46,7 @@ namespace Skyzer_Production.Admin.Production
             row["Id"] = -1;
             row["Name"] = "--Select--";
             dbTable.Rows.InsertAt(row, 0);
-                       
+
             comboBoxRange.DataSource = dbTable;
             comboBoxRange.ValueMember = "Id";
             comboBoxRange.DisplayMember = "Name";
@@ -68,7 +57,7 @@ namespace Skyzer_Production.Admin.Production
         {
             comboBoxTerminal.DataSource = null;
             conn.Open();
-           
+
             sql = "select * from Terminals where Range = @range";
             cmd = new SqlCommand(sql, conn);
             cmd.Parameters.AddWithValue("@range", range);
@@ -80,61 +69,63 @@ namespace Skyzer_Production.Admin.Production
             conn.Close();
         }
 
+      
+        private void ComboBoxTerminal_Leave(object sender, EventArgs e)
+        {
+            byte[] getImg = new byte[0];
+            conn.Open();
+            sql = "select * from Terminals where Id = @id";
+            cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@id", comboBoxTerminal.SelectedValue);
+            adapter = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                getImg = (byte[])dr["ImagePath"];
+            }
+
+            byte[] imgData = getImg;
+            MemoryStream stream = new MemoryStream(imgData);
+            pictureBoxTerminal.Image = Image.FromStream(stream);
+            conn.Close();
+        }
+
+        private void Testing_Load(object sender, EventArgs e)
+        {
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            labelDivider.AutoSize = false;
+            labelDivider.Height = 2;
+            labelDivider.BorderStyle = BorderStyle.Fixed3D;
+            labelDivider.Text = "------------------------------------------------------------------------------------------------------------------";
+
+            comboBoxRange.Text = "--Select--";
+        }
+
         private void ComboBoxTerminal_DropDown(object sender, EventArgs e)
         {
             FillComboBoxTerminal(comboBoxRange.SelectedValue);
         }
 
-        private void ButtonSave_Click(object sender, EventArgs e)
+        private void ComboBoxTerminal_Leave_1(object sender, EventArgs e)
         {
-            try
+            byte[] getImg = new byte[0];
+            conn.Open();
+            sql = "select * from Terminals where Id = @id";
+            cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@id", comboBoxTerminal.SelectedValue);
+            adapter = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+            foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                if(fileLocation != "")
-                {
-                    string filePath = fileLocation;
-                    FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
-                    BinaryReader reader = new BinaryReader(stream);
-                    byte[] file = reader.ReadBytes((int)stream.Length);
-                    reader.Close();
-                    stream.Close();
+                getImg = (byte[])dr["ImagePath"];
+            }
 
-                    conn.Open();
-                    sql = "insert into ProductionReActivation values (@termial, @initNote, @stage1, @stage2, @stage3, @endNote, @fileName, @fileUploadPath)";
-                    cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@termial", comboBoxTerminal.SelectedValue);
-                    cmd.Parameters.AddWithValue("@initNote", richTextBoxInitNote.Text);
-                    cmd.Parameters.AddWithValue("@stage1", richTextBoxStage1.Text);
-                    cmd.Parameters.AddWithValue("@stage2", richTextBoxStage2.Text);
-                    cmd.Parameters.AddWithValue("@stage3", richTextBoxStage3.Text);
-                    cmd.Parameters.AddWithValue("@endNote", richTextBoxEndNote.Text);
-                    cmd.Parameters.AddWithValue("@fileName", Path.GetFileName(fileLocation));
-                    cmd.Parameters.Add("@fileUploadPath", SqlDbType.Binary, file.Length).Value = file;
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                } else
-                {
-                    conn.Open();
-                    sql = "insert into ProductionReActivation (Terminal, InitNote, Stage1, Stage2, Stage3, EndNote)" +
-                        " values (@termial, @initNote, @stage1, @stage2, @stage3, @endNote)";
-                    cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@termial", comboBoxTerminal.SelectedValue);
-                    cmd.Parameters.AddWithValue("@initNote", richTextBoxInitNote.Text);
-                    cmd.Parameters.AddWithValue("@stage1", richTextBoxStage1.Text);
-                    cmd.Parameters.AddWithValue("@stage2", richTextBoxStage2.Text);
-                    cmd.Parameters.AddWithValue("@stage3", richTextBoxStage3.Text);
-                    cmd.Parameters.AddWithValue("@endNote", richTextBoxEndNote.Text);
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                }
-                              
-                MessageBox.Show("Saved Successfully !");
-                clear();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-                      
+            byte[] imgData = getImg;
+            MemoryStream stream = new MemoryStream(imgData);
+            pictureBoxTerminal.Image = Image.FromStream(stream);
+            conn.Close();
         }
 
         private void ButtonFileUpload_Click(object sender, EventArgs e)
@@ -157,13 +148,62 @@ namespace Skyzer_Production.Admin.Production
             }
         }
 
-        private void ButtonCancel_Click(object sender, EventArgs e)
+        private void ButtonSave_Click(object sender, EventArgs e)
         {
-            clear();
+            try
+            {
+                if (fileLocation != "")
+                {
+                    string filePath = fileLocation;
+                    FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+                    BinaryReader reader = new BinaryReader(stream);
+                    byte[] file = reader.ReadBytes((int)stream.Length);
+                    reader.Close();
+                    stream.Close();
+
+                    conn.Open();
+                    sql = "insert into ProductionTesting values (@termial, @autoTest, @manualTest, @initNote, @performe, @endNote, @fileName, @fileUploadPath)";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@termial", comboBoxTerminal.SelectedValue);
+                    cmd.Parameters.AddWithValue("@autoTest", checkBoxAutoTest.Checked);
+                    cmd.Parameters.AddWithValue("@manualTest", checkBoxManualTest.Checked);
+                    cmd.Parameters.AddWithValue("@initNote", richTextBoxInitNote.Text);
+                    cmd.Parameters.AddWithValue("@performe", richTextBoxPerforme.Text);
+                    cmd.Parameters.AddWithValue("@endNote", richTextBoxEndNote.Text);
+                    cmd.Parameters.AddWithValue("@fileName", Path.GetFileName(fileLocation));
+                    cmd.Parameters.Add("@fileUploadPath", SqlDbType.Binary, file.Length).Value = file;
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+                else
+                {
+                    conn.Open();
+                    sql = "insert into ProductionReActivation (Terminal, AutoTest, ManualTest, InitNote, Performe, EndNote)" +
+                        " values (@termial, @autoTest, @manualTest, @initNote, @performe, @endNote)";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@termial", comboBoxTerminal.SelectedValue);
+                    cmd.Parameters.AddWithValue("@autoTest", checkBoxAutoTest.Checked);
+                    cmd.Parameters.AddWithValue("@manualTest", checkBoxManualTest.Checked);
+                    cmd.Parameters.AddWithValue("@initNote", richTextBoxInitNote.Text);
+                    cmd.Parameters.AddWithValue("@performe", richTextBoxPerforme.Text);
+                    cmd.Parameters.AddWithValue("@endNote", richTextBoxEndNote.Text);
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                }
+
+                MessageBox.Show("Saved Successfully !");
+                clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         private void clear()
         {
+            checkBoxAutoTest.Checked = false;
+            checkBoxManualTest.Checked = true;
             comboBoxRange.SelectedIndex = 0;
             comboBoxTerminal.SelectedIndex = -1;
             if (pictureBoxTerminal.Image != null)
@@ -171,40 +211,17 @@ namespace Skyzer_Production.Admin.Production
                 pictureBoxTerminal.Image.Dispose();
                 pictureBoxTerminal.Image = null;
             }
-           
+
             richTextBoxInitNote.Text = "";
-            richTextBoxStage1.Text = "";
-            richTextBoxStage2.Text = "";
-            richTextBoxStage3.Text = "";
+            richTextBoxPerforme.Text = "";
             richTextBoxEndNote.Text = "";
             labelFileName.Text = "";
             fileLocation = "";
         }
 
-        private void ComboBoxTerminal_Leave(object sender, EventArgs e)
+        private void ButtonCancel_Click(object sender, EventArgs e)
         {
-            byte[] getImg = new byte[0];
-            conn.Open();
-            sql = "select * from Terminals where Id = @id";
-            cmd = new SqlCommand(sql, conn);
-            cmd.Parameters.AddWithValue("@id", comboBoxTerminal.SelectedValue);
-            adapter = new SqlDataAdapter(cmd);
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
-            foreach (DataRow dr in ds.Tables[0].Rows)
-            {
-                getImg = (byte[])dr["ImagePath"];
-            }
-
-            byte[] imgData = getImg;
-            MemoryStream stream = new MemoryStream(imgData);
-            pictureBoxTerminal.Image = Image.FromStream(stream);
-            conn.Close();
-        }
-
-        private void Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            clear();
         }
     }
 }

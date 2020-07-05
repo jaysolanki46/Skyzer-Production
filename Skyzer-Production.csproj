@@ -64,6 +64,12 @@
     <Compile Include="Admin\Production\ReActivate.Designer.cs">
       <DependentUpon>ReActivate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Production\Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Production\Testing.Designer.cs">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Client\IndexClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Production\ReActivate.resx">
       <DependentUpon>ReActivate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Production\Testing.resx">
+      <DependentUpon>Testing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\IndexClient.resx">
       <DependentUpon>IndexClient.cs</DependentUpon>

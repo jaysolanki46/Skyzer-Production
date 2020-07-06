@@ -1,4 +1,5 @@
 ﻿using Skyzer_Production.Admin;
+using Skyzer_Production.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Skyzer_Production
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IndexAdmin());
+            Application.Run(new IndexClient());
         }
     }
 }

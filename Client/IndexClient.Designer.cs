@@ -1,4 +1,4 @@
-﻿namespace Skyzer_Production
+﻿namespace Skyzer_Production.Client
 {
     partial class IndexClient
     {
@@ -28,273 +28,417 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.bookingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.howToBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timeSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.awaitingToBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timeSheetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.productionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.howToDoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reactivateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testingServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sWLoadingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.keyLoadinfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logonTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timesheetToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dispatchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.howToDoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.returnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.howToDoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.serviceToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.productionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dispatchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.returnsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndexClient));
+            this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.buttonFAQs = new System.Windows.Forms.Button();
+            this.panelWorkSheet = new System.Windows.Forms.Panel();
+            this.buttonMyWorkSheet = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.buttonWorkSheet = new System.Windows.Forms.Button();
+            this.panelDispatch = new System.Windows.Forms.Panel();
+            this.buttonDispatcHow = new System.Windows.Forms.Button();
+            this.buttonDispatch = new System.Windows.Forms.Button();
+            this.panelProduction = new System.Windows.Forms.Panel();
+            this.buttonServiceFaulty = new System.Windows.Forms.Button();
+            this.buttonProductionHow = new System.Windows.Forms.Button();
+            this.buttonProduction = new System.Windows.Forms.Button();
+            this.panelService = new System.Windows.Forms.Panel();
+            this.buttonServiceHow = new System.Windows.Forms.Button();
+            this.buttonService = new System.Windows.Forms.Button();
+            this.panelBookingSubMenu = new System.Windows.Forms.Panel();
+            this.buttonBookingIssues = new System.Windows.Forms.Button();
+            this.buttonBookingHow = new System.Windows.Forms.Button();
+            this.buttonBooking = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelSideMenu.SuspendLayout();
+            this.panelWorkSheet.SuspendLayout();
+            this.panelDispatch.SuspendLayout();
+            this.panelProduction.SuspendLayout();
+            this.panelService.SuspendLayout();
+            this.panelBookingSubMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // panelSideMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bookingToolStripMenuItem,
-            this.serviceToolStripMenuItem,
-            this.productionToolStripMenuItem,
-            this.dispatchToolStripMenuItem,
-            this.returnsToolStripMenuItem,
-            this.fAQToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panelSideMenu.AutoScroll = true;
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(194)))));
+            this.panelSideMenu.Controls.Add(this.buttonFAQs);
+            this.panelSideMenu.Controls.Add(this.panelWorkSheet);
+            this.panelSideMenu.Controls.Add(this.buttonWorkSheet);
+            this.panelSideMenu.Controls.Add(this.panelDispatch);
+            this.panelSideMenu.Controls.Add(this.buttonDispatch);
+            this.panelSideMenu.Controls.Add(this.panelProduction);
+            this.panelSideMenu.Controls.Add(this.buttonProduction);
+            this.panelSideMenu.Controls.Add(this.panelService);
+            this.panelSideMenu.Controls.Add(this.buttonService);
+            this.panelSideMenu.Controls.Add(this.panelBookingSubMenu);
+            this.panelSideMenu.Controls.Add(this.buttonBooking);
+            this.panelSideMenu.Controls.Add(this.panelLogo);
+            this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelSideMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelSideMenu.Name = "panelSideMenu";
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 745);
+            this.panelSideMenu.TabIndex = 0;
             // 
-            // bookingToolStripMenuItem
+            // buttonFAQs
             // 
-            this.bookingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToBookToolStripMenuItem,
-            this.timeSheetToolStripMenuItem,
-            this.awaitingToBookToolStripMenuItem});
-            this.bookingToolStripMenuItem.Name = "bookingToolStripMenuItem";
-            this.bookingToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.bookingToolStripMenuItem.Text = "Booking";
+            this.buttonFAQs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonFAQs.FlatAppearance.BorderSize = 0;
+            this.buttonFAQs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFAQs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFAQs.ForeColor = System.Drawing.Color.White;
+            this.buttonFAQs.Location = new System.Drawing.Point(0, 827);
+            this.buttonFAQs.Name = "buttonFAQs";
+            this.buttonFAQs.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonFAQs.Size = new System.Drawing.Size(229, 45);
+            this.buttonFAQs.TabIndex = 11;
+            this.buttonFAQs.Text = "FAQs";
+            this.buttonFAQs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonFAQs.UseVisualStyleBackColor = true;
+            this.buttonFAQs.Click += new System.EventHandler(this.ButtonFAQs_Click);
             // 
-            // howToBookToolStripMenuItem
+            // panelWorkSheet
             // 
-            this.howToBookToolStripMenuItem.Name = "howToBookToolStripMenuItem";
-            this.howToBookToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.howToBookToolStripMenuItem.Text = "How to do?";
-            this.howToBookToolStripMenuItem.Click += new System.EventHandler(this.HowToBookToolStripMenuItem_Click);
+            this.panelWorkSheet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(112)))), ((int)(((byte)(176)))));
+            this.panelWorkSheet.Controls.Add(this.buttonMyWorkSheet);
+            this.panelWorkSheet.Controls.Add(this.button1);
+            this.panelWorkSheet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelWorkSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelWorkSheet.Location = new System.Drawing.Point(0, 688);
+            this.panelWorkSheet.Name = "panelWorkSheet";
+            this.panelWorkSheet.Size = new System.Drawing.Size(229, 139);
+            this.panelWorkSheet.TabIndex = 10;
+            this.panelWorkSheet.Visible = false;
             // 
-            // timeSheetToolStripMenuItem
+            // buttonMyWorkSheet
             // 
-            this.timeSheetToolStripMenuItem.Name = "timeSheetToolStripMenuItem";
-            this.timeSheetToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.timeSheetToolStripMenuItem.Text = "Timesheet";
+            this.buttonMyWorkSheet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonMyWorkSheet.FlatAppearance.BorderSize = 0;
+            this.buttonMyWorkSheet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMyWorkSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonMyWorkSheet.ForeColor = System.Drawing.Color.White;
+            this.buttonMyWorkSheet.Location = new System.Drawing.Point(0, 45);
+            this.buttonMyWorkSheet.Name = "buttonMyWorkSheet";
+            this.buttonMyWorkSheet.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonMyWorkSheet.Size = new System.Drawing.Size(229, 45);
+            this.buttonMyWorkSheet.TabIndex = 1;
+            this.buttonMyWorkSheet.Text = "My Work Sheet";
+            this.buttonMyWorkSheet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMyWorkSheet.UseVisualStyleBackColor = true;
+            this.buttonMyWorkSheet.Click += new System.EventHandler(this.ButtonMyWorkSheet_Click);
             // 
-            // awaitingToBookToolStripMenuItem
+            // button1
             // 
-            this.awaitingToBookToolStripMenuItem.Name = "awaitingToBookToolStripMenuItem";
-            this.awaitingToBookToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.awaitingToBookToolStripMenuItem.Text = "Issues";
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(229, 45);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Production Work Sheet";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // serviceToolStripMenuItem
+            // buttonWorkSheet
             // 
-            this.serviceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.timeSheetToolStripMenuItem1});
-            this.serviceToolStripMenuItem.Name = "serviceToolStripMenuItem";
-            this.serviceToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.serviceToolStripMenuItem.Text = "Service";
+            this.buttonWorkSheet.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonWorkSheet.FlatAppearance.BorderSize = 0;
+            this.buttonWorkSheet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWorkSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonWorkSheet.ForeColor = System.Drawing.Color.White;
+            this.buttonWorkSheet.Location = new System.Drawing.Point(0, 643);
+            this.buttonWorkSheet.Name = "buttonWorkSheet";
+            this.buttonWorkSheet.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonWorkSheet.Size = new System.Drawing.Size(229, 45);
+            this.buttonWorkSheet.TabIndex = 9;
+            this.buttonWorkSheet.Text = "Work Sheet";
+            this.buttonWorkSheet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonWorkSheet.UseVisualStyleBackColor = true;
+            this.buttonWorkSheet.Click += new System.EventHandler(this.ButtonWorkSheet_Click);
             // 
-            // timeSheetToolStripMenuItem1
+            // panelDispatch
             // 
-            this.timeSheetToolStripMenuItem1.Name = "timeSheetToolStripMenuItem1";
-            this.timeSheetToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
-            this.timeSheetToolStripMenuItem1.Text = "Timesheet";
+            this.panelDispatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(112)))), ((int)(((byte)(176)))));
+            this.panelDispatch.Controls.Add(this.buttonDispatcHow);
+            this.panelDispatch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDispatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelDispatch.Location = new System.Drawing.Point(0, 587);
+            this.panelDispatch.Name = "panelDispatch";
+            this.panelDispatch.Size = new System.Drawing.Size(229, 56);
+            this.panelDispatch.TabIndex = 8;
+            this.panelDispatch.Visible = false;
             // 
-            // productionToolStripMenuItem
+            // buttonDispatcHow
             // 
-            this.productionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToDoToolStripMenuItem,
-            this.timesheetToolStripMenuItem2});
-            this.productionToolStripMenuItem.Name = "productionToolStripMenuItem";
-            this.productionToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
-            this.productionToolStripMenuItem.Text = "Production";
+            this.buttonDispatcHow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDispatcHow.FlatAppearance.BorderSize = 0;
+            this.buttonDispatcHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDispatcHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDispatcHow.ForeColor = System.Drawing.Color.White;
+            this.buttonDispatcHow.Location = new System.Drawing.Point(0, 0);
+            this.buttonDispatcHow.Name = "buttonDispatcHow";
+            this.buttonDispatcHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonDispatcHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonDispatcHow.TabIndex = 0;
+            this.buttonDispatcHow.Text = "How ?";
+            this.buttonDispatcHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDispatcHow.UseVisualStyleBackColor = true;
+            this.buttonDispatcHow.Click += new System.EventHandler(this.ButtonDispatcHow_Click);
             // 
-            // howToDoToolStripMenuItem
+            // buttonDispatch
             // 
-            this.howToDoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reactivateToolStripMenuItem,
-            this.testingServiceToolStripMenuItem,
-            this.sWLoadingToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.keyLoadinfToolStripMenuItem,
-            this.logonTestToolStripMenuItem});
-            this.howToDoToolStripMenuItem.Name = "howToDoToolStripMenuItem";
-            this.howToDoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.howToDoToolStripMenuItem.Text = "How to do?";
+            this.buttonDispatch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDispatch.FlatAppearance.BorderSize = 0;
+            this.buttonDispatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDispatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDispatch.ForeColor = System.Drawing.Color.White;
+            this.buttonDispatch.Location = new System.Drawing.Point(0, 542);
+            this.buttonDispatch.Name = "buttonDispatch";
+            this.buttonDispatch.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonDispatch.Size = new System.Drawing.Size(229, 45);
+            this.buttonDispatch.TabIndex = 7;
+            this.buttonDispatch.Text = "Dispatch";
+            this.buttonDispatch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDispatch.UseVisualStyleBackColor = true;
+            this.buttonDispatch.Click += new System.EventHandler(this.ButtonDispatch_Click);
             // 
-            // reactivateToolStripMenuItem
+            // panelProduction
             // 
-            this.reactivateToolStripMenuItem.Name = "reactivateToolStripMenuItem";
-            this.reactivateToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reactivateToolStripMenuItem.Text = "Re-activate";
+            this.panelProduction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(112)))), ((int)(((byte)(176)))));
+            this.panelProduction.Controls.Add(this.buttonServiceFaulty);
+            this.panelProduction.Controls.Add(this.buttonProductionHow);
+            this.panelProduction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelProduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelProduction.Location = new System.Drawing.Point(0, 425);
+            this.panelProduction.Name = "panelProduction";
+            this.panelProduction.Size = new System.Drawing.Size(229, 117);
+            this.panelProduction.TabIndex = 6;
+            this.panelProduction.Visible = false;
             // 
-            // testingServiceToolStripMenuItem
+            // buttonServiceFaulty
             // 
-            this.testingServiceToolStripMenuItem.Name = "testingServiceToolStripMenuItem";
-            this.testingServiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.testingServiceToolStripMenuItem.Text = "Testing (Service)";
+            this.buttonServiceFaulty.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonServiceFaulty.FlatAppearance.BorderSize = 0;
+            this.buttonServiceFaulty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonServiceFaulty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonServiceFaulty.ForeColor = System.Drawing.Color.White;
+            this.buttonServiceFaulty.Location = new System.Drawing.Point(0, 45);
+            this.buttonServiceFaulty.Name = "buttonServiceFaulty";
+            this.buttonServiceFaulty.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonServiceFaulty.Size = new System.Drawing.Size(229, 45);
+            this.buttonServiceFaulty.TabIndex = 1;
+            this.buttonServiceFaulty.Text = "Service Faulty";
+            this.buttonServiceFaulty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonServiceFaulty.UseVisualStyleBackColor = true;
+            this.buttonServiceFaulty.Click += new System.EventHandler(this.ButtonServiceFaulty_Click);
             // 
-            // sWLoadingToolStripMenuItem
+            // buttonProductionHow
             // 
-            this.sWLoadingToolStripMenuItem.Name = "sWLoadingToolStripMenuItem";
-            this.sWLoadingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sWLoadingToolStripMenuItem.Text = "S/W Loading";
+            this.buttonProductionHow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProductionHow.FlatAppearance.BorderSize = 0;
+            this.buttonProductionHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProductionHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProductionHow.ForeColor = System.Drawing.Color.White;
+            this.buttonProductionHow.Location = new System.Drawing.Point(0, 0);
+            this.buttonProductionHow.Name = "buttonProductionHow";
+            this.buttonProductionHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonProductionHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonProductionHow.TabIndex = 0;
+            this.buttonProductionHow.Text = "How ?";
+            this.buttonProductionHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProductionHow.UseVisualStyleBackColor = true;
+            this.buttonProductionHow.Click += new System.EventHandler(this.ButtonProductionHow_Click);
             // 
-            // keyLoadinfToolStripMenuItem
+            // buttonProduction
             // 
-            this.keyLoadinfToolStripMenuItem.Name = "keyLoadinfToolStripMenuItem";
-            this.keyLoadinfToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.keyLoadinfToolStripMenuItem.Text = "Key Loading";
+            this.buttonProduction.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProduction.FlatAppearance.BorderSize = 0;
+            this.buttonProduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProduction.ForeColor = System.Drawing.Color.White;
+            this.buttonProduction.Location = new System.Drawing.Point(0, 380);
+            this.buttonProduction.Name = "buttonProduction";
+            this.buttonProduction.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonProduction.Size = new System.Drawing.Size(229, 45);
+            this.buttonProduction.TabIndex = 5;
+            this.buttonProduction.Text = "Production";
+            this.buttonProduction.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProduction.UseVisualStyleBackColor = true;
+            this.buttonProduction.Click += new System.EventHandler(this.ButtonProduction_Click);
             // 
-            // logonTestToolStripMenuItem
+            // panelService
             // 
-            this.logonTestToolStripMenuItem.Name = "logonTestToolStripMenuItem";
-            this.logonTestToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logonTestToolStripMenuItem.Text = "Logon Test";
+            this.panelService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(112)))), ((int)(((byte)(176)))));
+            this.panelService.Controls.Add(this.buttonServiceHow);
+            this.panelService.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelService.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelService.Location = new System.Drawing.Point(0, 307);
+            this.panelService.Name = "panelService";
+            this.panelService.Size = new System.Drawing.Size(229, 73);
+            this.panelService.TabIndex = 4;
+            this.panelService.Visible = false;
             // 
-            // timesheetToolStripMenuItem2
+            // buttonServiceHow
             // 
-            this.timesheetToolStripMenuItem2.Name = "timesheetToolStripMenuItem2";
-            this.timesheetToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.timesheetToolStripMenuItem2.Text = "Timesheet";
+            this.buttonServiceHow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonServiceHow.FlatAppearance.BorderSize = 0;
+            this.buttonServiceHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonServiceHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonServiceHow.ForeColor = System.Drawing.Color.White;
+            this.buttonServiceHow.Location = new System.Drawing.Point(0, 0);
+            this.buttonServiceHow.Name = "buttonServiceHow";
+            this.buttonServiceHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonServiceHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonServiceHow.TabIndex = 0;
+            this.buttonServiceHow.Text = "How ?";
+            this.buttonServiceHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonServiceHow.UseVisualStyleBackColor = true;
+            this.buttonServiceHow.Click += new System.EventHandler(this.ButtonServiceHow_Click);
             // 
-            // dispatchToolStripMenuItem
+            // buttonService
             // 
-            this.dispatchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToDoToolStripMenuItem1});
-            this.dispatchToolStripMenuItem.Name = "dispatchToolStripMenuItem";
-            this.dispatchToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.dispatchToolStripMenuItem.Text = "Dispatch";
+            this.buttonService.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonService.FlatAppearance.BorderSize = 0;
+            this.buttonService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonService.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonService.ForeColor = System.Drawing.Color.White;
+            this.buttonService.Location = new System.Drawing.Point(0, 262);
+            this.buttonService.Name = "buttonService";
+            this.buttonService.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonService.Size = new System.Drawing.Size(229, 45);
+            this.buttonService.TabIndex = 3;
+            this.buttonService.Text = "Service";
+            this.buttonService.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonService.UseVisualStyleBackColor = true;
+            this.buttonService.Click += new System.EventHandler(this.ButtonService_Click);
             // 
-            // howToDoToolStripMenuItem1
+            // panelBookingSubMenu
             // 
-            this.howToDoToolStripMenuItem1.Name = "howToDoToolStripMenuItem1";
-            this.howToDoToolStripMenuItem1.Size = new System.Drawing.Size(135, 22);
-            this.howToDoToolStripMenuItem1.Text = "How to do?";
+            this.panelBookingSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(112)))), ((int)(((byte)(176)))));
+            this.panelBookingSubMenu.Controls.Add(this.buttonBookingIssues);
+            this.panelBookingSubMenu.Controls.Add(this.buttonBookingHow);
+            this.panelBookingSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBookingSubMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelBookingSubMenu.Location = new System.Drawing.Point(0, 145);
+            this.panelBookingSubMenu.Name = "panelBookingSubMenu";
+            this.panelBookingSubMenu.Size = new System.Drawing.Size(229, 117);
+            this.panelBookingSubMenu.TabIndex = 2;
+            this.panelBookingSubMenu.Visible = false;
             // 
-            // returnsToolStripMenuItem
+            // buttonBookingIssues
             // 
-            this.returnsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.howToDoToolStripMenuItem2});
-            this.returnsToolStripMenuItem.Name = "returnsToolStripMenuItem";
-            this.returnsToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.returnsToolStripMenuItem.Text = "Return";
-            this.returnsToolStripMenuItem.Click += new System.EventHandler(this.ReturnsToolStripMenuItem_Click);
+            this.buttonBookingIssues.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBookingIssues.FlatAppearance.BorderSize = 0;
+            this.buttonBookingIssues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBookingIssues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBookingIssues.ForeColor = System.Drawing.Color.White;
+            this.buttonBookingIssues.Location = new System.Drawing.Point(0, 45);
+            this.buttonBookingIssues.Name = "buttonBookingIssues";
+            this.buttonBookingIssues.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonBookingIssues.Size = new System.Drawing.Size(229, 45);
+            this.buttonBookingIssues.TabIndex = 1;
+            this.buttonBookingIssues.Text = "Issues";
+            this.buttonBookingIssues.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBookingIssues.UseVisualStyleBackColor = true;
+            this.buttonBookingIssues.Click += new System.EventHandler(this.ButtonBookingIssues_Click);
             // 
-            // howToDoToolStripMenuItem2
+            // buttonBookingHow
             // 
-            this.howToDoToolStripMenuItem2.Name = "howToDoToolStripMenuItem2";
-            this.howToDoToolStripMenuItem2.Size = new System.Drawing.Size(135, 22);
-            this.howToDoToolStripMenuItem2.Text = "How to do?";
+            this.buttonBookingHow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBookingHow.FlatAppearance.BorderSize = 0;
+            this.buttonBookingHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBookingHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBookingHow.ForeColor = System.Drawing.Color.White;
+            this.buttonBookingHow.Location = new System.Drawing.Point(0, 0);
+            this.buttonBookingHow.Name = "buttonBookingHow";
+            this.buttonBookingHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.buttonBookingHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonBookingHow.TabIndex = 0;
+            this.buttonBookingHow.Text = "How ?";
+            this.buttonBookingHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBookingHow.UseVisualStyleBackColor = true;
+            this.buttonBookingHow.Click += new System.EventHandler(this.ButtonBookingHow_Click);
             // 
-            // fAQToolStripMenuItem
+            // buttonBooking
             // 
-            this.fAQToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bookingToolStripMenuItem1,
-            this.serviceToolStripMenuItem1,
-            this.productionToolStripMenuItem1,
-            this.dispatchToolStripMenuItem1,
-            this.returnsToolStripMenuItem1});
-            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.fAQToolStripMenuItem.Text = "FAQ";
+            this.buttonBooking.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonBooking.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonBooking.FlatAppearance.BorderSize = 0;
+            this.buttonBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBooking.ForeColor = System.Drawing.Color.White;
+            this.buttonBooking.Image = ((System.Drawing.Image)(resources.GetObject("buttonBooking.Image")));
+            this.buttonBooking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBooking.Location = new System.Drawing.Point(0, 100);
+            this.buttonBooking.Name = "buttonBooking";
+            this.buttonBooking.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.buttonBooking.Size = new System.Drawing.Size(229, 45);
+            this.buttonBooking.TabIndex = 1;
+            this.buttonBooking.Text = "   Booking";
+            this.buttonBooking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBooking.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonBooking.UseVisualStyleBackColor = true;
+            this.buttonBooking.Click += new System.EventHandler(this.ButtonBooking_Click);
             // 
-            // bookingToolStripMenuItem1
+            // panelLogo
             // 
-            this.bookingToolStripMenuItem1.Name = "bookingToolStripMenuItem1";
-            this.bookingToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
-            this.bookingToolStripMenuItem1.Text = "Booking";
-            // 
-            // serviceToolStripMenuItem1
-            // 
-            this.serviceToolStripMenuItem1.Name = "serviceToolStripMenuItem1";
-            this.serviceToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
-            this.serviceToolStripMenuItem1.Text = "Service";
-            // 
-            // productionToolStripMenuItem1
-            // 
-            this.productionToolStripMenuItem1.Name = "productionToolStripMenuItem1";
-            this.productionToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
-            this.productionToolStripMenuItem1.Text = "Production";
-            // 
-            // dispatchToolStripMenuItem1
-            // 
-            this.dispatchToolStripMenuItem1.Name = "dispatchToolStripMenuItem1";
-            this.dispatchToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
-            this.dispatchToolStripMenuItem1.Text = "Dispatch";
-            // 
-            // returnsToolStripMenuItem1
-            // 
-            this.returnsToolStripMenuItem1.Name = "returnsToolStripMenuItem1";
-            this.returnsToolStripMenuItem1.Size = new System.Drawing.Size(133, 22);
-            this.returnsToolStripMenuItem1.Text = "Return";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "Paper Work";
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(229, 100);
+            this.panelLogo.TabIndex = 0;
             // 
             // IndexClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(1164, 745);
+            this.Controls.Add(this.panelSideMenu);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "IndexClient";
-            this.Text = "Skyzer Technologies Production";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "IndexClient";
+            this.Load += new System.EventHandler(this.IndexClient_Load);
+            this.panelSideMenu.ResumeLayout(false);
+            this.panelWorkSheet.ResumeLayout(false);
+            this.panelDispatch.ResumeLayout(false);
+            this.panelProduction.ResumeLayout(false);
+            this.panelService.ResumeLayout(false);
+            this.panelBookingSubMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem bookingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serviceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dispatchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem returnsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fAQToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem howToBookToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timeSheetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem awaitingToBookToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timeSheetToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem howToDoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem howToDoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem howToDoToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem bookingToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem serviceToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem productionToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem dispatchToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem returnsToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem reactivateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testingServiceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sWLoadingToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem keyLoadinfToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logonTestToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem timesheetToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.Panel panelSideMenu;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.Panel panelBookingSubMenu;
+        private System.Windows.Forms.Panel panelDispatch;
+        private System.Windows.Forms.Button buttonDispatcHow;
+        private System.Windows.Forms.Button buttonDispatch;
+        private System.Windows.Forms.Panel panelProduction;
+        private System.Windows.Forms.Button buttonServiceFaulty;
+        private System.Windows.Forms.Button buttonProductionHow;
+        private System.Windows.Forms.Button buttonProduction;
+        private System.Windows.Forms.Panel panelService;
+        private System.Windows.Forms.Button buttonServiceHow;
+        private System.Windows.Forms.Panel panelWorkSheet;
+        private System.Windows.Forms.Button buttonMyWorkSheet;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonWorkSheet;
+        private System.Windows.Forms.Button buttonFAQs;
+        private System.Windows.Forms.Button buttonService;
+        private System.Windows.Forms.Button buttonBooking;
+        private System.Windows.Forms.Button buttonBookingIssues;
+        private System.Windows.Forms.Button buttonBookingHow;
     }
 }
-

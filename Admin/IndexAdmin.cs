@@ -1,5 +1,6 @@
 ﻿using Skyzer_Production.Admin.General;
 using Skyzer_Production.Admin.Production;
+using Skyzer_Production.Admin.User;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -79,6 +80,13 @@ namespace Skyzer_Production.Admin
             FAQ fAQ = new FAQ();
             fAQ.MdiParent = this;
             fAQ.Show();
+        }
+
+        private void ToolStripMenuItemUser_Click(object sender, EventArgs e)
+        {
+            Users user = new Users();
+            user.MdiParent = this;
+            user.Show();
         }
     }
 }

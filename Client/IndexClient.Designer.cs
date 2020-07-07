@@ -78,7 +78,7 @@
             this.panelSideMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 745);
+            this.panelSideMenu.Size = new System.Drawing.Size(257, 745);
             this.panelSideMenu.TabIndex = 0;
             // 
             // buttonFAQs
@@ -88,13 +88,16 @@
             this.buttonFAQs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFAQs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFAQs.ForeColor = System.Drawing.Color.White;
+            this.buttonFAQs.Image = ((System.Drawing.Image)(resources.GetObject("buttonFAQs.Image")));
+            this.buttonFAQs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonFAQs.Location = new System.Drawing.Point(0, 827);
             this.buttonFAQs.Name = "buttonFAQs";
             this.buttonFAQs.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonFAQs.Size = new System.Drawing.Size(229, 45);
+            this.buttonFAQs.Size = new System.Drawing.Size(236, 45);
             this.buttonFAQs.TabIndex = 11;
-            this.buttonFAQs.Text = "FAQs";
+            this.buttonFAQs.Text = "   FAQs";
             this.buttonFAQs.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonFAQs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonFAQs.UseVisualStyleBackColor = true;
             this.buttonFAQs.Click += new System.EventHandler(this.ButtonFAQs_Click);
             // 
@@ -107,7 +110,7 @@
             this.panelWorkSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelWorkSheet.Location = new System.Drawing.Point(0, 688);
             this.panelWorkSheet.Name = "panelWorkSheet";
-            this.panelWorkSheet.Size = new System.Drawing.Size(229, 139);
+            this.panelWorkSheet.Size = new System.Drawing.Size(236, 139);
             this.panelWorkSheet.TabIndex = 10;
             this.panelWorkSheet.Visible = false;
             // 
@@ -118,13 +121,16 @@
             this.buttonMyWorkSheet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMyWorkSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMyWorkSheet.ForeColor = System.Drawing.Color.White;
+            this.buttonMyWorkSheet.Image = ((System.Drawing.Image)(resources.GetObject("buttonMyWorkSheet.Image")));
+            this.buttonMyWorkSheet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMyWorkSheet.Location = new System.Drawing.Point(0, 45);
             this.buttonMyWorkSheet.Name = "buttonMyWorkSheet";
             this.buttonMyWorkSheet.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonMyWorkSheet.Size = new System.Drawing.Size(229, 45);
+            this.buttonMyWorkSheet.Size = new System.Drawing.Size(236, 45);
             this.buttonMyWorkSheet.TabIndex = 1;
-            this.buttonMyWorkSheet.Text = "My Work Sheet";
+            this.buttonMyWorkSheet.Text = "   My Work Sheet";
             this.buttonMyWorkSheet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonMyWorkSheet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMyWorkSheet.UseVisualStyleBackColor = true;
             this.buttonMyWorkSheet.Click += new System.EventHandler(this.ButtonMyWorkSheet_Click);
             // 
@@ -135,13 +141,16 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(229, 45);
+            this.button1.Size = new System.Drawing.Size(236, 45);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Production Work Sheet";
+            this.button1.Text = "   Production Work Sheet";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
@@ -152,13 +161,16 @@
             this.buttonWorkSheet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWorkSheet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonWorkSheet.ForeColor = System.Drawing.Color.White;
+            this.buttonWorkSheet.Image = ((System.Drawing.Image)(resources.GetObject("buttonWorkSheet.Image")));
+            this.buttonWorkSheet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonWorkSheet.Location = new System.Drawing.Point(0, 643);
             this.buttonWorkSheet.Name = "buttonWorkSheet";
             this.buttonWorkSheet.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonWorkSheet.Size = new System.Drawing.Size(229, 45);
+            this.buttonWorkSheet.Size = new System.Drawing.Size(236, 45);
             this.buttonWorkSheet.TabIndex = 9;
-            this.buttonWorkSheet.Text = "Work Sheet";
+            this.buttonWorkSheet.Text = "   Work Sheet";
             this.buttonWorkSheet.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonWorkSheet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonWorkSheet.UseVisualStyleBackColor = true;
             this.buttonWorkSheet.Click += new System.EventHandler(this.ButtonWorkSheet_Click);
             // 
@@ -170,7 +182,7 @@
             this.panelDispatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelDispatch.Location = new System.Drawing.Point(0, 587);
             this.panelDispatch.Name = "panelDispatch";
-            this.panelDispatch.Size = new System.Drawing.Size(229, 56);
+            this.panelDispatch.Size = new System.Drawing.Size(236, 56);
             this.panelDispatch.TabIndex = 8;
             this.panelDispatch.Visible = false;
             // 
@@ -181,13 +193,16 @@
             this.buttonDispatcHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDispatcHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDispatcHow.ForeColor = System.Drawing.Color.White;
+            this.buttonDispatcHow.Image = ((System.Drawing.Image)(resources.GetObject("buttonDispatcHow.Image")));
+            this.buttonDispatcHow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDispatcHow.Location = new System.Drawing.Point(0, 0);
             this.buttonDispatcHow.Name = "buttonDispatcHow";
             this.buttonDispatcHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonDispatcHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonDispatcHow.Size = new System.Drawing.Size(236, 45);
             this.buttonDispatcHow.TabIndex = 0;
-            this.buttonDispatcHow.Text = "How ?";
+            this.buttonDispatcHow.Text = "   How ?";
             this.buttonDispatcHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDispatcHow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDispatcHow.UseVisualStyleBackColor = true;
             this.buttonDispatcHow.Click += new System.EventHandler(this.ButtonDispatcHow_Click);
             // 
@@ -198,13 +213,16 @@
             this.buttonDispatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDispatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDispatch.ForeColor = System.Drawing.Color.White;
+            this.buttonDispatch.Image = ((System.Drawing.Image)(resources.GetObject("buttonDispatch.Image")));
+            this.buttonDispatch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDispatch.Location = new System.Drawing.Point(0, 542);
             this.buttonDispatch.Name = "buttonDispatch";
             this.buttonDispatch.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonDispatch.Size = new System.Drawing.Size(229, 45);
+            this.buttonDispatch.Size = new System.Drawing.Size(236, 45);
             this.buttonDispatch.TabIndex = 7;
-            this.buttonDispatch.Text = "Dispatch";
+            this.buttonDispatch.Text = "   Dispatch";
             this.buttonDispatch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDispatch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDispatch.UseVisualStyleBackColor = true;
             this.buttonDispatch.Click += new System.EventHandler(this.ButtonDispatch_Click);
             // 
@@ -217,7 +235,7 @@
             this.panelProduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelProduction.Location = new System.Drawing.Point(0, 425);
             this.panelProduction.Name = "panelProduction";
-            this.panelProduction.Size = new System.Drawing.Size(229, 117);
+            this.panelProduction.Size = new System.Drawing.Size(236, 117);
             this.panelProduction.TabIndex = 6;
             this.panelProduction.Visible = false;
             // 
@@ -228,13 +246,16 @@
             this.buttonServiceFaulty.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonServiceFaulty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonServiceFaulty.ForeColor = System.Drawing.Color.White;
+            this.buttonServiceFaulty.Image = ((System.Drawing.Image)(resources.GetObject("buttonServiceFaulty.Image")));
+            this.buttonServiceFaulty.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonServiceFaulty.Location = new System.Drawing.Point(0, 45);
             this.buttonServiceFaulty.Name = "buttonServiceFaulty";
             this.buttonServiceFaulty.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonServiceFaulty.Size = new System.Drawing.Size(229, 45);
+            this.buttonServiceFaulty.Size = new System.Drawing.Size(236, 45);
             this.buttonServiceFaulty.TabIndex = 1;
-            this.buttonServiceFaulty.Text = "Service Faulty";
+            this.buttonServiceFaulty.Text = "   Service Faulty";
             this.buttonServiceFaulty.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonServiceFaulty.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonServiceFaulty.UseVisualStyleBackColor = true;
             this.buttonServiceFaulty.Click += new System.EventHandler(this.ButtonServiceFaulty_Click);
             // 
@@ -245,13 +266,16 @@
             this.buttonProductionHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonProductionHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonProductionHow.ForeColor = System.Drawing.Color.White;
+            this.buttonProductionHow.Image = ((System.Drawing.Image)(resources.GetObject("buttonProductionHow.Image")));
+            this.buttonProductionHow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProductionHow.Location = new System.Drawing.Point(0, 0);
             this.buttonProductionHow.Name = "buttonProductionHow";
             this.buttonProductionHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonProductionHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonProductionHow.Size = new System.Drawing.Size(236, 45);
             this.buttonProductionHow.TabIndex = 0;
-            this.buttonProductionHow.Text = "How ?";
+            this.buttonProductionHow.Text = "   How ?";
             this.buttonProductionHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProductionHow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonProductionHow.UseVisualStyleBackColor = true;
             this.buttonProductionHow.Click += new System.EventHandler(this.ButtonProductionHow_Click);
             // 
@@ -262,13 +286,16 @@
             this.buttonProduction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonProduction.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonProduction.ForeColor = System.Drawing.Color.White;
+            this.buttonProduction.Image = ((System.Drawing.Image)(resources.GetObject("buttonProduction.Image")));
+            this.buttonProduction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProduction.Location = new System.Drawing.Point(0, 380);
             this.buttonProduction.Name = "buttonProduction";
             this.buttonProduction.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonProduction.Size = new System.Drawing.Size(229, 45);
+            this.buttonProduction.Size = new System.Drawing.Size(236, 45);
             this.buttonProduction.TabIndex = 5;
-            this.buttonProduction.Text = "Production";
+            this.buttonProduction.Text = "   Production";
             this.buttonProduction.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProduction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonProduction.UseVisualStyleBackColor = true;
             this.buttonProduction.Click += new System.EventHandler(this.ButtonProduction_Click);
             // 
@@ -280,7 +307,7 @@
             this.panelService.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelService.Location = new System.Drawing.Point(0, 307);
             this.panelService.Name = "panelService";
-            this.panelService.Size = new System.Drawing.Size(229, 73);
+            this.panelService.Size = new System.Drawing.Size(236, 73);
             this.panelService.TabIndex = 4;
             this.panelService.Visible = false;
             // 
@@ -291,13 +318,16 @@
             this.buttonServiceHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonServiceHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonServiceHow.ForeColor = System.Drawing.Color.White;
+            this.buttonServiceHow.Image = ((System.Drawing.Image)(resources.GetObject("buttonServiceHow.Image")));
+            this.buttonServiceHow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonServiceHow.Location = new System.Drawing.Point(0, 0);
             this.buttonServiceHow.Name = "buttonServiceHow";
             this.buttonServiceHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonServiceHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonServiceHow.Size = new System.Drawing.Size(236, 45);
             this.buttonServiceHow.TabIndex = 0;
-            this.buttonServiceHow.Text = "How ?";
+            this.buttonServiceHow.Text = "   How ?";
             this.buttonServiceHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonServiceHow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonServiceHow.UseVisualStyleBackColor = true;
             this.buttonServiceHow.Click += new System.EventHandler(this.ButtonServiceHow_Click);
             // 
@@ -308,13 +338,16 @@
             this.buttonService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonService.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonService.ForeColor = System.Drawing.Color.White;
+            this.buttonService.Image = ((System.Drawing.Image)(resources.GetObject("buttonService.Image")));
+            this.buttonService.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonService.Location = new System.Drawing.Point(0, 262);
             this.buttonService.Name = "buttonService";
             this.buttonService.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonService.Size = new System.Drawing.Size(229, 45);
+            this.buttonService.Size = new System.Drawing.Size(236, 45);
             this.buttonService.TabIndex = 3;
-            this.buttonService.Text = "Service";
+            this.buttonService.Text = "   Service";
             this.buttonService.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonService.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonService.UseVisualStyleBackColor = true;
             this.buttonService.Click += new System.EventHandler(this.ButtonService_Click);
             // 
@@ -327,7 +360,7 @@
             this.panelBookingSubMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelBookingSubMenu.Location = new System.Drawing.Point(0, 145);
             this.panelBookingSubMenu.Name = "panelBookingSubMenu";
-            this.panelBookingSubMenu.Size = new System.Drawing.Size(229, 117);
+            this.panelBookingSubMenu.Size = new System.Drawing.Size(236, 117);
             this.panelBookingSubMenu.TabIndex = 2;
             this.panelBookingSubMenu.Visible = false;
             // 
@@ -338,13 +371,16 @@
             this.buttonBookingIssues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBookingIssues.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBookingIssues.ForeColor = System.Drawing.Color.White;
+            this.buttonBookingIssues.Image = ((System.Drawing.Image)(resources.GetObject("buttonBookingIssues.Image")));
+            this.buttonBookingIssues.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonBookingIssues.Location = new System.Drawing.Point(0, 45);
             this.buttonBookingIssues.Name = "buttonBookingIssues";
             this.buttonBookingIssues.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonBookingIssues.Size = new System.Drawing.Size(229, 45);
+            this.buttonBookingIssues.Size = new System.Drawing.Size(236, 45);
             this.buttonBookingIssues.TabIndex = 1;
-            this.buttonBookingIssues.Text = "Issues";
+            this.buttonBookingIssues.Text = "   Issues";
             this.buttonBookingIssues.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBookingIssues.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonBookingIssues.UseVisualStyleBackColor = true;
             this.buttonBookingIssues.Click += new System.EventHandler(this.ButtonBookingIssues_Click);
             // 
@@ -355,13 +391,16 @@
             this.buttonBookingHow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBookingHow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBookingHow.ForeColor = System.Drawing.Color.White;
+            this.buttonBookingHow.Image = ((System.Drawing.Image)(resources.GetObject("buttonBookingHow.Image")));
+            this.buttonBookingHow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonBookingHow.Location = new System.Drawing.Point(0, 0);
             this.buttonBookingHow.Name = "buttonBookingHow";
             this.buttonBookingHow.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.buttonBookingHow.Size = new System.Drawing.Size(229, 45);
+            this.buttonBookingHow.Size = new System.Drawing.Size(236, 45);
             this.buttonBookingHow.TabIndex = 0;
-            this.buttonBookingHow.Text = "How ?";
+            this.buttonBookingHow.Text = "   How ?";
             this.buttonBookingHow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBookingHow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonBookingHow.UseVisualStyleBackColor = true;
             this.buttonBookingHow.Click += new System.EventHandler(this.ButtonBookingHow_Click);
             // 
@@ -378,7 +417,7 @@
             this.buttonBooking.Location = new System.Drawing.Point(0, 100);
             this.buttonBooking.Name = "buttonBooking";
             this.buttonBooking.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.buttonBooking.Size = new System.Drawing.Size(229, 45);
+            this.buttonBooking.Size = new System.Drawing.Size(236, 45);
             this.buttonBooking.TabIndex = 1;
             this.buttonBooking.Text = "   Booking";
             this.buttonBooking.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -392,7 +431,7 @@
             this.panelLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(229, 100);
+            this.panelLogo.Size = new System.Drawing.Size(236, 100);
             this.panelLogo.TabIndex = 0;
             // 
             // IndexClient
@@ -405,7 +444,7 @@
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "IndexClient";
-            this.Text = "IndexClient";
+            this.Text = "Skyzer Technologies Production";
             this.Load += new System.EventHandler(this.IndexClient_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelWorkSheet.ResumeLayout(false);

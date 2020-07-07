@@ -18,7 +18,7 @@ namespace Skyzer_Production
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IndexClient());
+            Application.Run(new Login());
         }
     }
 }

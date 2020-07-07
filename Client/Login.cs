@@ -16,5 +16,12 @@ namespace Skyzer_Production.Client
         {
             InitializeComponent();
         }
+
+        private void ButtonLogIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            IndexClient client = new IndexClient();
+            client.Show();
+        }
     }
 }

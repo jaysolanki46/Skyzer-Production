@@ -1,5 +1,7 @@
 ﻿using Skyzer_Production.Admin.General;
+using Skyzer_Production.Client.FAQ;
 using Skyzer_Production.Client.Production;
+using Skyzer_Production.Client.WorkSheet;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +24,8 @@ namespace Skyzer_Production.Client
         private void IndexClient_Load(object sender, EventArgs e)
         {
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            panelMDI.Left = (this.ClientSize.Width - panelMDI.Width) / 2;
+            panelMDI.Top = (this.ClientSize.Height - panelMDI.Height) / 2;
         }
 
         private void hideSubMenu()
@@ -93,6 +97,7 @@ namespace Skyzer_Production.Client
 
         private void ButtonProductionHow_Click(object sender, EventArgs e)
         {
+            panelMDI.Visible = false;
             bool found = false;
             try
             {
@@ -148,12 +153,7 @@ namespace Skyzer_Production.Client
 
         private void ButtonMyWorkSheet_Click(object sender, EventArgs e)
         {
-            hideSubMenu();
-        }
-
-        private void ButtonFAQs_Click(object sender, EventArgs e)
-        {
-            /*
+            panelMDI.Visible = false;
             bool found = false;
             try
             {
@@ -161,7 +161,7 @@ namespace Skyzer_Production.Client
                 {
                     //Checks if the window is already open, and brings it to the front if it is
                     Form n = Application.OpenForms[i];
-                    if (n.Name == "FAQ")
+                    if (n.Name == "MyWorkSheet")
                     {
                         n.BringToFront();
                         found = true;
@@ -169,16 +169,48 @@ namespace Skyzer_Production.Client
                 }
                 if (!found)
                 {
-                    FAQ faq = new FAQ();
-                    faq.Name = "FAQ";
-                    faq.MdiParent = this;
-                    faq.Show();
+                    MyWorkSheet myWorkSheet = new MyWorkSheet();
+                    myWorkSheet.Name = "MyWorkSheet";
+                    myWorkSheet.MdiParent = this;
+                    myWorkSheet.Show();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
-            }*/
+            }
+            hideSubMenu();
+        }
+
+        private void ButtonFAQs_Click(object sender, EventArgs e)
+        {
+            panelMDI.Visible = false;
+            bool found = false;
+            try
+            {
+                for (int i = 0; i < Application.OpenForms.Count; i++)
+                {
+                    //Checks if the window is already open, and brings it to the front if it is
+                    Form n = Application.OpenForms[i];
+                    if (n.Name == "FAQs")
+                    {
+                        n.BringToFront();
+                        found = true;
+                    }
+                }
+                if (!found)
+                {
+                    FAQs fAQs = new FAQs();
+                    fAQs.Name = "FAQs";
+                    fAQs.MdiParent = this;
+                    fAQs.Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            hideSubMenu();
         }
 
         private void IconButtonBooking_Click(object sender, EventArgs e)

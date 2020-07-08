@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
+  </data>
+  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
+  </data>
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
+  </data>
+</root>

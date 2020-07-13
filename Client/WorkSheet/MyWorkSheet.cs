@@ -32,5 +32,10 @@ namespace Skyzer_Production.Client.WorkSheet
         {
 
         }
+
+        private void MonthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
     }
 }

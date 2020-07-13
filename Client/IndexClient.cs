@@ -217,5 +217,24 @@ namespace Skyzer_Production.Client
         {
             showSubMenu(panelBookingSubMenu);
         }
+
+        private void ButtonLogout_Click(object sender, EventArgs e)
+        {
+     
+            DialogResult dialogResult = MessageBox.Show("Are you sure to logout?", "Logout", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.Show();
+
+                LoginInfo.UserID = "";
+                LoginInfo.UserName = "";
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
+        }
     }
 }

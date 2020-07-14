@@ -110,6 +110,7 @@
     <Compile Include="Admin\User\Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="Client\Departments.cs" />
     <Compile Include="Client\FAQ\FAQs.cs">
       <SubType>Form</SubType>
     </Compile>

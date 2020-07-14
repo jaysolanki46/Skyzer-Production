@@ -29,80 +29,86 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyWorkSheet));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.labelHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.timeHR = new System.Windows.Forms.NumericUpDown();
+            this.label20 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
-            this.button8 = new System.Windows.Forms.Button();
+            this.numericUpDownReturedTotal = new System.Windows.Forms.NumericUpDown();
+            this.buttonReturedSave = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.labelDate = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.monthCalendarMyWorkSheet = new System.Windows.Forms.MonthCalendar();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDispatchedSold = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDispatchedRetured = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDispatchedDispatched = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonDispatchedSave = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownProductionLogOn = new System.Windows.Forms.NumericUpDown();
+            this.label19 = new System.Windows.Forms.Label();
+            this.numericUpDownProductionKeyLoad = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownProductionPaperWork = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownProductionSWLoad = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownProductionTest = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownProductionReAct = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonProductionSave = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownServicedRepaired = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownServicedQuot = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonServicedSave = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.buttonLogIn = new System.Windows.Forms.Button();
+            this.numericUpDownBookedTotal = new System.Windows.Forms.NumericUpDown();
+            this.buttonBookedSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.labelReactivationHeader = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeHR)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownReturedTotal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedSold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedRetured)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedDispatched)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionLogOn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionKeyLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionPaperWork)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionSWLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionTest)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionReAct)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownServicedRepaired)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownServicedQuot)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBookedTotal)).BeginInit();
             this.SuspendLayout();
             // 
             // panelHeader
@@ -133,11 +139,13 @@
             this.panel1.AutoScroll = true;
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.panel1.Controls.Add(this.timeHR);
+            this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.labelDate);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.chart1);
-            this.panel1.Controls.Add(this.monthCalendar1);
+            this.panel1.Controls.Add(this.monthCalendarMyWorkSheet);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
@@ -148,12 +156,46 @@
             this.panel1.Size = new System.Drawing.Size(1466, 899);
             this.panel1.TabIndex = 2;
             // 
+            // timeHR
+            // 
+            this.timeHR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.timeHR.Location = new System.Drawing.Point(131, 365);
+            this.timeHR.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.timeHR.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.timeHR.Name = "timeHR";
+            this.timeHR.Size = new System.Drawing.Size(112, 27);
+            this.timeHR.TabIndex = 14;
+            this.timeHR.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(87, 367);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(38, 21);
+            this.label20.TabIndex = 9;
+            this.label20.Text = "HR:";
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(123)))), ((int)(((byte)(162)))));
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.numericUpDown12);
-            this.panel6.Controls.Add(this.button8);
+            this.panel6.Controls.Add(this.numericUpDownReturedTotal);
+            this.panel6.Controls.Add(this.buttonReturedSave);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Controls.Add(this.button9);
             this.panel6.Controls.Add(this.label18);
@@ -162,30 +204,30 @@
             this.panel6.Size = new System.Drawing.Size(262, 484);
             this.panel6.TabIndex = 8;
             // 
-            // numericUpDown12
+            // numericUpDownReturedTotal
             // 
-            this.numericUpDown12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown12.Location = new System.Drawing.Point(82, 91);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown12.TabIndex = 20;
+            this.numericUpDownReturedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownReturedTotal.Location = new System.Drawing.Point(82, 91);
+            this.numericUpDownReturedTotal.Name = "numericUpDownReturedTotal";
+            this.numericUpDownReturedTotal.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownReturedTotal.TabIndex = 20;
             // 
-            // button8
+            // buttonReturedSave
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.Location = new System.Drawing.Point(82, 357);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(115, 33);
-            this.button8.TabIndex = 12;
-            this.button8.Text = "   Save";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = false;
+            this.buttonReturedSave.BackColor = System.Drawing.Color.Transparent;
+            this.buttonReturedSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReturedSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReturedSave.ForeColor = System.Drawing.Color.White;
+            this.buttonReturedSave.Image = ((System.Drawing.Image)(resources.GetObject("buttonReturedSave.Image")));
+            this.buttonReturedSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonReturedSave.Location = new System.Drawing.Point(82, 410);
+            this.buttonReturedSave.Name = "buttonReturedSave";
+            this.buttonReturedSave.Size = new System.Drawing.Size(115, 33);
+            this.buttonReturedSave.TabIndex = 12;
+            this.buttonReturedSave.Text = "   Save";
+            this.buttonReturedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonReturedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonReturedSave.UseVisualStyleBackColor = false;
             // 
             // label17
             // 
@@ -220,63 +262,63 @@
             this.label18.TabIndex = 3;
             this.label18.Text = "Retured";
             // 
-            // label16
+            // labelDate
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Franklin Gothic Book", 15F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(135, 362);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(167, 32);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "##/##/####";
+            this.labelDate.AutoSize = true;
+            this.labelDate.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.labelDate.ForeColor = System.Drawing.Color.White;
+            this.labelDate.Location = new System.Drawing.Point(127, 327);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(116, 21);
+            this.labelDate.TabIndex = 7;
+            this.labelDate.Text = "##/##/####";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 15F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(45, 362);
+            this.label1.Location = new System.Drawing.Point(72, 327);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 32);
+            this.label1.Size = new System.Drawing.Size(53, 21);
             this.label1.TabIndex = 6;
             this.label1.Text = "Date:";
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(319, 41);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(862, 353);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(746, 353);
             this.chart1.TabIndex = 5;
             this.chart1.Text = "chart1";
             // 
-            // monthCalendar1
+            // monthCalendarMyWorkSheet
             // 
-            this.monthCalendar1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendar1.Location = new System.Drawing.Point(51, 41);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 4;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.MonthCalendar1_DateChanged);
+            this.monthCalendarMyWorkSheet.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monthCalendarMyWorkSheet.Location = new System.Drawing.Point(51, 41);
+            this.monthCalendarMyWorkSheet.Name = "monthCalendarMyWorkSheet";
+            this.monthCalendarMyWorkSheet.TabIndex = 4;
+            this.monthCalendarMyWorkSheet.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.MonthCalendarMyWorkSheet_DateSelected);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(86)))), ((int)(((byte)(88)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.numericUpDown11);
-            this.panel5.Controls.Add(this.numericUpDown10);
-            this.panel5.Controls.Add(this.numericUpDown9);
+            this.panel5.Controls.Add(this.numericUpDownDispatchedSold);
+            this.panel5.Controls.Add(this.numericUpDownDispatchedRetured);
+            this.panel5.Controls.Add(this.numericUpDownDispatchedDispatched);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Controls.Add(this.button6);
+            this.panel5.Controls.Add(this.buttonDispatchedSave);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.button7);
             this.panel5.Controls.Add(this.label13);
@@ -285,29 +327,29 @@
             this.panel5.Size = new System.Drawing.Size(286, 484);
             this.panel5.TabIndex = 3;
             // 
-            // numericUpDown11
+            // numericUpDownDispatchedSold
             // 
-            this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown11.Location = new System.Drawing.Point(117, 194);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown11.TabIndex = 19;
+            this.numericUpDownDispatchedSold.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownDispatchedSold.Location = new System.Drawing.Point(117, 194);
+            this.numericUpDownDispatchedSold.Name = "numericUpDownDispatchedSold";
+            this.numericUpDownDispatchedSold.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownDispatchedSold.TabIndex = 19;
             // 
-            // numericUpDown10
+            // numericUpDownDispatchedRetured
             // 
-            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown10.Location = new System.Drawing.Point(117, 143);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown10.TabIndex = 18;
+            this.numericUpDownDispatchedRetured.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownDispatchedRetured.Location = new System.Drawing.Point(117, 143);
+            this.numericUpDownDispatchedRetured.Name = "numericUpDownDispatchedRetured";
+            this.numericUpDownDispatchedRetured.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownDispatchedRetured.TabIndex = 18;
             // 
-            // numericUpDown9
+            // numericUpDownDispatchedDispatched
             // 
-            this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown9.Location = new System.Drawing.Point(117, 91);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown9.TabIndex = 17;
+            this.numericUpDownDispatchedDispatched.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownDispatchedDispatched.Location = new System.Drawing.Point(117, 91);
+            this.numericUpDownDispatchedDispatched.Name = "numericUpDownDispatchedDispatched";
+            this.numericUpDownDispatchedDispatched.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownDispatchedDispatched.TabIndex = 17;
             // 
             // label15
             // 
@@ -331,22 +373,22 @@
             this.label14.TabIndex = 14;
             this.label14.Text = "Returned:";
             // 
-            // button6
+            // buttonDispatchedSave
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(117, 357);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(115, 33);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "   Save";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
+            this.buttonDispatchedSave.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDispatchedSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDispatchedSave.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDispatchedSave.ForeColor = System.Drawing.Color.White;
+            this.buttonDispatchedSave.Image = ((System.Drawing.Image)(resources.GetObject("buttonDispatchedSave.Image")));
+            this.buttonDispatchedSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonDispatchedSave.Location = new System.Drawing.Point(117, 410);
+            this.buttonDispatchedSave.Name = "buttonDispatchedSave";
+            this.buttonDispatchedSave.Size = new System.Drawing.Size(115, 33);
+            this.buttonDispatchedSave.TabIndex = 12;
+            this.buttonDispatchedSave.Text = "   Save";
+            this.buttonDispatchedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDispatchedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonDispatchedSave.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -385,16 +427,18 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(175)))), ((int)(((byte)(228)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.numericUpDown8);
-            this.panel4.Controls.Add(this.numericUpDown7);
-            this.panel4.Controls.Add(this.numericUpDown6);
-            this.panel4.Controls.Add(this.numericUpDown5);
-            this.panel4.Controls.Add(this.numericUpDown4);
+            this.panel4.Controls.Add(this.numericUpDownProductionLogOn);
+            this.panel4.Controls.Add(this.label19);
+            this.panel4.Controls.Add(this.numericUpDownProductionKeyLoad);
+            this.panel4.Controls.Add(this.numericUpDownProductionPaperWork);
+            this.panel4.Controls.Add(this.numericUpDownProductionSWLoad);
+            this.panel4.Controls.Add(this.numericUpDownProductionTest);
+            this.panel4.Controls.Add(this.numericUpDownProductionReAct);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.buttonProductionSave);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.label8);
@@ -403,45 +447,64 @@
             this.panel4.Size = new System.Drawing.Size(298, 484);
             this.panel4.TabIndex = 2;
             // 
-            // numericUpDown8
+            // numericUpDownProductionLogOn
             // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown8.Location = new System.Drawing.Point(116, 294);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown8.TabIndex = 25;
+            this.numericUpDownProductionLogOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownProductionLogOn.Location = new System.Drawing.Point(116, 341);
+            this.numericUpDownProductionLogOn.Name = "numericUpDownProductionLogOn";
+            this.numericUpDownProductionLogOn.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownProductionLogOn.TabIndex = 27;
             // 
-            // numericUpDown7
+            // label19
             // 
-            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown7.Location = new System.Drawing.Point(116, 249);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown7.TabIndex = 24;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(30, 343);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(68, 21);
+            this.label19.TabIndex = 26;
+            this.label19.Text = "Log on:";
             // 
-            // numericUpDown6
+            // numericUpDownProductionKeyLoad
             // 
-            this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown6.Location = new System.Drawing.Point(116, 194);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown6.TabIndex = 23;
+            this.numericUpDownProductionKeyLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownProductionKeyLoad.Location = new System.Drawing.Point(116, 294);
+            this.numericUpDownProductionKeyLoad.Name = "numericUpDownProductionKeyLoad";
+            this.numericUpDownProductionKeyLoad.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownProductionKeyLoad.TabIndex = 25;
             // 
-            // numericUpDown5
+            // numericUpDownProductionPaperWork
             // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown5.Location = new System.Drawing.Point(116, 143);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown5.TabIndex = 22;
+            this.numericUpDownProductionPaperWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownProductionPaperWork.Location = new System.Drawing.Point(116, 249);
+            this.numericUpDownProductionPaperWork.Name = "numericUpDownProductionPaperWork";
+            this.numericUpDownProductionPaperWork.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownProductionPaperWork.TabIndex = 24;
             // 
-            // numericUpDown4
+            // numericUpDownProductionSWLoad
             // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown4.Location = new System.Drawing.Point(116, 91);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown4.TabIndex = 21;
+            this.numericUpDownProductionSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownProductionSWLoad.Location = new System.Drawing.Point(116, 194);
+            this.numericUpDownProductionSWLoad.Name = "numericUpDownProductionSWLoad";
+            this.numericUpDownProductionSWLoad.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownProductionSWLoad.TabIndex = 23;
+            // 
+            // numericUpDownProductionTest
+            // 
+            this.numericUpDownProductionTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownProductionTest.Location = new System.Drawing.Point(116, 143);
+            this.numericUpDownProductionTest.Name = "numericUpDownProductionTest";
+            this.numericUpDownProductionTest.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownProductionTest.TabIndex = 22;
+            // 
+            // numericUpDownProductionReAct
+            // 
+            this.numericUpDownProductionReAct.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownProductionReAct.Location = new System.Drawing.Point(116, 91);
+            this.numericUpDownProductionReAct.Name = "numericUpDownProductionReAct";
+            this.numericUpDownProductionReAct.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownProductionReAct.TabIndex = 21;
             // 
             // label11
             // 
@@ -487,22 +550,22 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Test:";
             // 
-            // button4
+            // buttonProductionSave
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(116, 357);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 33);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "   Save";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonProductionSave.BackColor = System.Drawing.Color.Transparent;
+            this.buttonProductionSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProductionSave.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProductionSave.ForeColor = System.Drawing.Color.White;
+            this.buttonProductionSave.Image = ((System.Drawing.Image)(resources.GetObject("buttonProductionSave.Image")));
+            this.buttonProductionSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonProductionSave.Location = new System.Drawing.Point(116, 410);
+            this.buttonProductionSave.Name = "buttonProductionSave";
+            this.buttonProductionSave.Size = new System.Drawing.Size(115, 33);
+            this.buttonProductionSave.TabIndex = 12;
+            this.buttonProductionSave.Text = "   Save";
+            this.buttonProductionSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProductionSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonProductionSave.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -541,10 +604,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(172)))), ((int)(((byte)(89)))), ((int)(((byte)(207)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.numericUpDown3);
-            this.panel3.Controls.Add(this.numericUpDown2);
+            this.panel3.Controls.Add(this.numericUpDownServicedRepaired);
+            this.panel3.Controls.Add(this.numericUpDownServicedQuot);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.buttonServicedSave);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.label4);
@@ -553,21 +616,21 @@
             this.panel3.Size = new System.Drawing.Size(266, 484);
             this.panel3.TabIndex = 1;
             // 
-            // numericUpDown3
+            // numericUpDownServicedRepaired
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown3.Location = new System.Drawing.Point(114, 152);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown3.TabIndex = 16;
+            this.numericUpDownServicedRepaired.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownServicedRepaired.Location = new System.Drawing.Point(114, 152);
+            this.numericUpDownServicedRepaired.Name = "numericUpDownServicedRepaired";
+            this.numericUpDownServicedRepaired.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownServicedRepaired.TabIndex = 16;
             // 
-            // numericUpDown2
+            // numericUpDownServicedQuot
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown2.Location = new System.Drawing.Point(114, 91);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown2.TabIndex = 15;
+            this.numericUpDownServicedQuot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownServicedQuot.Location = new System.Drawing.Point(114, 91);
+            this.numericUpDownServicedQuot.Name = "numericUpDownServicedQuot";
+            this.numericUpDownServicedQuot.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownServicedQuot.TabIndex = 15;
             // 
             // label5
             // 
@@ -580,22 +643,22 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Repaired:";
             // 
-            // button2
+            // buttonServicedSave
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(114, 357);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 33);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "   Save";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonServicedSave.BackColor = System.Drawing.Color.Transparent;
+            this.buttonServicedSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonServicedSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonServicedSave.ForeColor = System.Drawing.Color.White;
+            this.buttonServicedSave.Image = ((System.Drawing.Image)(resources.GetObject("buttonServicedSave.Image")));
+            this.buttonServicedSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonServicedSave.Location = new System.Drawing.Point(114, 410);
+            this.buttonServicedSave.Name = "buttonServicedSave";
+            this.buttonServicedSave.Size = new System.Drawing.Size(115, 33);
+            this.buttonServicedSave.TabIndex = 12;
+            this.buttonServicedSave.Text = "   Save";
+            this.buttonServicedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonServicedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonServicedSave.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -634,8 +697,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(187)))), ((int)(((byte)(78)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.numericUpDown1);
-            this.panel2.Controls.Add(this.buttonLogIn);
+            this.panel2.Controls.Add(this.numericUpDownBookedTotal);
+            this.panel2.Controls.Add(this.buttonBookedSave);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.labelReactivationHeader);
@@ -643,32 +706,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(262, 484);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
-            // numericUpDown1
+            // numericUpDownBookedTotal
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown1.Location = new System.Drawing.Point(82, 91);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDown1.TabIndex = 13;
+            this.numericUpDownBookedTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.numericUpDownBookedTotal.Location = new System.Drawing.Point(82, 91);
+            this.numericUpDownBookedTotal.Name = "numericUpDownBookedTotal";
+            this.numericUpDownBookedTotal.Size = new System.Drawing.Size(115, 27);
+            this.numericUpDownBookedTotal.TabIndex = 13;
             // 
-            // buttonLogIn
+            // buttonBookedSave
             // 
-            this.buttonLogIn.BackColor = System.Drawing.Color.Transparent;
-            this.buttonLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogIn.ForeColor = System.Drawing.Color.White;
-            this.buttonLogIn.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogIn.Image")));
-            this.buttonLogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonLogIn.Location = new System.Drawing.Point(82, 357);
-            this.buttonLogIn.Name = "buttonLogIn";
-            this.buttonLogIn.Size = new System.Drawing.Size(115, 33);
-            this.buttonLogIn.TabIndex = 12;
-            this.buttonLogIn.Text = "   Save";
-            this.buttonLogIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonLogIn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLogIn.UseVisualStyleBackColor = false;
+            this.buttonBookedSave.BackColor = System.Drawing.Color.Transparent;
+            this.buttonBookedSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBookedSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBookedSave.ForeColor = System.Drawing.Color.White;
+            this.buttonBookedSave.Image = ((System.Drawing.Image)(resources.GetObject("buttonBookedSave.Image")));
+            this.buttonBookedSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonBookedSave.Location = new System.Drawing.Point(82, 410);
+            this.buttonBookedSave.Name = "buttonBookedSave";
+            this.buttonBookedSave.Size = new System.Drawing.Size(115, 33);
+            this.buttonBookedSave.TabIndex = 12;
+            this.buttonBookedSave.Text = "   Save";
+            this.buttonBookedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonBookedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonBookedSave.UseVisualStyleBackColor = false;
+            this.buttonBookedSave.Click += new System.EventHandler(this.ButtonBookedSave_Click);
             // 
             // label2
             // 
@@ -718,29 +781,31 @@
             this.panelHeader.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeHR)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownReturedTotal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedSold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedRetured)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedDispatched)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionLogOn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionKeyLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionPaperWork)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionSWLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionTest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionReAct)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownServicedRepaired)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownServicedQuot)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBookedTotal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -755,15 +820,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelReactivationHeader;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button buttonLogIn;
+        private System.Windows.Forms.Button buttonBookedSave;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonServicedSave;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonProductionSave;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label8;
@@ -772,32 +837,36 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonDispatchedSave;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.MonthCalendar monthCalendarMyWorkSheet;
+        private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonReturedSave;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDownBookedTotal;
+        private System.Windows.Forms.NumericUpDown numericUpDownReturedTotal;
+        private System.Windows.Forms.NumericUpDown numericUpDownDispatchedSold;
+        private System.Windows.Forms.NumericUpDown numericUpDownDispatchedRetured;
+        private System.Windows.Forms.NumericUpDown numericUpDownDispatchedDispatched;
+        private System.Windows.Forms.NumericUpDown numericUpDownProductionKeyLoad;
+        private System.Windows.Forms.NumericUpDown numericUpDownProductionPaperWork;
+        private System.Windows.Forms.NumericUpDown numericUpDownProductionSWLoad;
+        private System.Windows.Forms.NumericUpDown numericUpDownProductionTest;
+        private System.Windows.Forms.NumericUpDown numericUpDownProductionReAct;
+        private System.Windows.Forms.NumericUpDown numericUpDownServicedRepaired;
+        private System.Windows.Forms.NumericUpDown numericUpDownServicedQuot;
+        private System.Windows.Forms.NumericUpDown numericUpDownProductionLogOn;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.NumericUpDown timeHR;
+        private System.Windows.Forms.Label label20;
     }
 }

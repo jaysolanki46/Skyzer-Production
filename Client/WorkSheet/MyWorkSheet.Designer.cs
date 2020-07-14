@@ -228,6 +228,7 @@
             this.buttonReturedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonReturedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonReturedSave.UseVisualStyleBackColor = false;
+            this.buttonReturedSave.Click += new System.EventHandler(this.ButtonReturedSave_Click);
             // 
             // label17
             // 
@@ -258,9 +259,9 @@
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(81, 19);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(138, 39);
+            this.label18.Size = new System.Drawing.Size(157, 39);
             this.label18.TabIndex = 3;
-            this.label18.Text = "Retured";
+            this.label18.Text = "Returned";
             // 
             // labelDate
             // 
@@ -389,6 +390,7 @@
             this.buttonDispatchedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonDispatchedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonDispatchedSave.UseVisualStyleBackColor = false;
+            this.buttonDispatchedSave.Click += new System.EventHandler(this.ButtonDispatchedSave_Click);
             // 
             // label12
             // 
@@ -566,6 +568,7 @@
             this.buttonProductionSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonProductionSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonProductionSave.UseVisualStyleBackColor = false;
+            this.buttonProductionSave.Click += new System.EventHandler(this.ButtonProductionSave_Click);
             // 
             // label7
             // 
@@ -659,6 +662,7 @@
             this.buttonServicedSave.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonServicedSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonServicedSave.UseVisualStyleBackColor = false;
+            this.buttonServicedSave.Click += new System.EventHandler(this.ButtonServicedSave_Click);
             // 
             // label3
             // 

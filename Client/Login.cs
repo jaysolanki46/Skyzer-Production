@@ -34,38 +34,46 @@ namespace Skyzer_Production.Client
             if(textBoxUsername.Text == "" || textBoxPassword.Text == "")
             {
                 MessageBox.Show("Please provide username & password!");
-            } 
-
-            try
+            } else
             {
-                conn.Open();
-                sql = "Select * from Users where Username = @username and Pass = @pass";
-                cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@username", textBoxUsername.Text.Trim());
-                cmd.Parameters.AddWithValue("@pass", textBoxPassword.Text.Trim());
-                reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                try
                 {
-                    //MessageBox.Show(reader["Username"].ToString());
-                    LoginInfo.UserID = reader["Id"].ToString(); 
-                    LoginInfo.UserName = reader["Username"].ToString();
+                    conn.Open();
+                    sql = "Select * from Users where Username = @username and Pass = @pass";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@username", textBoxUsername.Text.Trim());
+                    cmd.Parameters.AddWithValue("@pass", textBoxPassword.Text.Trim());
+                    reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+                        //MessageBox.Show(reader["Username"].ToString());
+                        LoginInfo.UserID = reader["Id"].ToString();
+                        LoginInfo.UserName = reader["Username"].ToString();
 
 
-                    this.Hide();
-                    IndexClient client = new IndexClient();
-                    client.buttonLogout.Text = "   Hi, " + LoginInfo.UserName;
-                    client.Show();    
+                        this.Hide();
+                        IndexClient client = new IndexClient();
+                        client.buttonLogout.Text = "   Hi, " + LoginInfo.UserName;
+                        client.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password!");
+                    }
+
+
                 }
-
-
-            } catch(Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            } finally
-            {
-                conn.Close();
-            }  
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+           
         }
     }
 }

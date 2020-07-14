@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyWorkSheet));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.labelHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,7 +45,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.labelDate = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartMyWorkSheet = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.monthCalendarMyWorkSheet = new System.Windows.Forms.MonthCalendar();
             this.panel5 = new System.Windows.Forms.Panel();
             this.numericUpDownDispatchedSold = new System.Windows.Forms.NumericUpDown();
@@ -92,7 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.timeHR)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownReturedTotal)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMyWorkSheet)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedSold)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedRetured)).BeginInit();
@@ -144,7 +144,7 @@
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.labelDate);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.chart1);
+            this.panel1.Controls.Add(this.chartMyWorkSheet);
             this.panel1.Controls.Add(this.monthCalendarMyWorkSheet);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
@@ -285,27 +285,32 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Date:";
             // 
-            // chart1
+            // chartMyWorkSheet
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(319, 41);
-            this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(746, 353);
-            this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.Enabled = false;
+            chartArea1.Name = "ChartArea1";
+            this.chartMyWorkSheet.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartMyWorkSheet.Legends.Add(legend1);
+            this.chartMyWorkSheet.Location = new System.Drawing.Point(319, 0);
+            this.chartMyWorkSheet.Name = "chartMyWorkSheet";
+            this.chartMyWorkSheet.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.BorderWidth = 0;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "My work";
+            this.chartMyWorkSheet.Series.Add(series1);
+            this.chartMyWorkSheet.Size = new System.Drawing.Size(862, 394);
+            this.chartMyWorkSheet.TabIndex = 5;
             // 
             // monthCalendarMyWorkSheet
             // 
             this.monthCalendarMyWorkSheet.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendarMyWorkSheet.Location = new System.Drawing.Point(51, 41);
+            this.monthCalendarMyWorkSheet.Location = new System.Drawing.Point(45, 111);
             this.monthCalendarMyWorkSheet.Name = "monthCalendarMyWorkSheet";
             this.monthCalendarMyWorkSheet.TabIndex = 4;
             this.monthCalendarMyWorkSheet.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.MonthCalendarMyWorkSheet_DateSelected);
@@ -789,7 +794,7 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownReturedTotal)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartMyWorkSheet)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedSold)).EndInit();
@@ -847,7 +852,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartMyWorkSheet;
         private System.Windows.Forms.MonthCalendar monthCalendarMyWorkSheet;
         private System.Windows.Forms.Label labelDate;
         private System.Windows.Forms.Label label1;

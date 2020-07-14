@@ -29,6 +29,7 @@ namespace Skyzer_Production.Client.WorkSheet
             conn = new SqlConnection();
             conn = db.getConn();
             labelDate.Text = DateTime.Now.ToString("dd.MM.yyy");
+            chart();
 
         }
 
@@ -221,6 +222,26 @@ namespace Skyzer_Production.Client.WorkSheet
             numericUpDownDispatchedRetured.Value = 0;
             numericUpDownDispatchedSold.Value = 0;
             numericUpDownReturedTotal.Value = 0;
+        }
+
+        private void chart()
+        {
+            // Get from db
+
+            chartMyWorkSheet.Series["My work"].Points.AddXY("Booking", 50);
+            chartMyWorkSheet.Series["My work"].Points[0].Color = Color.FromArgb(84, 187, 78);
+
+            chartMyWorkSheet.Series["My work"].Points.AddXY("Service", 22);
+            chartMyWorkSheet.Series["My work"].Points[1].Color = Color.FromArgb(172, 89, 207);
+
+            chartMyWorkSheet.Series["My work"].Points.AddXY("Production", 10);
+            chartMyWorkSheet.Series["My work"].Points[2].Color = Color.FromArgb(112, 175, 228);
+
+            chartMyWorkSheet.Series["My work"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["My work"].Points[3].Color = Color.FromArgb(186, 86, 88);
+
+            chartMyWorkSheet.Series["My work"].Points.AddXY("Return", 4);
+            chartMyWorkSheet.Series["My work"].Points[4].Color = Color.FromArgb(191, 123, 162);
         }
     }
 }

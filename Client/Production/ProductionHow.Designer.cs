@@ -46,172 +46,165 @@
             this.buttonSWLoad = new System.Windows.Forms.Button();
             this.buttonTest = new System.Windows.Forms.Button();
             this.buttonReActivate = new System.Windows.Forms.Button();
-            this.panelLogon = new System.Windows.Forms.Panel();
-            this.buttonLogOnPDF = new System.Windows.Forms.Button();
-            this.buttonLogOnTutorial = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.panelSendKey = new System.Windows.Forms.Panel();
-            this.buttonSendKeyPDF = new System.Windows.Forms.Button();
-            this.buttonSendKeyTutorial = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panelKeyLoad = new System.Windows.Forms.Panel();
-            this.buttonKeyLoadPDF = new System.Windows.Forms.Button();
-            this.buttonKeyLoadTutorial = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.panelPaperWork = new System.Windows.Forms.Panel();
-            this.buttonPaperWorkPDF = new System.Windows.Forms.Button();
-            this.buttonPaperWorkTutorial = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panelReactivate = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.labelEndNotelabelStage1ForReActivation = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.labelStage3labelStage1ForReActivation = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.labelStage2labelStage1ForReActivation = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.labelStage1ForReActivation = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelinitNoteForReActivation = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panelReActivationBottom = new System.Windows.Forms.Panel();
-            this.buttonReActivePDF = new System.Windows.Forms.Button();
-            this.panelReActicationHeader = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.labelReactivationHeader = new System.Windows.Forms.Label();
-            this.buttonReactiveTutorial = new System.Windows.Forms.Button();
-            this.panelTest = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.labelEndNoteForTest = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.labelPerformForTest = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.labelInItNoteForTest = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonTestTutorial = new System.Windows.Forms.Button();
-            this.panelSWLoad = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.labelEndNoteForSWLoad = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.labelStage7ForSWLoad = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.labelStage6ForSWLoad = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.labelStage5ForSWLoad = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.labelStage4ForSWLoad = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.labelStage3ForSWLoad = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.labelStage2ForSWLoad = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.labelStage1ForSWLoad = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.labelInItNoteForSWLoad = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.buttonSWLoadTutorial = new System.Windows.Forms.Button();
             this.tabControlProduction = new System.Windows.Forms.TabControl();
             this.tabPageReActivate = new System.Windows.Forms.TabPage();
-            this.panelTerminalImage = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPageTest = new System.Windows.Forms.TabPage();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.tabPageSWLoad = new System.Windows.Forms.TabPage();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPagePaperWork = new System.Windows.Forms.TabPage();
             this.tabPageKeyLoad = new System.Windows.Forms.TabPage();
             this.tabPageSendKey = new System.Windows.Forms.TabPage();
             this.tabPageLogon = new System.Windows.Forms.TabPage();
             this.labelMainText = new System.Windows.Forms.Label();
             this.buttonMainImage = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelTerminalImage = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panelReActicationHeader = new System.Windows.Forms.Panel();
+            this.labelReactivationHeader = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panelReActivationBottom = new System.Windows.Forms.Panel();
+            this.buttonReActivePDF = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panelReactivate = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer2 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.tabPageSWLoad = new System.Windows.Forms.TabPage();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer3 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer4 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer5 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer6 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.axWindowsMediaPlayer7 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.button13 = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
             this.panelHeader.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelBottom.SuspendLayout();
-            this.panelLogon.SuspendLayout();
-            this.panelSendKey.SuspendLayout();
-            this.panelKeyLoad.SuspendLayout();
-            this.panelPaperWork.SuspendLayout();
-            this.panelReactivate.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panelReActivationBottom.SuspendLayout();
-            this.panelReActicationHeader.SuspendLayout();
-            this.panelTest.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panelSWLoad.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel23.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.tabControlProduction.SuspendLayout();
             this.tabPageReActivate.SuspendLayout();
-            this.panelTerminalImage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPageTest.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.tabPageSWLoad.SuspendLayout();
-            this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPagePaperWork.SuspendLayout();
             this.tabPageKeyLoad.SuspendLayout();
             this.tabPageSendKey.SuspendLayout();
             this.tabPageLogon.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTerminalImage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.panelReActicationHeader.SuspendLayout();
+            this.panelReActivationBottom.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panelReactivate.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel14.SuspendLayout();
+            this.tabPageSWLoad.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer4)).BeginInit();
+            this.panel15.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer5)).BeginInit();
+            this.panel20.SuspendLayout();
+            this.panel21.SuspendLayout();
+            this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel24.SuspendLayout();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer6)).BeginInit();
+            this.panel26.SuspendLayout();
+            this.panel27.SuspendLayout();
+            this.panel28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer7)).BeginInit();
+            this.panel31.SuspendLayout();
+            this.panel32.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(194)))));
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(64)))));
             this.panelHeader.Controls.Add(this.labelHeader);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,24 +217,24 @@
             // labelHeader
             // 
             this.labelHeader.AutoSize = true;
-            this.labelHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeader.Font = new System.Drawing.Font("Franklin Gothic Book", 25F, System.Drawing.FontStyle.Bold);
             this.labelHeader.ForeColor = System.Drawing.Color.White;
-            this.labelHeader.Location = new System.Drawing.Point(301, 0);
+            this.labelHeader.Location = new System.Drawing.Point(317, 9);
             this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(525, 58);
+            this.labelHeader.Size = new System.Drawing.Size(446, 49);
             this.labelHeader.TabIndex = 0;
             this.labelHeader.Text = "How to do production?";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(194)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(64)))));
             this.panel3.Controls.Add(this.buttonLogIn);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.comboBoxRanges);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.panel3.Location = new System.Drawing.Point(0, 67);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1205, 59);
@@ -250,11 +243,11 @@
             // buttonLogIn
             // 
             this.buttonLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.buttonLogIn.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.buttonLogIn.ForeColor = System.Drawing.Color.White;
             this.buttonLogIn.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogIn.Image")));
             this.buttonLogIn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonLogIn.Location = new System.Drawing.Point(581, 18);
+            this.buttonLogIn.Location = new System.Drawing.Point(639, 18);
             this.buttonLogIn.Name = "buttonLogIn";
             this.buttonLogIn.Size = new System.Drawing.Size(101, 26);
             this.buttonLogIn.TabIndex = 11;
@@ -267,58 +260,58 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(284, 21);
+            this.label2.Location = new System.Drawing.Point(323, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 18);
+            this.label2.Size = new System.Drawing.Size(86, 21);
             this.label2.TabIndex = 3;
             this.label2.Text = "Terminal:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 18);
+            this.label1.Size = new System.Drawing.Size(65, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Range:";
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "--Select--",
-            "ICT 250",
+            "ICT 220",
             "IWL 255",
             "IWL 252",
             "Desk 3200",
             "Move 5000"});
-            this.comboBox1.Location = new System.Drawing.Point(353, 18);
+            this.comboBox1.Location = new System.Drawing.Point(415, 18);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(212, 26);
+            this.comboBox1.Size = new System.Drawing.Size(212, 29);
             this.comboBox1.TabIndex = 1;
             // 
             // comboBoxRanges
             // 
-            this.comboBoxRanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxRanges.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.comboBoxRanges.FormattingEnabled = true;
             this.comboBoxRanges.Items.AddRange(new object[] {
             "--Select--",
             "Telium",
             "Tetra"});
-            this.comboBoxRanges.Location = new System.Drawing.Point(66, 18);
+            this.comboBoxRanges.Location = new System.Drawing.Point(82, 18);
             this.comboBoxRanges.Name = "comboBoxRanges";
-            this.comboBoxRanges.Size = new System.Drawing.Size(212, 26);
+            this.comboBoxRanges.Size = new System.Drawing.Size(212, 29);
             this.comboBoxRanges.TabIndex = 0;
             // 
             // panelBottom
             // 
             this.panelBottom.AutoScroll = true;
-            this.panelBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(194)))));
+            this.panelBottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(50)))), ((int)(((byte)(64)))));
             this.panelBottom.Controls.Add(this.buttonDispatch);
             this.panelBottom.Controls.Add(this.buttonLogOn);
             this.panelBottom.Controls.Add(this.buttonSendKey);
@@ -339,7 +332,7 @@
             this.buttonDispatch.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonDispatch.FlatAppearance.BorderSize = 0;
             this.buttonDispatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDispatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDispatch.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDispatch.ForeColor = System.Drawing.Color.White;
             this.buttonDispatch.Image = ((System.Drawing.Image)(resources.GetObject("buttonDispatch.Image")));
             this.buttonDispatch.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -358,7 +351,7 @@
             this.buttonLogOn.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonLogOn.FlatAppearance.BorderSize = 0;
             this.buttonLogOn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogOn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogOn.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogOn.ForeColor = System.Drawing.Color.White;
             this.buttonLogOn.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOn.Image")));
             this.buttonLogOn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -378,7 +371,7 @@
             this.buttonSendKey.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonSendKey.FlatAppearance.BorderSize = 0;
             this.buttonSendKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSendKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSendKey.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSendKey.ForeColor = System.Drawing.Color.White;
             this.buttonSendKey.Image = ((System.Drawing.Image)(resources.GetObject("buttonSendKey.Image")));
             this.buttonSendKey.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -397,7 +390,7 @@
             this.buttonKeyLoad.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonKeyLoad.FlatAppearance.BorderSize = 0;
             this.buttonKeyLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKeyLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKeyLoad.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonKeyLoad.ForeColor = System.Drawing.Color.White;
             this.buttonKeyLoad.Image = ((System.Drawing.Image)(resources.GetObject("buttonKeyLoad.Image")));
             this.buttonKeyLoad.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -417,7 +410,7 @@
             this.buttonPaperWork.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonPaperWork.FlatAppearance.BorderSize = 0;
             this.buttonPaperWork.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPaperWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPaperWork.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPaperWork.ForeColor = System.Drawing.Color.White;
             this.buttonPaperWork.Image = ((System.Drawing.Image)(resources.GetObject("buttonPaperWork.Image")));
             this.buttonPaperWork.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -437,7 +430,7 @@
             this.buttonSWLoad.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonSWLoad.FlatAppearance.BorderSize = 0;
             this.buttonSWLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSWLoad.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSWLoad.ForeColor = System.Drawing.Color.White;
             this.buttonSWLoad.Image = ((System.Drawing.Image)(resources.GetObject("buttonSWLoad.Image")));
             this.buttonSWLoad.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -457,7 +450,7 @@
             this.buttonTest.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonTest.FlatAppearance.BorderSize = 0;
             this.buttonTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTest.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTest.ForeColor = System.Drawing.Color.White;
             this.buttonTest.Image = ((System.Drawing.Image)(resources.GetObject("buttonTest.Image")));
             this.buttonTest.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -477,7 +470,7 @@
             this.buttonReActivate.Dock = System.Windows.Forms.DockStyle.Left;
             this.buttonReActivate.FlatAppearance.BorderSize = 0;
             this.buttonReActivate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReActivate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonReActivate.Font = new System.Drawing.Font("Franklin Gothic Book", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReActivate.ForeColor = System.Drawing.Color.White;
             this.buttonReActivate.Image = ((System.Drawing.Image)(resources.GetObject("buttonReActivate.Image")));
             this.buttonReActivate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -492,1134 +485,6 @@
             this.buttonReActivate.UseVisualStyleBackColor = true;
             this.buttonReActivate.Click += new System.EventHandler(this.ButtonReActivate_Click);
             // 
-            // panelLogon
-            // 
-            this.panelLogon.BackColor = System.Drawing.Color.Transparent;
-            this.panelLogon.Controls.Add(this.buttonLogOnPDF);
-            this.panelLogon.Controls.Add(this.buttonLogOnTutorial);
-            this.panelLogon.Controls.Add(this.label8);
-            this.panelLogon.Controls.Add(this.button7);
-            this.panelLogon.ForeColor = System.Drawing.Color.Transparent;
-            this.panelLogon.Location = new System.Drawing.Point(6, 4);
-            this.panelLogon.Name = "panelLogon";
-            this.panelLogon.Size = new System.Drawing.Size(1183, 542);
-            this.panelLogon.TabIndex = 7;
-            // 
-            // buttonLogOnPDF
-            // 
-            this.buttonLogOnPDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogOnPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogOnPDF.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOnPDF.Image")));
-            this.buttonLogOnPDF.Location = new System.Drawing.Point(1137, 496);
-            this.buttonLogOnPDF.Name = "buttonLogOnPDF";
-            this.buttonLogOnPDF.Size = new System.Drawing.Size(43, 43);
-            this.buttonLogOnPDF.TabIndex = 4;
-            this.buttonLogOnPDF.UseVisualStyleBackColor = true;
-            // 
-            // buttonLogOnTutorial
-            // 
-            this.buttonLogOnTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLogOnTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogOnTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonLogOnTutorial.Image")));
-            this.buttonLogOnTutorial.Location = new System.Drawing.Point(1137, 3);
-            this.buttonLogOnTutorial.Name = "buttonLogOnTutorial";
-            this.buttonLogOnTutorial.Size = new System.Drawing.Size(43, 43);
-            this.buttonLogOnTutorial.TabIndex = 3;
-            this.buttonLogOnTutorial.UseVisualStyleBackColor = true;
-            this.buttonLogOnTutorial.Click += new System.EventHandler(this.ButtonLogOnTutorial_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(75, 29);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(163, 41);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Log On";
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(4, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(65, 67);
-            this.button7.TabIndex = 0;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // panelSendKey
-            // 
-            this.panelSendKey.BackColor = System.Drawing.Color.Transparent;
-            this.panelSendKey.Controls.Add(this.buttonSendKeyPDF);
-            this.panelSendKey.Controls.Add(this.buttonSendKeyTutorial);
-            this.panelSendKey.Controls.Add(this.label7);
-            this.panelSendKey.Controls.Add(this.button6);
-            this.panelSendKey.ForeColor = System.Drawing.Color.Transparent;
-            this.panelSendKey.Location = new System.Drawing.Point(6, 6);
-            this.panelSendKey.Name = "panelSendKey";
-            this.panelSendKey.Size = new System.Drawing.Size(1183, 540);
-            this.panelSendKey.TabIndex = 6;
-            // 
-            // buttonSendKeyPDF
-            // 
-            this.buttonSendKeyPDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSendKeyPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSendKeyPDF.Image = ((System.Drawing.Image)(resources.GetObject("buttonSendKeyPDF.Image")));
-            this.buttonSendKeyPDF.Location = new System.Drawing.Point(1137, 494);
-            this.buttonSendKeyPDF.Name = "buttonSendKeyPDF";
-            this.buttonSendKeyPDF.Size = new System.Drawing.Size(43, 43);
-            this.buttonSendKeyPDF.TabIndex = 5;
-            this.buttonSendKeyPDF.UseVisualStyleBackColor = true;
-            // 
-            // buttonSendKeyTutorial
-            // 
-            this.buttonSendKeyTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSendKeyTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSendKeyTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonSendKeyTutorial.Image")));
-            this.buttonSendKeyTutorial.Location = new System.Drawing.Point(1137, 3);
-            this.buttonSendKeyTutorial.Name = "buttonSendKeyTutorial";
-            this.buttonSendKeyTutorial.Size = new System.Drawing.Size(43, 43);
-            this.buttonSendKeyTutorial.TabIndex = 3;
-            this.buttonSendKeyTutorial.UseVisualStyleBackColor = true;
-            this.buttonSendKeyTutorial.Click += new System.EventHandler(this.ButtonSendKeyTutorial_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(76, 29);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(201, 41);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Send Key";
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(4, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(66, 67);
-            this.button6.TabIndex = 0;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // panelKeyLoad
-            // 
-            this.panelKeyLoad.BackColor = System.Drawing.Color.Transparent;
-            this.panelKeyLoad.Controls.Add(this.buttonKeyLoadPDF);
-            this.panelKeyLoad.Controls.Add(this.buttonKeyLoadTutorial);
-            this.panelKeyLoad.Controls.Add(this.label6);
-            this.panelKeyLoad.Controls.Add(this.button5);
-            this.panelKeyLoad.ForeColor = System.Drawing.Color.Transparent;
-            this.panelKeyLoad.Location = new System.Drawing.Point(6, 6);
-            this.panelKeyLoad.Name = "panelKeyLoad";
-            this.panelKeyLoad.Size = new System.Drawing.Size(1183, 540);
-            this.panelKeyLoad.TabIndex = 5;
-            // 
-            // buttonKeyLoadPDF
-            // 
-            this.buttonKeyLoadPDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonKeyLoadPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKeyLoadPDF.Image = ((System.Drawing.Image)(resources.GetObject("buttonKeyLoadPDF.Image")));
-            this.buttonKeyLoadPDF.Location = new System.Drawing.Point(1137, 494);
-            this.buttonKeyLoadPDF.Name = "buttonKeyLoadPDF";
-            this.buttonKeyLoadPDF.Size = new System.Drawing.Size(43, 43);
-            this.buttonKeyLoadPDF.TabIndex = 5;
-            this.buttonKeyLoadPDF.UseVisualStyleBackColor = true;
-            // 
-            // buttonKeyLoadTutorial
-            // 
-            this.buttonKeyLoadTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonKeyLoadTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonKeyLoadTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonKeyLoadTutorial.Image")));
-            this.buttonKeyLoadTutorial.Location = new System.Drawing.Point(1137, 3);
-            this.buttonKeyLoadTutorial.Name = "buttonKeyLoadTutorial";
-            this.buttonKeyLoadTutorial.Size = new System.Drawing.Size(43, 43);
-            this.buttonKeyLoadTutorial.TabIndex = 3;
-            this.buttonKeyLoadTutorial.UseVisualStyleBackColor = true;
-            this.buttonKeyLoadTutorial.Click += new System.EventHandler(this.ButtonKeyLoadTutorial_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(82, 29);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(211, 41);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Key Load";
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(4, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(72, 67);
-            this.button5.TabIndex = 0;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // panelPaperWork
-            // 
-            this.panelPaperWork.BackColor = System.Drawing.Color.Transparent;
-            this.panelPaperWork.Controls.Add(this.buttonPaperWorkPDF);
-            this.panelPaperWork.Controls.Add(this.buttonPaperWorkTutorial);
-            this.panelPaperWork.Controls.Add(this.label5);
-            this.panelPaperWork.Controls.Add(this.button4);
-            this.panelPaperWork.ForeColor = System.Drawing.Color.Transparent;
-            this.panelPaperWork.Location = new System.Drawing.Point(6, 6);
-            this.panelPaperWork.Name = "panelPaperWork";
-            this.panelPaperWork.Size = new System.Drawing.Size(1183, 540);
-            this.panelPaperWork.TabIndex = 4;
-            // 
-            // buttonPaperWorkPDF
-            // 
-            this.buttonPaperWorkPDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonPaperWorkPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPaperWorkPDF.Image = ((System.Drawing.Image)(resources.GetObject("buttonPaperWorkPDF.Image")));
-            this.buttonPaperWorkPDF.Location = new System.Drawing.Point(1137, 497);
-            this.buttonPaperWorkPDF.Name = "buttonPaperWorkPDF";
-            this.buttonPaperWorkPDF.Size = new System.Drawing.Size(43, 43);
-            this.buttonPaperWorkPDF.TabIndex = 5;
-            this.buttonPaperWorkPDF.UseVisualStyleBackColor = true;
-            // 
-            // buttonPaperWorkTutorial
-            // 
-            this.buttonPaperWorkTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonPaperWorkTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPaperWorkTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonPaperWorkTutorial.Image")));
-            this.buttonPaperWorkTutorial.Location = new System.Drawing.Point(1137, 3);
-            this.buttonPaperWorkTutorial.Name = "buttonPaperWorkTutorial";
-            this.buttonPaperWorkTutorial.Size = new System.Drawing.Size(43, 43);
-            this.buttonPaperWorkTutorial.TabIndex = 3;
-            this.buttonPaperWorkTutorial.UseVisualStyleBackColor = true;
-            this.buttonPaperWorkTutorial.Click += new System.EventHandler(this.ButtonPaperWorkTutorial_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(63, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(268, 41);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Paper work";
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(4, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(53, 67);
-            this.button4.TabIndex = 0;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // panelReactivate
-            // 
-            this.panelReactivate.AutoScroll = true;
-            this.panelReactivate.BackColor = System.Drawing.Color.Transparent;
-            this.panelReactivate.Controls.Add(this.panel6);
-            this.panelReactivate.Controls.Add(this.panel5);
-            this.panelReactivate.Controls.Add(this.panel4);
-            this.panelReactivate.Controls.Add(this.panel2);
-            this.panelReactivate.Controls.Add(this.panel1);
-            this.panelReactivate.Controls.Add(this.panelReActivationBottom);
-            this.panelReactivate.Controls.Add(this.panelReActicationHeader);
-            this.panelReactivate.ForeColor = System.Drawing.Color.Transparent;
-            this.panelReactivate.Location = new System.Drawing.Point(6, 6);
-            this.panelReactivate.Name = "panelReactivate";
-            this.panelReactivate.Size = new System.Drawing.Size(898, 596);
-            this.panelReactivate.TabIndex = 0;
-            this.panelReactivate.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelReactivate_Paint);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.labelEndNotelabelStage1ForReActivation);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 451);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(898, 73);
-            this.panel6.TabIndex = 12;
-            // 
-            // labelEndNotelabelStage1ForReActivation
-            // 
-            this.labelEndNotelabelStage1ForReActivation.AutoSize = true;
-            this.labelEndNotelabelStage1ForReActivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEndNotelabelStage1ForReActivation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelEndNotelabelStage1ForReActivation.Location = new System.Drawing.Point(119, 19);
-            this.labelEndNotelabelStage1ForReActivation.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelEndNotelabelStage1ForReActivation.Name = "labelEndNotelabelStage1ForReActivation";
-            this.labelEndNotelabelStage1ForReActivation.Size = new System.Drawing.Size(31, 20);
-            this.labelEndNotelabelStage1ForReActivation.TabIndex = 12;
-            this.labelEndNotelabelStage1ForReActivation.Text = "init";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(48, 18);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(65, 21);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Note:";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.labelStage3labelStage1ForReActivation);
-            this.panel5.Controls.Add(this.label12);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 356);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(898, 95);
-            this.panel5.TabIndex = 11;
-            // 
-            // labelStage3labelStage1ForReActivation
-            // 
-            this.labelStage3labelStage1ForReActivation.AutoSize = true;
-            this.labelStage3labelStage1ForReActivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage3labelStage1ForReActivation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage3labelStage1ForReActivation.Location = new System.Drawing.Point(119, 20);
-            this.labelStage3labelStage1ForReActivation.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage3labelStage1ForReActivation.Name = "labelStage3labelStage1ForReActivation";
-            this.labelStage3labelStage1ForReActivation.Size = new System.Drawing.Size(31, 20);
-            this.labelStage3labelStage1ForReActivation.TabIndex = 11;
-            this.labelStage3labelStage1ForReActivation.Text = "init";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label12.Location = new System.Drawing.Point(27, 19);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 21);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Stage 3:";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.labelStage2labelStage1ForReActivation);
-            this.panel4.Controls.Add(this.label11);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 260);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(898, 96);
-            this.panel4.TabIndex = 10;
-            // 
-            // labelStage2labelStage1ForReActivation
-            // 
-            this.labelStage2labelStage1ForReActivation.AutoSize = true;
-            this.labelStage2labelStage1ForReActivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage2labelStage1ForReActivation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage2labelStage1ForReActivation.Location = new System.Drawing.Point(119, 20);
-            this.labelStage2labelStage1ForReActivation.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage2labelStage1ForReActivation.Name = "labelStage2labelStage1ForReActivation";
-            this.labelStage2labelStage1ForReActivation.Size = new System.Drawing.Size(31, 20);
-            this.labelStage2labelStage1ForReActivation.TabIndex = 10;
-            this.labelStage2labelStage1ForReActivation.Text = "init";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(26, 19);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 21);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "Stage 2:";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.labelStage1ForReActivation);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 169);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(898, 91);
-            this.panel2.TabIndex = 9;
-            // 
-            // labelStage1ForReActivation
-            // 
-            this.labelStage1ForReActivation.AutoSize = true;
-            this.labelStage1ForReActivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage1ForReActivation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage1ForReActivation.Location = new System.Drawing.Point(119, 17);
-            this.labelStage1ForReActivation.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage1ForReActivation.Name = "labelStage1ForReActivation";
-            this.labelStage1ForReActivation.Size = new System.Drawing.Size(31, 20);
-            this.labelStage1ForReActivation.TabIndex = 9;
-            this.labelStage1ForReActivation.Text = "init";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label10.Location = new System.Drawing.Point(30, 17);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 21);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Stage 1:";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.labelinitNoteForReActivation);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 75);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 94);
-            this.panel1.TabIndex = 8;
-            // 
-            // labelinitNoteForReActivation
-            // 
-            this.labelinitNoteForReActivation.AutoSize = true;
-            this.labelinitNoteForReActivation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelinitNoteForReActivation.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelinitNoteForReActivation.Location = new System.Drawing.Point(119, 20);
-            this.labelinitNoteForReActivation.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelinitNoteForReActivation.Name = "labelinitNoteForReActivation";
-            this.labelinitNoteForReActivation.Size = new System.Drawing.Size(31, 20);
-            this.labelinitNoteForReActivation.TabIndex = 8;
-            this.labelinitNoteForReActivation.Text = "init";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(3, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 21);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Init Note:";
-            // 
-            // panelReActivationBottom
-            // 
-            this.panelReActivationBottom.Controls.Add(this.buttonReActivePDF);
-            this.panelReActivationBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelReActivationBottom.Location = new System.Drawing.Point(0, 540);
-            this.panelReActivationBottom.Name = "panelReActivationBottom";
-            this.panelReActivationBottom.Size = new System.Drawing.Size(898, 56);
-            this.panelReActivationBottom.TabIndex = 7;
-            // 
-            // buttonReActivePDF
-            // 
-            this.buttonReActivePDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonReActivePDF.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonReActivePDF.FlatAppearance.BorderSize = 0;
-            this.buttonReActivePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReActivePDF.Image = ((System.Drawing.Image)(resources.GetObject("buttonReActivePDF.Image")));
-            this.buttonReActivePDF.Location = new System.Drawing.Point(855, 0);
-            this.buttonReActivePDF.Name = "buttonReActivePDF";
-            this.buttonReActivePDF.Size = new System.Drawing.Size(43, 56);
-            this.buttonReActivePDF.TabIndex = 6;
-            this.buttonReActivePDF.UseVisualStyleBackColor = true;
-            // 
-            // panelReActicationHeader
-            // 
-            this.panelReActicationHeader.Controls.Add(this.label15);
-            this.panelReActicationHeader.Controls.Add(this.button1);
-            this.panelReActicationHeader.Controls.Add(this.labelReactivationHeader);
-            this.panelReActicationHeader.Controls.Add(this.buttonReactiveTutorial);
-            this.panelReActicationHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelReActicationHeader.Location = new System.Drawing.Point(0, 0);
-            this.panelReActicationHeader.Name = "panelReActicationHeader";
-            this.panelReActicationHeader.Size = new System.Drawing.Size(898, 75);
-            this.panelReActicationHeader.TabIndex = 6;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label15.Location = new System.Drawing.Point(369, 30);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(176, 41);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "(ICT 220)";
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(72, 68);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // labelReactivationHeader
-            // 
-            this.labelReactivationHeader.AutoSize = true;
-            this.labelReactivationHeader.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelReactivationHeader.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelReactivationHeader.Location = new System.Drawing.Point(81, 30);
-            this.labelReactivationHeader.Name = "labelReactivationHeader";
-            this.labelReactivationHeader.Size = new System.Drawing.Size(258, 41);
-            this.labelReactivationHeader.TabIndex = 1;
-            this.labelReactivationHeader.Text = "Re-activate";
-            // 
-            // buttonReactiveTutorial
-            // 
-            this.buttonReactiveTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonReactiveTutorial.Dock = System.Windows.Forms.DockStyle.Right;
-            this.buttonReactiveTutorial.FlatAppearance.BorderSize = 0;
-            this.buttonReactiveTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonReactiveTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonReactiveTutorial.Image")));
-            this.buttonReactiveTutorial.Location = new System.Drawing.Point(855, 0);
-            this.buttonReactiveTutorial.Name = "buttonReactiveTutorial";
-            this.buttonReactiveTutorial.Size = new System.Drawing.Size(43, 75);
-            this.buttonReactiveTutorial.TabIndex = 2;
-            this.buttonReactiveTutorial.UseVisualStyleBackColor = true;
-            this.buttonReactiveTutorial.Click += new System.EventHandler(this.ButtonReactiveTutorial_Click);
-            // 
-            // panelTest
-            // 
-            this.panelTest.AutoScroll = true;
-            this.panelTest.BackColor = System.Drawing.Color.Transparent;
-            this.panelTest.Controls.Add(this.panel12);
-            this.panelTest.Controls.Add(this.panel10);
-            this.panelTest.Controls.Add(this.panel11);
-            this.panelTest.Controls.Add(this.panel9);
-            this.panelTest.Controls.Add(this.panel8);
-            this.panelTest.Controls.Add(this.buttonTestTutorial);
-            this.panelTest.ForeColor = System.Drawing.Color.Transparent;
-            this.panelTest.Location = new System.Drawing.Point(6, 6);
-            this.panelTest.Name = "panelTest";
-            this.panelTest.Size = new System.Drawing.Size(898, 596);
-            this.panelTest.TabIndex = 2;
-            this.panelTest.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTest_Paint);
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.labelEndNoteForTest);
-            this.panel12.Controls.Add(this.label19);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel12.Location = new System.Drawing.Point(0, 260);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(1180, 73);
-            this.panel12.TabIndex = 13;
-            // 
-            // labelEndNoteForTest
-            // 
-            this.labelEndNoteForTest.AutoSize = true;
-            this.labelEndNoteForTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEndNoteForTest.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelEndNoteForTest.Location = new System.Drawing.Point(119, 19);
-            this.labelEndNoteForTest.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelEndNoteForTest.Name = "labelEndNoteForTest";
-            this.labelEndNoteForTest.Size = new System.Drawing.Size(31, 20);
-            this.labelEndNoteForTest.TabIndex = 12;
-            this.labelEndNoteForTest.Text = "init";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Red;
-            this.label19.Location = new System.Drawing.Point(48, 18);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 21);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "Note:";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.labelPerformForTest);
-            this.panel10.Controls.Add(this.label18);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 169);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1180, 91);
-            this.panel10.TabIndex = 11;
-            // 
-            // labelPerformForTest
-            // 
-            this.labelPerformForTest.AutoSize = true;
-            this.labelPerformForTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPerformForTest.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelPerformForTest.Location = new System.Drawing.Point(119, 17);
-            this.labelPerformForTest.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelPerformForTest.Name = "labelPerformForTest";
-            this.labelPerformForTest.Size = new System.Drawing.Size(31, 20);
-            this.labelPerformForTest.TabIndex = 9;
-            this.labelPerformForTest.Text = "init";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label18.Location = new System.Drawing.Point(11, 17);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(102, 21);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "Perform:";
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.labelInItNoteForTest);
-            this.panel11.Controls.Add(this.label20);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 75);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1180, 94);
-            this.panel11.TabIndex = 10;
-            // 
-            // labelInItNoteForTest
-            // 
-            this.labelInItNoteForTest.AutoSize = true;
-            this.labelInItNoteForTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInItNoteForTest.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelInItNoteForTest.Location = new System.Drawing.Point(119, 20);
-            this.labelInItNoteForTest.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelInItNoteForTest.Name = "labelInItNoteForTest";
-            this.labelInItNoteForTest.Size = new System.Drawing.Size(31, 20);
-            this.labelInItNoteForTest.TabIndex = 8;
-            this.labelInItNoteForTest.Text = "init";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label20.Location = new System.Drawing.Point(3, 20);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(110, 21);
-            this.label20.TabIndex = 7;
-            this.label20.Text = "Init Note:";
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.button8);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel9.Location = new System.Drawing.Point(0, 519);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1180, 56);
-            this.panel9.TabIndex = 8;
-            // 
-            // button8
-            // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(1137, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(43, 56);
-            this.button8.TabIndex = 6;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.label17);
-            this.panel8.Controls.Add(this.label16);
-            this.panel8.Controls.Add(this.button9);
-            this.panel8.Controls.Add(this.button2);
-            this.panel8.Controls.Add(this.label3);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1180, 75);
-            this.panel8.TabIndex = 7;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label17.Location = new System.Drawing.Point(539, 46);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(113, 21);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "Auto-Test";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label16.Location = new System.Drawing.Point(369, 30);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(176, 41);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "(ICT 220)";
-            // 
-            // button9
-            // 
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(1137, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(43, 75);
-            this.button9.TabIndex = 2;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 67);
-            this.button2.TabIndex = 0;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(82, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 41);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Test";
-            // 
-            // buttonTestTutorial
-            // 
-            this.buttonTestTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonTestTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTestTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonTestTutorial.Image")));
-            this.buttonTestTutorial.Location = new System.Drawing.Point(1137, 3);
-            this.buttonTestTutorial.Name = "buttonTestTutorial";
-            this.buttonTestTutorial.Size = new System.Drawing.Size(43, 43);
-            this.buttonTestTutorial.TabIndex = 3;
-            this.buttonTestTutorial.UseVisualStyleBackColor = true;
-            this.buttonTestTutorial.Click += new System.EventHandler(this.ButtonTestTutorial_Click);
-            // 
-            // panelSWLoad
-            // 
-            this.panelSWLoad.AutoScroll = true;
-            this.panelSWLoad.BackColor = System.Drawing.Color.Transparent;
-            this.panelSWLoad.Controls.Add(this.panel24);
-            this.panelSWLoad.Controls.Add(this.panel23);
-            this.panelSWLoad.Controls.Add(this.panel22);
-            this.panelSWLoad.Controls.Add(this.panel21);
-            this.panelSWLoad.Controls.Add(this.panel20);
-            this.panelSWLoad.Controls.Add(this.panel19);
-            this.panelSWLoad.Controls.Add(this.panel18);
-            this.panelSWLoad.Controls.Add(this.panel17);
-            this.panelSWLoad.Controls.Add(this.panel16);
-            this.panelSWLoad.Controls.Add(this.panel15);
-            this.panelSWLoad.Controls.Add(this.panel13);
-            this.panelSWLoad.Controls.Add(this.buttonSWLoadTutorial);
-            this.panelSWLoad.ForeColor = System.Drawing.Color.Transparent;
-            this.panelSWLoad.Location = new System.Drawing.Point(6, 6);
-            this.panelSWLoad.Name = "panelSWLoad";
-            this.panelSWLoad.Size = new System.Drawing.Size(898, 593);
-            this.panelSWLoad.TabIndex = 3;
-            this.panelSWLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelSWLoad_Paint);
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.label38);
-            this.panel24.Controls.Add(this.labelEndNoteForSWLoad);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel24.Location = new System.Drawing.Point(0, 806);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(1182, 91);
-            this.panel24.TabIndex = 18;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.Red;
-            this.label38.Location = new System.Drawing.Point(48, 17);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(65, 21);
-            this.label38.TabIndex = 10;
-            this.label38.Text = "Note:";
-            // 
-            // labelEndNoteForSWLoad
-            // 
-            this.labelEndNoteForSWLoad.AutoSize = true;
-            this.labelEndNoteForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEndNoteForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelEndNoteForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelEndNoteForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelEndNoteForSWLoad.Name = "labelEndNoteForSWLoad";
-            this.labelEndNoteForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelEndNoteForSWLoad.TabIndex = 9;
-            this.labelEndNoteForSWLoad.Text = "init";
-            // 
-            // panel23
-            // 
-            this.panel23.Controls.Add(this.labelStage7ForSWLoad);
-            this.panel23.Controls.Add(this.label36);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel23.Location = new System.Drawing.Point(0, 715);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(1182, 91);
-            this.panel23.TabIndex = 17;
-            // 
-            // labelStage7ForSWLoad
-            // 
-            this.labelStage7ForSWLoad.AutoSize = true;
-            this.labelStage7ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage7ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage7ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage7ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage7ForSWLoad.Name = "labelStage7ForSWLoad";
-            this.labelStage7ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage7ForSWLoad.TabIndex = 9;
-            this.labelStage7ForSWLoad.Text = "init";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label36.Location = new System.Drawing.Point(30, 17);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(87, 21);
-            this.label36.TabIndex = 7;
-            this.label36.Text = "Stage 7:";
-            // 
-            // panel22
-            // 
-            this.panel22.Controls.Add(this.labelStage6ForSWLoad);
-            this.panel22.Controls.Add(this.label34);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel22.Location = new System.Drawing.Point(0, 624);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(1182, 91);
-            this.panel22.TabIndex = 16;
-            // 
-            // labelStage6ForSWLoad
-            // 
-            this.labelStage6ForSWLoad.AutoSize = true;
-            this.labelStage6ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage6ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage6ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage6ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage6ForSWLoad.Name = "labelStage6ForSWLoad";
-            this.labelStage6ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage6ForSWLoad.TabIndex = 9;
-            this.labelStage6ForSWLoad.Text = "init";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label34.Location = new System.Drawing.Point(30, 17);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(87, 21);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "Stage 6:";
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.labelStage5ForSWLoad);
-            this.panel21.Controls.Add(this.label32);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel21.Location = new System.Drawing.Point(0, 533);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(1182, 91);
-            this.panel21.TabIndex = 15;
-            // 
-            // labelStage5ForSWLoad
-            // 
-            this.labelStage5ForSWLoad.AutoSize = true;
-            this.labelStage5ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage5ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage5ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage5ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage5ForSWLoad.Name = "labelStage5ForSWLoad";
-            this.labelStage5ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage5ForSWLoad.TabIndex = 9;
-            this.labelStage5ForSWLoad.Text = "init";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label32.Location = new System.Drawing.Point(30, 17);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(86, 21);
-            this.label32.TabIndex = 7;
-            this.label32.Text = "Stage 5:";
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.labelStage4ForSWLoad);
-            this.panel20.Controls.Add(this.label30);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel20.Location = new System.Drawing.Point(0, 442);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(1182, 91);
-            this.panel20.TabIndex = 14;
-            // 
-            // labelStage4ForSWLoad
-            // 
-            this.labelStage4ForSWLoad.AutoSize = true;
-            this.labelStage4ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage4ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage4ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage4ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage4ForSWLoad.Name = "labelStage4ForSWLoad";
-            this.labelStage4ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage4ForSWLoad.TabIndex = 9;
-            this.labelStage4ForSWLoad.Text = "init";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label30.Location = new System.Drawing.Point(30, 17);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(88, 21);
-            this.label30.TabIndex = 7;
-            this.label30.Text = "Stage 4:";
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.labelStage3ForSWLoad);
-            this.panel19.Controls.Add(this.label28);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel19.Location = new System.Drawing.Point(0, 351);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(1182, 91);
-            this.panel19.TabIndex = 13;
-            // 
-            // labelStage3ForSWLoad
-            // 
-            this.labelStage3ForSWLoad.AutoSize = true;
-            this.labelStage3ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage3ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage3ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage3ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage3ForSWLoad.Name = "labelStage3ForSWLoad";
-            this.labelStage3ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage3ForSWLoad.TabIndex = 9;
-            this.labelStage3ForSWLoad.Text = "init";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label28.Location = new System.Drawing.Point(30, 17);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(86, 21);
-            this.label28.TabIndex = 7;
-            this.label28.Text = "Stage 3:";
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.labelStage2ForSWLoad);
-            this.panel18.Controls.Add(this.label26);
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel18.Location = new System.Drawing.Point(0, 260);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(1182, 91);
-            this.panel18.TabIndex = 12;
-            // 
-            // labelStage2ForSWLoad
-            // 
-            this.labelStage2ForSWLoad.AutoSize = true;
-            this.labelStage2ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage2ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage2ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage2ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage2ForSWLoad.Name = "labelStage2ForSWLoad";
-            this.labelStage2ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage2ForSWLoad.TabIndex = 9;
-            this.labelStage2ForSWLoad.Text = "init";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label26.Location = new System.Drawing.Point(30, 17);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(87, 21);
-            this.label26.TabIndex = 7;
-            this.label26.Text = "Stage 2:";
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.labelStage1ForSWLoad);
-            this.panel17.Controls.Add(this.label24);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel17.Location = new System.Drawing.Point(0, 169);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(1182, 91);
-            this.panel17.TabIndex = 11;
-            // 
-            // labelStage1ForSWLoad
-            // 
-            this.labelStage1ForSWLoad.AutoSize = true;
-            this.labelStage1ForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStage1ForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelStage1ForSWLoad.Location = new System.Drawing.Point(119, 17);
-            this.labelStage1ForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelStage1ForSWLoad.Name = "labelStage1ForSWLoad";
-            this.labelStage1ForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelStage1ForSWLoad.TabIndex = 9;
-            this.labelStage1ForSWLoad.Text = "init";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label24.Location = new System.Drawing.Point(30, 17);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(83, 21);
-            this.label24.TabIndex = 7;
-            this.label24.Text = "Stage 1:";
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.labelInItNoteForSWLoad);
-            this.panel16.Controls.Add(this.label22);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel16.Location = new System.Drawing.Point(0, 75);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(1182, 94);
-            this.panel16.TabIndex = 10;
-            // 
-            // labelInItNoteForSWLoad
-            // 
-            this.labelInItNoteForSWLoad.AutoSize = true;
-            this.labelInItNoteForSWLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInItNoteForSWLoad.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelInItNoteForSWLoad.Location = new System.Drawing.Point(119, 20);
-            this.labelInItNoteForSWLoad.MaximumSize = new System.Drawing.Size(700, 0);
-            this.labelInItNoteForSWLoad.Name = "labelInItNoteForSWLoad";
-            this.labelInItNoteForSWLoad.Size = new System.Drawing.Size(31, 20);
-            this.labelInItNoteForSWLoad.TabIndex = 8;
-            this.labelInItNoteForSWLoad.Text = "init";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Perpetua Titling MT", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label22.Location = new System.Drawing.Point(3, 20);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(110, 21);
-            this.label22.TabIndex = 7;
-            this.label22.Text = "Init Note:";
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.button10);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel15.Location = new System.Drawing.Point(0, 897);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(1182, 56);
-            this.panel15.TabIndex = 9;
-            // 
-            // button10
-            // 
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(1139, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(43, 56);
-            this.button10.TabIndex = 6;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.label14);
-            this.panel13.Controls.Add(this.button11);
-            this.panel13.Controls.Add(this.label4);
-            this.panel13.Controls.Add(this.button3);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1182, 75);
-            this.panel13.TabIndex = 7;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label14.Location = new System.Drawing.Point(369, 30);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(176, 41);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "(ICT 220)";
-            // 
-            // button11
-            // 
-            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(1139, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(43, 75);
-            this.button11.TabIndex = 2;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(94, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(200, 41);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "S/W Load";
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(13, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 67);
-            this.button3.TabIndex = 0;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // buttonSWLoadTutorial
-            // 
-            this.buttonSWLoadTutorial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSWLoadTutorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSWLoadTutorial.Image = ((System.Drawing.Image)(resources.GetObject("buttonSWLoadTutorial.Image")));
-            this.buttonSWLoadTutorial.Location = new System.Drawing.Point(1139, 3);
-            this.buttonSWLoadTutorial.Name = "buttonSWLoadTutorial";
-            this.buttonSWLoadTutorial.Size = new System.Drawing.Size(43, 43);
-            this.buttonSWLoadTutorial.TabIndex = 3;
-            this.buttonSWLoadTutorial.UseVisualStyleBackColor = true;
-            this.buttonSWLoadTutorial.Click += new System.EventHandler(this.ButtonSWLoadTutorial_Click);
-            // 
             // tabControlProduction
             // 
             this.tabControlProduction.Controls.Add(this.tabPageReActivate);
@@ -1630,6 +495,7 @@
             this.tabControlProduction.Controls.Add(this.tabPageSendKey);
             this.tabControlProduction.Controls.Add(this.tabPageLogon);
             this.tabControlProduction.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlProduction.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.tabControlProduction.Location = new System.Drawing.Point(0, 126);
             this.tabControlProduction.Name = "tabControlProduction";
             this.tabControlProduction.SelectedIndex = 0;
@@ -1639,145 +505,79 @@
             // 
             // tabPageReActivate
             // 
-            this.tabPageReActivate.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageReActivate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
             this.tabPageReActivate.Controls.Add(this.panelTerminalImage);
             this.tabPageReActivate.Controls.Add(this.panelReactivate);
             this.tabPageReActivate.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPageReActivate.Location = new System.Drawing.Point(4, 25);
+            this.tabPageReActivate.Location = new System.Drawing.Point(4, 30);
             this.tabPageReActivate.Name = "tabPageReActivate";
             this.tabPageReActivate.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageReActivate.Size = new System.Drawing.Size(1197, 639);
+            this.tabPageReActivate.Size = new System.Drawing.Size(1197, 634);
             this.tabPageReActivate.TabIndex = 0;
             this.tabPageReActivate.Text = "Re activate   ";
             // 
-            // panelTerminalImage
-            // 
-            this.panelTerminalImage.Controls.Add(this.pictureBox1);
-            this.panelTerminalImage.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelTerminalImage.Location = new System.Drawing.Point(910, 3);
-            this.panelTerminalImage.Name = "panelTerminalImage";
-            this.panelTerminalImage.Size = new System.Drawing.Size(284, 633);
-            this.panelTerminalImage.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 15);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 599);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPageTest
             // 
-            this.tabPageTest.BackColor = System.Drawing.Color.Transparent;
+            this.tabPageTest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.tabPageTest.Controls.Add(this.panel1);
             this.tabPageTest.Controls.Add(this.panel7);
-            this.tabPageTest.Controls.Add(this.panelTest);
             this.tabPageTest.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPageTest.Location = new System.Drawing.Point(4, 25);
+            this.tabPageTest.Location = new System.Drawing.Point(4, 30);
             this.tabPageTest.Name = "tabPageTest";
             this.tabPageTest.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageTest.Size = new System.Drawing.Size(1197, 639);
+            this.tabPageTest.Size = new System.Drawing.Size(1197, 634);
             this.tabPageTest.TabIndex = 1;
             this.tabPageTest.Text = "Test   ";
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(910, 3);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(284, 633);
-            this.panel7.TabIndex = 3;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(256, 599);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // tabPageSWLoad
-            // 
-            this.tabPageSWLoad.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageSWLoad.Controls.Add(this.panel14);
-            this.tabPageSWLoad.Controls.Add(this.panelSWLoad);
-            this.tabPageSWLoad.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPageSWLoad.Location = new System.Drawing.Point(4, 25);
-            this.tabPageSWLoad.Name = "tabPageSWLoad";
-            this.tabPageSWLoad.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSWLoad.Size = new System.Drawing.Size(1197, 639);
-            this.tabPageSWLoad.TabIndex = 2;
-            this.tabPageSWLoad.Text = "S/W Load   ";
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.pictureBox3);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel14.Location = new System.Drawing.Point(910, 3);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(284, 633);
-            this.panel14.TabIndex = 4;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 15);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(256, 599);
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // tabPagePaperWork
             // 
-            this.tabPagePaperWork.BackColor = System.Drawing.Color.Transparent;
-            this.tabPagePaperWork.Controls.Add(this.panelPaperWork);
+            this.tabPagePaperWork.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.tabPagePaperWork.Controls.Add(this.panel17);
+            this.tabPagePaperWork.Controls.Add(this.panel12);
             this.tabPagePaperWork.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPagePaperWork.Location = new System.Drawing.Point(4, 25);
+            this.tabPagePaperWork.Location = new System.Drawing.Point(4, 30);
             this.tabPagePaperWork.Name = "tabPagePaperWork";
             this.tabPagePaperWork.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPagePaperWork.Size = new System.Drawing.Size(1197, 639);
+            this.tabPagePaperWork.Size = new System.Drawing.Size(1197, 634);
             this.tabPagePaperWork.TabIndex = 3;
             this.tabPagePaperWork.Text = "Paper Work   ";
             // 
             // tabPageKeyLoad
             // 
-            this.tabPageKeyLoad.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageKeyLoad.Controls.Add(this.panelKeyLoad);
+            this.tabPageKeyLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.tabPageKeyLoad.Controls.Add(this.panel22);
+            this.tabPageKeyLoad.Controls.Add(this.panel18);
             this.tabPageKeyLoad.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPageKeyLoad.Location = new System.Drawing.Point(4, 25);
+            this.tabPageKeyLoad.Location = new System.Drawing.Point(4, 30);
             this.tabPageKeyLoad.Name = "tabPageKeyLoad";
             this.tabPageKeyLoad.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageKeyLoad.Size = new System.Drawing.Size(1197, 639);
+            this.tabPageKeyLoad.Size = new System.Drawing.Size(1197, 634);
             this.tabPageKeyLoad.TabIndex = 4;
             this.tabPageKeyLoad.Text = "Key Load   ";
             // 
             // tabPageSendKey
             // 
-            this.tabPageSendKey.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageSendKey.Controls.Add(this.panelSendKey);
+            this.tabPageSendKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.tabPageSendKey.Controls.Add(this.panel23);
+            this.tabPageSendKey.Controls.Add(this.panel24);
             this.tabPageSendKey.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPageSendKey.Location = new System.Drawing.Point(4, 25);
+            this.tabPageSendKey.Location = new System.Drawing.Point(4, 30);
             this.tabPageSendKey.Name = "tabPageSendKey";
             this.tabPageSendKey.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSendKey.Size = new System.Drawing.Size(1197, 639);
+            this.tabPageSendKey.Size = new System.Drawing.Size(1197, 634);
             this.tabPageSendKey.TabIndex = 5;
             this.tabPageSendKey.Text = "Send Key   ";
             // 
             // tabPageLogon
             // 
-            this.tabPageLogon.BackColor = System.Drawing.Color.Transparent;
-            this.tabPageLogon.Controls.Add(this.panelLogon);
+            this.tabPageLogon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.tabPageLogon.Controls.Add(this.panel28);
+            this.tabPageLogon.Controls.Add(this.panel29);
             this.tabPageLogon.ForeColor = System.Drawing.Color.Transparent;
-            this.tabPageLogon.Location = new System.Drawing.Point(4, 25);
+            this.tabPageLogon.Location = new System.Drawing.Point(4, 30);
             this.tabPageLogon.Name = "tabPageLogon";
             this.tabPageLogon.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageLogon.Size = new System.Drawing.Size(1197, 639);
+            this.tabPageLogon.Size = new System.Drawing.Size(1197, 634);
             this.tabPageLogon.TabIndex = 6;
             this.tabPageLogon.Text = "Log On   ";
             // 
@@ -1802,6 +602,916 @@
             this.buttonMainImage.TabIndex = 9;
             this.buttonMainImage.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelTerminalImage
+            // 
+            this.panelTerminalImage.Controls.Add(this.pictureBox1);
+            this.panelTerminalImage.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelTerminalImage.Location = new System.Drawing.Point(910, 3);
+            this.panelTerminalImage.Name = "panelTerminalImage";
+            this.panelTerminalImage.Size = new System.Drawing.Size(284, 628);
+            this.panelTerminalImage.TabIndex = 2;
+            // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer1.TabIndex = 0;
+            // 
+            // panelReActicationHeader
+            // 
+            this.panelReActicationHeader.Controls.Add(this.label15);
+            this.panelReActicationHeader.Controls.Add(this.button1);
+            this.panelReActicationHeader.Controls.Add(this.labelReactivationHeader);
+            this.panelReActicationHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelReActicationHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelReActicationHeader.Name = "panelReActicationHeader";
+            this.panelReActicationHeader.Size = new System.Drawing.Size(898, 75);
+            this.panelReActicationHeader.TabIndex = 6;
+            // 
+            // labelReactivationHeader
+            // 
+            this.labelReactivationHeader.AutoSize = true;
+            this.labelReactivationHeader.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReactivationHeader.ForeColor = System.Drawing.Color.White;
+            this.labelReactivationHeader.Location = new System.Drawing.Point(82, 34);
+            this.labelReactivationHeader.Name = "labelReactivationHeader";
+            this.labelReactivationHeader.Size = new System.Drawing.Size(182, 38);
+            this.labelReactivationHeader.TabIndex = 1;
+            this.labelReactivationHeader.Text = "Re-activate";
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(4, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(72, 68);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(277, 34);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(154, 38);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "(ICT 220)";
+            // 
+            // panelReActivationBottom
+            // 
+            this.panelReActivationBottom.Controls.Add(this.label9);
+            this.panelReActivationBottom.Controls.Add(this.buttonReActivePDF);
+            this.panelReActivationBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelReActivationBottom.Location = new System.Drawing.Point(0, 530);
+            this.panelReActivationBottom.Name = "panelReActivationBottom";
+            this.panelReActivationBottom.Size = new System.Drawing.Size(898, 66);
+            this.panelReActivationBottom.TabIndex = 7;
+            // 
+            // buttonReActivePDF
+            // 
+            this.buttonReActivePDF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonReActivePDF.FlatAppearance.BorderSize = 0;
+            this.buttonReActivePDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReActivePDF.Image = ((System.Drawing.Image)(resources.GetObject("buttonReActivePDF.Image")));
+            this.buttonReActivePDF.Location = new System.Drawing.Point(8, 6);
+            this.buttonReActivePDF.Name = "buttonReActivePDF";
+            this.buttonReActivePDF.Size = new System.Drawing.Size(43, 56);
+            this.buttonReActivePDF.TabIndex = 6;
+            this.buttonReActivePDF.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(47, 24);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(104, 21);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "ICT 220.pdf";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.axWindowsMediaPlayer1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 75);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(898, 410);
+            this.panel4.TabIndex = 10;
+            // 
+            // panelReactivate
+            // 
+            this.panelReactivate.AutoScroll = true;
+            this.panelReactivate.BackColor = System.Drawing.Color.Transparent;
+            this.panelReactivate.Controls.Add(this.panel4);
+            this.panelReactivate.Controls.Add(this.panelReActivationBottom);
+            this.panelReactivate.Controls.Add(this.panelReActicationHeader);
+            this.panelReactivate.ForeColor = System.Drawing.Color.Transparent;
+            this.panelReactivate.Location = new System.Drawing.Point(8, 6);
+            this.panelReactivate.Name = "panelReactivate";
+            this.panelReactivate.Size = new System.Drawing.Size(898, 596);
+            this.panelReactivate.TabIndex = 0;
+            this.panelReactivate.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelReactivate_Paint);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.ForeColor = System.Drawing.Color.Transparent;
+            this.panel1.Location = new System.Drawing.Point(8, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(898, 596);
+            this.panel1.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.axWindowsMediaPlayer2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 75);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(898, 410);
+            this.panel2.TabIndex = 10;
+            // 
+            // axWindowsMediaPlayer2
+            // 
+            this.axWindowsMediaPlayer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer2.Enabled = true;
+            this.axWindowsMediaPlayer2.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer2.Name = "axWindowsMediaPlayer2";
+            this.axWindowsMediaPlayer2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer2.OcxState")));
+            this.axWindowsMediaPlayer2.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer2.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.button2);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel5.Location = new System.Drawing.Point(0, 530);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(898, 66);
+            this.panel5.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(47, 24);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 21);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "ICT 220.pdf";
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(8, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(43, 56);
+            this.button2.TabIndex = 6;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.button8);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(898, 75);
+            this.panel6.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(277, 34);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(154, 38);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "(ICT 220)";
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.Location = new System.Drawing.Point(4, 7);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(72, 68);
+            this.button8.TabIndex = 0;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(82, 34);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 38);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Test";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(910, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(284, 628);
+            this.panel7.TabIndex = 3;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel14
+            // 
+            this.panel14.Controls.Add(this.pictureBox3);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel14.Location = new System.Drawing.Point(910, 3);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(284, 628);
+            this.panel14.TabIndex = 4;
+            // 
+            // tabPageSWLoad
+            // 
+            this.tabPageSWLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.tabPageSWLoad.Controls.Add(this.panel8);
+            this.tabPageSWLoad.Controls.Add(this.panel14);
+            this.tabPageSWLoad.ForeColor = System.Drawing.Color.Transparent;
+            this.tabPageSWLoad.Location = new System.Drawing.Point(4, 30);
+            this.tabPageSWLoad.Name = "tabPageSWLoad";
+            this.tabPageSWLoad.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSWLoad.Size = new System.Drawing.Size(1197, 634);
+            this.tabPageSWLoad.TabIndex = 2;
+            this.tabPageSWLoad.Text = "S/W Load   ";
+            // 
+            // panel8
+            // 
+            this.panel8.AutoScroll = true;
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.panel10);
+            this.panel8.Controls.Add(this.panel11);
+            this.panel8.ForeColor = System.Drawing.Color.Transparent;
+            this.panel8.Location = new System.Drawing.Point(8, 6);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(898, 596);
+            this.panel8.TabIndex = 5;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.axWindowsMediaPlayer3);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 75);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(898, 410);
+            this.panel9.TabIndex = 10;
+            // 
+            // axWindowsMediaPlayer3
+            // 
+            this.axWindowsMediaPlayer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer3.Enabled = true;
+            this.axWindowsMediaPlayer3.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer3.Name = "axWindowsMediaPlayer3";
+            this.axWindowsMediaPlayer3.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer3.OcxState")));
+            this.axWindowsMediaPlayer3.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer3.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.label4);
+            this.panel10.Controls.Add(this.button3);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(0, 530);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(898, 66);
+            this.panel10.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(47, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 21);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "ICT 220.pdf";
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(8, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(43, 56);
+            this.button3.TabIndex = 6;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.label12);
+            this.panel11.Controls.Add(this.button9);
+            this.panel11.Controls.Add(this.label13);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(898, 75);
+            this.panel11.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(277, 34);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(154, 38);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "(ICT 220)";
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.Location = new System.Drawing.Point(4, 7);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(72, 68);
+            this.button9.TabIndex = 0;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(82, 34);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(162, 38);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "S/W Load";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel12
+            // 
+            this.panel12.AutoScroll = true;
+            this.panel12.BackColor = System.Drawing.Color.Transparent;
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Controls.Add(this.panel15);
+            this.panel12.Controls.Add(this.panel16);
+            this.panel12.ForeColor = System.Drawing.Color.Transparent;
+            this.panel12.Location = new System.Drawing.Point(8, 6);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(898, 596);
+            this.panel12.TabIndex = 6;
+            // 
+            // panel13
+            // 
+            this.panel13.Controls.Add(this.axWindowsMediaPlayer4);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 75);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(898, 410);
+            this.panel13.TabIndex = 10;
+            // 
+            // axWindowsMediaPlayer4
+            // 
+            this.axWindowsMediaPlayer4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer4.Enabled = true;
+            this.axWindowsMediaPlayer4.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer4.Name = "axWindowsMediaPlayer4";
+            this.axWindowsMediaPlayer4.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer4.OcxState")));
+            this.axWindowsMediaPlayer4.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer4.TabIndex = 0;
+            // 
+            // panel15
+            // 
+            this.panel15.Controls.Add(this.label5);
+            this.panel15.Controls.Add(this.button4);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel15.Location = new System.Drawing.Point(0, 530);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(898, 66);
+            this.panel15.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(47, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 21);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "ICT 220.pdf";
+            // 
+            // button4
+            // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(8, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(43, 56);
+            this.button4.TabIndex = 6;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // panel16
+            // 
+            this.panel16.Controls.Add(this.label14);
+            this.panel16.Controls.Add(this.button10);
+            this.panel16.Controls.Add(this.label16);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel16.Location = new System.Drawing.Point(0, 0);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(898, 75);
+            this.panel16.TabIndex = 6;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(277, 34);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(154, 38);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "(ICT 220)";
+            // 
+            // button10
+            // 
+            this.button10.FlatAppearance.BorderSize = 0;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(4, 7);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(72, 68);
+            this.button10.TabIndex = 0;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(82, 34);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(188, 38);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Paper Work";
+            // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.pictureBox4);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel17.Location = new System.Drawing.Point(910, 3);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(284, 628);
+            this.panel17.TabIndex = 7;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel18
+            // 
+            this.panel18.AutoScroll = true;
+            this.panel18.BackColor = System.Drawing.Color.Transparent;
+            this.panel18.Controls.Add(this.panel19);
+            this.panel18.Controls.Add(this.panel20);
+            this.panel18.Controls.Add(this.panel21);
+            this.panel18.ForeColor = System.Drawing.Color.Transparent;
+            this.panel18.Location = new System.Drawing.Point(6, 6);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(898, 596);
+            this.panel18.TabIndex = 7;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.axWindowsMediaPlayer5);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel19.Location = new System.Drawing.Point(0, 75);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(898, 410);
+            this.panel19.TabIndex = 10;
+            // 
+            // axWindowsMediaPlayer5
+            // 
+            this.axWindowsMediaPlayer5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer5.Enabled = true;
+            this.axWindowsMediaPlayer5.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer5.Name = "axWindowsMediaPlayer5";
+            this.axWindowsMediaPlayer5.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer5.OcxState")));
+            this.axWindowsMediaPlayer5.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer5.TabIndex = 0;
+            // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.label6);
+            this.panel20.Controls.Add(this.button5);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel20.Location = new System.Drawing.Point(0, 530);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(898, 66);
+            this.panel20.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(47, 24);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 21);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "ICT 220.pdf";
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(8, 6);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(43, 56);
+            this.button5.TabIndex = 6;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.label17);
+            this.panel21.Controls.Add(this.button11);
+            this.panel21.Controls.Add(this.label18);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel21.Location = new System.Drawing.Point(0, 0);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(898, 75);
+            this.panel21.TabIndex = 6;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(277, 34);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(154, 38);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "(ICT 220)";
+            // 
+            // button11
+            // 
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
+            this.button11.Location = new System.Drawing.Point(4, 7);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(72, 68);
+            this.button11.TabIndex = 0;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(82, 34);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(153, 38);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Key Load";
+            // 
+            // panel22
+            // 
+            this.panel22.Controls.Add(this.pictureBox5);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel22.Location = new System.Drawing.Point(910, 3);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(284, 628);
+            this.panel22.TabIndex = 8;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // panel23
+            // 
+            this.panel23.Controls.Add(this.pictureBox6);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel23.Location = new System.Drawing.Point(910, 3);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(284, 628);
+            this.panel23.TabIndex = 10;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel24
+            // 
+            this.panel24.AutoScroll = true;
+            this.panel24.BackColor = System.Drawing.Color.Transparent;
+            this.panel24.Controls.Add(this.panel25);
+            this.panel24.Controls.Add(this.panel26);
+            this.panel24.Controls.Add(this.panel27);
+            this.panel24.ForeColor = System.Drawing.Color.Transparent;
+            this.panel24.Location = new System.Drawing.Point(4, 6);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(898, 596);
+            this.panel24.TabIndex = 9;
+            // 
+            // panel25
+            // 
+            this.panel25.Controls.Add(this.axWindowsMediaPlayer6);
+            this.panel25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel25.Location = new System.Drawing.Point(0, 75);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(898, 410);
+            this.panel25.TabIndex = 10;
+            // 
+            // axWindowsMediaPlayer6
+            // 
+            this.axWindowsMediaPlayer6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer6.Enabled = true;
+            this.axWindowsMediaPlayer6.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer6.Name = "axWindowsMediaPlayer6";
+            this.axWindowsMediaPlayer6.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer6.OcxState")));
+            this.axWindowsMediaPlayer6.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer6.TabIndex = 0;
+            // 
+            // panel26
+            // 
+            this.panel26.Controls.Add(this.label7);
+            this.panel26.Controls.Add(this.button6);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel26.Location = new System.Drawing.Point(0, 530);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(898, 66);
+            this.panel26.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(47, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 21);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "ICT 220.pdf";
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(8, 6);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(43, 56);
+            this.button6.TabIndex = 6;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // panel27
+            // 
+            this.panel27.Controls.Add(this.label19);
+            this.panel27.Controls.Add(this.button12);
+            this.panel27.Controls.Add(this.label20);
+            this.panel27.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel27.Location = new System.Drawing.Point(0, 0);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(898, 75);
+            this.panel27.TabIndex = 6;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(277, 34);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(154, 38);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "(ICT 220)";
+            // 
+            // button12
+            // 
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
+            this.button12.Location = new System.Drawing.Point(4, 7);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(72, 68);
+            this.button12.TabIndex = 0;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(82, 34);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(157, 38);
+            this.label20.TabIndex = 1;
+            this.label20.Text = "Send Key";
+            // 
+            // panel28
+            // 
+            this.panel28.Controls.Add(this.pictureBox7);
+            this.panel28.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel28.Location = new System.Drawing.Point(910, 3);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(284, 628);
+            this.panel28.TabIndex = 12;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(13, 10);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(256, 473);
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // panel29
+            // 
+            this.panel29.AutoScroll = true;
+            this.panel29.BackColor = System.Drawing.Color.Transparent;
+            this.panel29.Controls.Add(this.panel30);
+            this.panel29.Controls.Add(this.panel31);
+            this.panel29.Controls.Add(this.panel32);
+            this.panel29.ForeColor = System.Drawing.Color.Transparent;
+            this.panel29.Location = new System.Drawing.Point(3, 6);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(898, 596);
+            this.panel29.TabIndex = 11;
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.axWindowsMediaPlayer7);
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel30.Location = new System.Drawing.Point(0, 75);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(898, 410);
+            this.panel30.TabIndex = 10;
+            // 
+            // axWindowsMediaPlayer7
+            // 
+            this.axWindowsMediaPlayer7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer7.Enabled = true;
+            this.axWindowsMediaPlayer7.Location = new System.Drawing.Point(0, 0);
+            this.axWindowsMediaPlayer7.Name = "axWindowsMediaPlayer7";
+            this.axWindowsMediaPlayer7.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer7.OcxState")));
+            this.axWindowsMediaPlayer7.Size = new System.Drawing.Size(898, 410);
+            this.axWindowsMediaPlayer7.TabIndex = 0;
+            // 
+            // panel31
+            // 
+            this.panel31.Controls.Add(this.label8);
+            this.panel31.Controls.Add(this.button7);
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel31.Location = new System.Drawing.Point(0, 530);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(898, 66);
+            this.panel31.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(47, 24);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(104, 21);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "ICT 220.pdf";
+            // 
+            // button7
+            // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Location = new System.Drawing.Point(8, 6);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(43, 56);
+            this.button7.TabIndex = 6;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // panel32
+            // 
+            this.panel32.Controls.Add(this.label21);
+            this.panel32.Controls.Add(this.button13);
+            this.panel32.Controls.Add(this.label22);
+            this.panel32.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel32.Location = new System.Drawing.Point(0, 0);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(898, 75);
+            this.panel32.TabIndex = 6;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(277, 34);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(154, 38);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "(ICT 220)";
+            // 
+            // button13
+            // 
+            this.button13.FlatAppearance.BorderSize = 0;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
+            this.button13.Location = new System.Drawing.Point(4, 7);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(72, 68);
+            this.button13.TabIndex = 0;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Franklin Gothic Book", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(82, 34);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(119, 38);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "Log On";
+            // 
             // ProductionHow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1821,74 +1531,77 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panelBottom.ResumeLayout(false);
-            this.panelLogon.ResumeLayout(false);
-            this.panelLogon.PerformLayout();
-            this.panelSendKey.ResumeLayout(false);
-            this.panelSendKey.PerformLayout();
-            this.panelKeyLoad.ResumeLayout(false);
-            this.panelKeyLoad.PerformLayout();
-            this.panelPaperWork.ResumeLayout(false);
-            this.panelPaperWork.PerformLayout();
-            this.panelReactivate.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panelReActivationBottom.ResumeLayout(false);
-            this.panelReActicationHeader.ResumeLayout(false);
-            this.panelReActicationHeader.PerformLayout();
-            this.panelTest.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panelSWLoad.ResumeLayout(false);
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             this.tabControlProduction.ResumeLayout(false);
             this.tabPageReActivate.ResumeLayout(false);
-            this.panelTerminalImage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPageTest.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.tabPageSWLoad.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPagePaperWork.ResumeLayout(false);
             this.tabPageKeyLoad.ResumeLayout(false);
             this.tabPageSendKey.ResumeLayout(false);
             this.tabPageLogon.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTerminalImage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            this.panelReActicationHeader.ResumeLayout(false);
+            this.panelReActicationHeader.PerformLayout();
+            this.panelReActivationBottom.ResumeLayout(false);
+            this.panelReActivationBottom.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panelReactivate.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer2)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel14.ResumeLayout(false);
+            this.tabPageSWLoad.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer3)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.panel13.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer4)).EndInit();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer5)).EndInit();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            this.panel22.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel24.ResumeLayout(false);
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer6)).EndInit();
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            this.panel27.ResumeLayout(false);
+            this.panel27.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panel29.ResumeLayout(false);
+            this.panel30.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer7)).EndInit();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1913,119 +1626,99 @@
         private System.Windows.Forms.Button buttonReActivate;
         private System.Windows.Forms.Button buttonLogIn;
         private System.Windows.Forms.Label labelHeader;
-        private System.Windows.Forms.Panel panelReactivate;
-        private System.Windows.Forms.Label labelReactivationHeader;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panelTest;
-        private System.Windows.Forms.Panel panelSWLoad;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Panel panelPaperWork;
-        private System.Windows.Forms.Panel panelKeyLoad;
-        private System.Windows.Forms.Panel panelSendKey;
-        private System.Windows.Forms.Panel panelLogon;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TabControl tabControlProduction;
         private System.Windows.Forms.TabPage tabPageReActivate;
         private System.Windows.Forms.TabPage tabPageTest;
-        private System.Windows.Forms.TabPage tabPageSWLoad;
         private System.Windows.Forms.TabPage tabPagePaperWork;
         private System.Windows.Forms.TabPage tabPageKeyLoad;
         private System.Windows.Forms.TabPage tabPageSendKey;
         private System.Windows.Forms.TabPage tabPageLogon;
         private System.Windows.Forms.Label labelMainText;
         private System.Windows.Forms.Button buttonMainImage;
-        private System.Windows.Forms.Button buttonReactiveTutorial;
-        private System.Windows.Forms.Button buttonLogOnTutorial;
-        private System.Windows.Forms.Button buttonSendKeyTutorial;
-        private System.Windows.Forms.Button buttonKeyLoadTutorial;
-        private System.Windows.Forms.Button buttonPaperWorkTutorial;
-        private System.Windows.Forms.Button buttonTestTutorial;
-        private System.Windows.Forms.Button buttonSWLoadTutorial;
-        private System.Windows.Forms.Button buttonLogOnPDF;
-        private System.Windows.Forms.Button buttonSendKeyPDF;
-        private System.Windows.Forms.Button buttonKeyLoadPDF;
-        private System.Windows.Forms.Button buttonPaperWorkPDF;
-        private System.Windows.Forms.Panel panelReActicationHeader;
-        private System.Windows.Forms.Panel panelReActivationBottom;
-        private System.Windows.Forms.Button buttonReActivePDF;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label labelEndNotelabelStage1ForReActivation;
-        private System.Windows.Forms.Label labelStage3labelStage1ForReActivation;
-        private System.Windows.Forms.Label labelStage2labelStage1ForReActivation;
-        private System.Windows.Forms.Label labelStage1ForReActivation;
-        private System.Windows.Forms.Label labelinitNoteForReActivation;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panelTerminalImage;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panelReactivate;
+        private System.Windows.Forms.Panel panel4;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Panel panelReActivationBottom;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button buttonReActivePDF;
+        private System.Windows.Forms.Panel panelReActicationHeader;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelReactivationHeader;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TabPage tabPageSWLoad;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel9;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer3;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label labelPerformForTest;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label labelInItNoteForTest;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label labelEndNoteForTest;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label labelStage3ForSWLoad;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label labelStage2ForSWLoad;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label labelStage1ForSWLoad;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label labelInItNoteForSWLoad;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Label labelStage7ForSWLoad;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel13;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer4;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Label labelStage6ForSWLoad;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label labelStage5ForSWLoad;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel panel19;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer5;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label labelStage4ForSWLoad;
-        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Panel panel23;
+        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label labelEndNoteForSWLoad;
+        private System.Windows.Forms.Panel panel25;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer6;
+        private System.Windows.Forms.Panel panel26;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel30;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer7;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Label label22;
     }
 }

@@ -119,6 +119,7 @@ namespace Skyzer_Production.Client.Production
 
         private void PanelReactivate_Paint(object sender, PaintEventArgs e)
         {
+            /*
             labelinitNoteForReActivation.Text = "Check the paper work from which stage you have to start? If it is s/w upgrade only please directly jump to stage 3.";
             labelStage1ForReActivation.Text =  "Open FLIT -> " +
                 "Scan the barcode serial number from the back terminal (#1800CT.....) -> " +
@@ -136,20 +137,24 @@ namespace Skyzer_Production.Client.Production
                 "Check and verify terminal with paper work," +
                 "Keep terminal in testing section if it service," +
                 "If it is S/W upgrade no need to test";
+                */
         }
 
         private void PanelTest_Paint(object sender, PaintEventArgs e)
         {
+            /*
             labelInItNoteForTest.Text = "If terminal came from service departmaent then and then only you have to perform testing, First, Connect testing pen-drive to terminal, M.box with Ethernet and Modem cabel then connect with Power cabel";
             labelPerformForTest.Text = "Press F4 while starting the terminal -> " +
                 "select product reference code like (#ICT220-...) -> " +
                 "Let them start -> Press 7-Auto tets -> It will start the testing the terminal -> " +
                 "Follow the steps -> After successfull test do LLT by restart your terminal and press MENU -> Delete All";
             labelEndNoteForTest.Text = "If you found any error while testing please note terminal details and update issue to particular Technician who assigned to that terminal for repair.";
+            */
         }
 
         private void PanelSWLoad_Paint(object sender, PaintEventArgs e)
         {
+            /*
             labelInItNoteForSWLoad.Text = "Connect S/W load pendrive to terminal -> power up your terminal and before you do S/W load terminal should be on LLT (Restart -> MENU) mode";
             labelStage1ForSWLoad.Text = "Clear + FUNC -> F4 (Long press) -> Now you can see the list of stages -> perform stage 1";
             labelStage2ForSWLoad.Text = "Clear + FUNC -> F4 (Long press) -> perform stage 2";
@@ -160,6 +165,7 @@ namespace Skyzer_Production.Client.Production
             labelStage6ForSWLoad.Text = "N/A";
             labelStage7ForSWLoad.Text = "N/A";
             labelEndNoteForSWLoad.Text = "Func -> 99 -> verify the s/w load was correct?";
+            */
         }
     }
 }

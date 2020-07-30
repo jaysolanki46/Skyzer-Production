@@ -118,6 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAASQAAAEkASAF0aEAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAC2UlEQVRYR8WXTWsUQRCGRwgmB/EDA35gNDsrHhR/gmaWHCQHBQUP/gfBkwdR0IN4jQiy2xMxiB8Q
+        yS8wKAQiRCQ3Dbi3gIJ60MOGPW5bT+/0MDtbbgbXZA4v01tT/b613VXVPYG1thBOzjwarU7FM2FkGuGU
+        WZZns1KLNwHjxNbAB1+NQ4NqzOLEOXMkjOJ6WDMtEbCgMv2kM3HpRefotUULGGPz7wXiG9eZq3FmoRrB
+        ZDQ/Vo3MfSFrQzpx+aU9cHPZjtabNlj8qYJ3+OCbBNKGAy5NA6jGyejx4bAWf4Dk+MXnnT0P1lTBQWAO
+        c5NAVuHUtPoM4XlzVvb1GxPHr7+xuxa+qwJFwFw44HKcwp3X6/lBlDhWanOdvXdXVdJ/AVxwwp1fiYz4
+        /BhLRbRbiY8827D7br+3+2+tODDGpvl6wAk3GtmcSANIEs4tmUaQxcEbbz1ZCmyabxZ+O9DqCaBbaqZN
+        0hTZc09UX/jswLhI4HAnidn2JeoCcHUuJEWz3Qfwbu2HQ9EAABr4o+kCoGvRZKhdbYKGYQIASZ9ooR0k
+        7dU1EM1Zw7ABoMUctGX5pbfLj0EdLo9hA0CLOWgHHCL08bwTZUVmQ5zHsSuv+gLApvnCoZWoOztEmxVo
+        cpjkHajtJEoVpy887Xz88tsCxpqPB1x5fjTlXTPgOOVEyzvQYJhMmfl/mgXCnzY2HRhrPr5E4crzo4l2
+        qQHIu1apW1CN4vVykzAySyWXYeNhyY3I1LqtWJKhhFb8K4rujZR4GJnZ9DTc8eNYDr9TkRlPAwA7eyFp
+        3PG6aQA7dyWLV85cfb27L4BuENt7KZWl/1qZnjuU1ewJAGzXtRzxLa/lHu7DJNkOkqZodWTBnOT+55Y9
+        /889+gwe/+XTTLKdhMvueR6qMYv049R9cHYznj7OYcKJBhgnvb0rLE1GMOtLbRBUo4a/fZ7LU/5lvC7P
+        JXo77ZUOp3H0wwZ/AMwAzecgtZfIAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        BmD/BgKWwcmCZOkKAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -146,7 +203,7 @@
 </value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
+    <value>The Igenico Move 5000 countertop device is a game changer having the broadest range of payment methods on the go with the latest technology. The Move 5000 offers POS and Cash Register Integration. Large backlit keypad for greater customer visibility in any environment, with a colour screen.</value>
   </data>
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -175,9 +232,6 @@
         cn+K8Q8IGFwOrDGW/yIO529lm0MF/i9t2QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
-  </data>
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
@@ -205,34 +259,31 @@
         cn+K8Q8IGFwOrDGW/yIO529lm0MF/i9t2QAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>The iCT220 terminal is simple to use and provides all the basic EFTPOS functions. This is ideal for businesses who complete a lower number of transactions per day, e.g. lawyers, schools, automotive repairs, accountants. While the terminal itself does not have contactless capabilities; this can be achieved by adding a customer PIN pad if this is a desired feature.</value>
-  </data>
   <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="label1.Text" xml:space="preserve">

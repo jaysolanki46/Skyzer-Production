@@ -72,11 +72,13 @@ namespace Skyzer_Production.Client
 
         private void ButtonBookingHow_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Coming soon...");
             hideSubMenu();
         }
 
         private void ButtonBookingIssues_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Coming soon...");
             hideSubMenu();
         }
 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyWorkSheet));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.labelHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -49,10 +49,8 @@
             this.monthCalendarMyWorkSheet = new System.Windows.Forms.MonthCalendar();
             this.panel5 = new System.Windows.Forms.Panel();
             this.numericUpDownDispatchedSold = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownDispatchedRetured = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownDispatchedDispatched = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.buttonDispatchedSave = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
@@ -95,7 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartMyWorkSheet)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedSold)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedRetured)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedDispatched)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownProductionLogOn)).BeginInit();
@@ -259,9 +256,9 @@
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(81, 19);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(157, 39);
+            this.label18.Size = new System.Drawing.Size(119, 39);
             this.label18.TabIndex = 3;
-            this.label18.Text = "Returned";
+            this.label18.Text = "Return";
             // 
             // labelDate
             // 
@@ -287,23 +284,23 @@
             // 
             // chartMyWorkSheet
             // 
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.Name = "ChartArea1";
-            this.chartMyWorkSheet.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartMyWorkSheet.Legends.Add(legend1);
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisY.MajorGrid.Enabled = false;
+            chartArea2.Name = "ChartArea1";
+            this.chartMyWorkSheet.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartMyWorkSheet.Legends.Add(legend2);
             this.chartMyWorkSheet.Location = new System.Drawing.Point(319, 0);
             this.chartMyWorkSheet.Name = "chartMyWorkSheet";
             this.chartMyWorkSheet.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.BorderWidth = 0;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "My work";
-            this.chartMyWorkSheet.Series.Add(series1);
+            series2.BorderWidth = 0;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series2.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "My work";
+            this.chartMyWorkSheet.Series.Add(series2);
             this.chartMyWorkSheet.Size = new System.Drawing.Size(862, 394);
             this.chartMyWorkSheet.TabIndex = 5;
             // 
@@ -320,10 +317,8 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(186)))), ((int)(((byte)(86)))), ((int)(((byte)(88)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.numericUpDownDispatchedSold);
-            this.panel5.Controls.Add(this.numericUpDownDispatchedRetured);
             this.panel5.Controls.Add(this.numericUpDownDispatchedDispatched);
             this.panel5.Controls.Add(this.label15);
-            this.panel5.Controls.Add(this.label14);
             this.panel5.Controls.Add(this.buttonDispatchedSave);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.button7);
@@ -336,18 +331,10 @@
             // numericUpDownDispatchedSold
             // 
             this.numericUpDownDispatchedSold.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDownDispatchedSold.Location = new System.Drawing.Point(117, 194);
+            this.numericUpDownDispatchedSold.Location = new System.Drawing.Point(117, 145);
             this.numericUpDownDispatchedSold.Name = "numericUpDownDispatchedSold";
             this.numericUpDownDispatchedSold.Size = new System.Drawing.Size(115, 27);
             this.numericUpDownDispatchedSold.TabIndex = 19;
-            // 
-            // numericUpDownDispatchedRetured
-            // 
-            this.numericUpDownDispatchedRetured.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.numericUpDownDispatchedRetured.Location = new System.Drawing.Point(117, 143);
-            this.numericUpDownDispatchedRetured.Name = "numericUpDownDispatchedRetured";
-            this.numericUpDownDispatchedRetured.Size = new System.Drawing.Size(115, 27);
-            this.numericUpDownDispatchedRetured.TabIndex = 18;
             // 
             // numericUpDownDispatchedDispatched
             // 
@@ -362,22 +349,11 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(59, 196);
+            this.label15.Location = new System.Drawing.Point(59, 147);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(51, 21);
             this.label15.TabIndex = 16;
             this.label15.Text = "Sold:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(21, 145);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 21);
-            this.label14.TabIndex = 14;
-            this.label14.Text = "Returned:";
             // 
             // buttonDispatchedSave
             // 
@@ -426,9 +402,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(72, 19);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(189, 39);
+            this.label13.Size = new System.Drawing.Size(151, 39);
             this.label13.TabIndex = 3;
-            this.label13.Text = "Dispatched";
+            this.label13.Text = "Dispatch";
             // 
             // panel4
             // 
@@ -698,9 +674,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(91, 19);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 39);
+            this.label4.Size = new System.Drawing.Size(129, 39);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Serviced";
+            this.label4.Text = "Service";
             // 
             // panel2
             // 
@@ -771,9 +747,9 @@
             this.labelReactivationHeader.ForeColor = System.Drawing.Color.White;
             this.labelReactivationHeader.Location = new System.Drawing.Point(81, 19);
             this.labelReactivationHeader.Name = "labelReactivationHeader";
-            this.labelReactivationHeader.Size = new System.Drawing.Size(133, 39);
+            this.labelReactivationHeader.Size = new System.Drawing.Size(141, 39);
             this.labelReactivationHeader.TabIndex = 3;
-            this.labelReactivationHeader.Text = "Booked";
+            this.labelReactivationHeader.Text = "Booking";
             // 
             // MyWorkSheet
             // 
@@ -798,7 +774,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedSold)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedRetured)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDispatchedDispatched)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -851,7 +826,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartMyWorkSheet;
         private System.Windows.Forms.MonthCalendar monthCalendarMyWorkSheet;
         private System.Windows.Forms.Label labelDate;
@@ -864,7 +838,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownBookedTotal;
         private System.Windows.Forms.NumericUpDown numericUpDownReturedTotal;
         private System.Windows.Forms.NumericUpDown numericUpDownDispatchedSold;
-        private System.Windows.Forms.NumericUpDown numericUpDownDispatchedRetured;
         private System.Windows.Forms.NumericUpDown numericUpDownDispatchedDispatched;
         private System.Windows.Forms.NumericUpDown numericUpDownProductionKeyLoad;
         private System.Windows.Forms.NumericUpDown numericUpDownProductionPaperWork;

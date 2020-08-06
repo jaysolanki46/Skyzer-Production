@@ -54,7 +54,7 @@ namespace Skyzer_Production.Client.WorkSheet
             myTotalDispatched = 0;
             myTotalSold = 0;
             myTotalReturned = 0;
-            chart();
+            chart(false, false, true, false);
 
         }
 
@@ -79,7 +79,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@department", Departments.BOOKING);
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@total", numericUpDownBookedTotal.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd MMM yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -92,13 +92,13 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-                chart();
+                chart(false, false, true, false);
             }
         }
 
         private void MonthCalendarMyWorkSheet_DateSelected(object sender, DateRangeEventArgs e)
         {
-            labelDate.Text = monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd MMM yyyy");
+            labelDate.Text = monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy");
         }
 
         private void ButtonServicedSave_Click(object sender, EventArgs e)
@@ -112,7 +112,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@quot", numericUpDownServicedQuot.Value);
                 cmd.Parameters.AddWithValue("@repaired", numericUpDownServicedRepaired.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd MMM yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -127,7 +127,7 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-                chart();
+                chart(false, false, true, false);
             }
         }
 
@@ -147,7 +147,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@paperWork", numericUpDownProductionPaperWork.Value);
                 cmd.Parameters.AddWithValue("@keyLoad", numericUpDownProductionKeyLoad.Value);
                 cmd.Parameters.AddWithValue("@logOn", numericUpDownProductionLogOn.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd MMM yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -168,7 +168,7 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-                chart();
+               chart(false, false, true, false);
             }
         }
 
@@ -184,7 +184,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@dispatched", numericUpDownDispatchedDispatched.Value);
                 cmd.Parameters.AddWithValue("@sold", numericUpDownDispatchedSold.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd MMM yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -201,7 +201,7 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-                chart();
+               chart(false, false, true, false);
             }
         }
 
@@ -215,7 +215,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@department", Departments.RETURN);
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@total", numericUpDownReturedTotal.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd MMM yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -230,7 +230,7 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-                chart();
+               chart(false, false, true, false);
             }
         }
 
@@ -251,14 +251,14 @@ namespace Skyzer_Production.Client.WorkSheet
             numericUpDownReturedTotal.Value = 0;
         }
 
-        private void chart()
+        private void chart(bool isThisMonth, bool isThisWeek, bool isToday, bool isFilter)
         {
             // set values to varibales
-            getMyTotalBooked();
-            getMyTotalServiced();
-            getMyTotalProduction();
-            getMyTotalDispatched();
-            getMyTotalRetured();
+            getMyTotalBooked(isThisMonth, isThisWeek, isToday, isFilter);
+            getMyTotalServiced(isThisMonth, isThisWeek, isToday, isFilter);
+            getMyTotalProduction(isThisMonth, isThisWeek, isToday, isFilter);
+            getMyTotalDispatched(isThisMonth, isThisWeek, isToday, isFilter);
+            getMyTotalRetured(isThisMonth, isThisWeek, isToday, isFilter);
 
             // Set XY for all
             chartMyWorkSheet.Series["Booked"].Points.Clear();
@@ -357,18 +357,36 @@ namespace Skyzer_Production.Client.WorkSheet
             */
         }
 
-        private void getMyTotalBooked()
+        private void getMyTotalBooked(bool isThisMonth, bool isThisWeek, bool isToday, bool isFilter)
         {
             try
             {
                 myTotalBooked = 0;
+
                 conn.Open();
-                sql = "Select * from MyBooked where Department = @department and [User] = @usr";
-                cmd = new SqlCommand(sql, conn);
+
+                if (isThisMonth)
+                {
+
+                }
+                else if (isThisWeek)
+                {
+                }
+                else if (isToday)
+                {
+                    
+                    sql = "Select * from MyBooked where Department = @department and [User] = @usr  and Date = @date";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+
+                } else if (isFilter)
+                {
+
+                }
+
                 cmd.Parameters.AddWithValue("@department", Departments.BOOKING);
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
-
 
                 while (reader.Read())
                 {
@@ -386,15 +404,34 @@ namespace Skyzer_Production.Client.WorkSheet
             }
         }
 
-        private void getMyTotalServiced()
+        private void getMyTotalServiced(bool isThisMonth, bool isThisWeek, bool isToday, bool isFilter)
         {
             try
             {
                 myTotalQuot = 0;
                 myTotalRepaired = 0;
                 conn.Open();
-                sql = "Select * from MyServiced where Department = @department and [User] = @usr";
-                cmd = new SqlCommand(sql, conn);
+
+                if (isThisMonth)
+                {
+
+                }
+                else if (isThisWeek)
+                {
+                }
+                else if (isToday)
+                {
+
+                    sql = "Select * from MyServiced where Department = @department and [User] = @usr  and Date = @date";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+
+                }
+                else if (isFilter)
+                {
+
+                }
+                
                 cmd.Parameters.AddWithValue("@department", Departments.SERVICE);
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
@@ -416,9 +453,7 @@ namespace Skyzer_Production.Client.WorkSheet
             }
         }
 
-       
-        
-        private void getMyTotalProduction()
+        private void getMyTotalProduction(bool isThisMonth, bool isThisWeek, bool isToday, bool isFilter)
         {
             try
             {
@@ -430,8 +465,26 @@ namespace Skyzer_Production.Client.WorkSheet
                 myTotalLogOn = 0;
 
                 conn.Open();
-                sql = "Select * from MyProduction where Department = @department and [User] = @usr";
-                cmd = new SqlCommand(sql, conn);
+                if (isThisMonth)
+                {
+
+                }
+                else if (isThisWeek)
+                {
+                }
+                else if (isToday)
+                {
+
+                    sql = "Select * from MyProduction where Department = @department and [User] = @usr  and Date = @date";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+
+                }
+                else if (isFilter)
+                {
+
+                }
+
                 cmd.Parameters.AddWithValue("@department", Departments.PRODUCTION);
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
@@ -458,17 +511,33 @@ namespace Skyzer_Production.Client.WorkSheet
             }
         }
         
-       
-
-        private void getMyTotalDispatched()
+        private void getMyTotalDispatched(bool isThisMonth, bool isThisWeek, bool isToday, bool isFilter)
         {
             try
             {
                 myTotalDispatched = 0;
                 myTotalSold = 0;
                 conn.Open();
-                sql = "Select * from MyDispatched where Department = @department and [User] = @usr";
-                cmd = new SqlCommand(sql, conn);
+                if (isThisMonth)
+                {
+
+                }
+                else if (isThisWeek)
+                {
+                }
+                else if (isToday)
+                {
+
+                    sql = "Select * from MyDispatched where Department = @department and [User] = @usr  and Date = @date";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+
+                }
+                else if (isFilter)
+                {
+
+                }
+               
                 cmd.Parameters.AddWithValue("@department", Departments.DISPATCH);
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
@@ -491,14 +560,32 @@ namespace Skyzer_Production.Client.WorkSheet
             }
         }
 
-        private void getMyTotalRetured()
+        private void getMyTotalRetured(bool isThisMonth, bool isThisWeek, bool isToday, bool isFilter)
         {
             try
             {
                 myTotalReturned = 0;
                 conn.Open();
-                sql = "Select * from MyReturned where Department = @department and [User] = @usr";
-                cmd = new SqlCommand(sql, conn);
+                if (isThisMonth)
+                {
+
+                }
+                else if (isThisWeek)
+                {
+                }
+                else if (isToday)
+                {
+
+                    sql = "Select * from MyReturned where Department = @department and [User] = @usr  and Date = @date";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+
+                }
+                else if (isFilter)
+                {
+
+                }
+               
                 cmd.Parameters.AddWithValue("@department", Departments.RETURN);
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
@@ -520,5 +607,9 @@ namespace Skyzer_Production.Client.WorkSheet
             }
         }
 
+        private void RadioButtonToday_CheckedChanged(object sender, EventArgs e)
+        {
+            chart(false, false, true, false);
+        }
     }
 }

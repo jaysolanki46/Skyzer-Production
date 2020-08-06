@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series19 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series20 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series21 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyWorkSheet));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.labelHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -96,6 +96,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.labelReactivationHeader = new System.Windows.Forms.Label();
+            this.radioButtonThisMonth = new System.Windows.Forms.RadioButton();
+            this.radioButtonThisWeek = new System.Windows.Forms.RadioButton();
+            this.radioButtonToday = new System.Windows.Forms.RadioButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.buttonFilter = new System.Windows.Forms.Button();
             this.panelHeader.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.timeHR)).BeginInit();
@@ -147,6 +154,13 @@
             this.panel1.AutoScroll = true;
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
+            this.panel1.Controls.Add(this.buttonFilter);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.radioButtonToday);
+            this.panel1.Controls.Add(this.radioButtonThisWeek);
+            this.panel1.Controls.Add(this.radioButtonThisMonth);
             this.panel1.Controls.Add(this.timeHR);
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.panel6);
@@ -295,82 +309,80 @@
             // 
             // chartMyWorkSheet
             // 
-            chartArea1.AxisX.MajorGrid.Enabled = false;
-            chartArea1.AxisY.MajorGrid.Enabled = false;
-            chartArea1.Name = "ChartArea1";
-            this.chartMyWorkSheet.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartMyWorkSheet.Legends.Add(legend1);
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisY.MajorGrid.Enabled = false;
+            chartArea2.Name = "ChartArea1";
+            this.chartMyWorkSheet.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartMyWorkSheet.Legends.Add(legend2);
             this.chartMyWorkSheet.Location = new System.Drawing.Point(319, 0);
             this.chartMyWorkSheet.Name = "chartMyWorkSheet";
             this.chartMyWorkSheet.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.BorderWidth = 0;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series1.IsXValueIndexed = true;
-            series1.Legend = "Legend1";
-            series1.Name = "Booked";
-            series2.BorderWidth = 0;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series2.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
-            series2.IsXValueIndexed = true;
-            series2.Legend = "Legend1";
-            series2.Name = "Quot";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series3.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
-            series3.Legend = "Legend1";
-            series3.Name = "Repaired";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series4.Legend = "Legend1";
-            series4.Name = "Re-activated";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series5.Legend = "Legend1";
-            series5.Name = "Tested";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series6.Legend = "Legend1";
-            series6.Name = "S/W Loaded";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series7.Legend = "Legend1";
-            series7.Name = "Paper Work";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series8.Legend = "Legend1";
-            series8.Name = "Key Loaded";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series9.Legend = "Legend1";
-            series9.Name = "Log On";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series10.Legend = "Legend1";
-            series10.Name = "Dispatched";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series11.Legend = "Legend1";
-            series11.Name = "Sold";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
-            series12.Legend = "Legend1";
-            series12.Name = "Returned";
-            this.chartMyWorkSheet.Series.Add(series1);
-            this.chartMyWorkSheet.Series.Add(series2);
-            this.chartMyWorkSheet.Series.Add(series3);
-            this.chartMyWorkSheet.Series.Add(series4);
-            this.chartMyWorkSheet.Series.Add(series5);
-            this.chartMyWorkSheet.Series.Add(series6);
-            this.chartMyWorkSheet.Series.Add(series7);
-            this.chartMyWorkSheet.Series.Add(series8);
-            this.chartMyWorkSheet.Series.Add(series9);
-            this.chartMyWorkSheet.Series.Add(series10);
-            this.chartMyWorkSheet.Series.Add(series11);
-            this.chartMyWorkSheet.Series.Add(series12);
+            series13.BorderWidth = 0;
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series13.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series13.Legend = "Legend1";
+            series13.Name = "Booked";
+            series14.BorderWidth = 0;
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series14.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            series14.Legend = "Legend1";
+            series14.Name = "Quot";
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series15.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
+            series15.Legend = "Legend1";
+            series15.Name = "Repaired";
+            series16.ChartArea = "ChartArea1";
+            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series16.Legend = "Legend1";
+            series16.Name = "Re-activated";
+            series17.ChartArea = "ChartArea1";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series17.Legend = "Legend1";
+            series17.Name = "Tested";
+            series18.ChartArea = "ChartArea1";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series18.Legend = "Legend1";
+            series18.Name = "S/W Loaded";
+            series19.ChartArea = "ChartArea1";
+            series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series19.Legend = "Legend1";
+            series19.Name = "Paper Work";
+            series20.ChartArea = "ChartArea1";
+            series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series20.Legend = "Legend1";
+            series20.Name = "Key Loaded";
+            series21.ChartArea = "ChartArea1";
+            series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series21.Legend = "Legend1";
+            series21.Name = "Log On";
+            series22.ChartArea = "ChartArea1";
+            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series22.Legend = "Legend1";
+            series22.Name = "Dispatched";
+            series23.ChartArea = "ChartArea1";
+            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series23.Legend = "Legend1";
+            series23.Name = "Sold";
+            series24.ChartArea = "ChartArea1";
+            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
+            series24.Legend = "Legend1";
+            series24.Name = "Returned";
+            this.chartMyWorkSheet.Series.Add(series13);
+            this.chartMyWorkSheet.Series.Add(series14);
+            this.chartMyWorkSheet.Series.Add(series15);
+            this.chartMyWorkSheet.Series.Add(series16);
+            this.chartMyWorkSheet.Series.Add(series17);
+            this.chartMyWorkSheet.Series.Add(series18);
+            this.chartMyWorkSheet.Series.Add(series19);
+            this.chartMyWorkSheet.Series.Add(series20);
+            this.chartMyWorkSheet.Series.Add(series21);
+            this.chartMyWorkSheet.Series.Add(series22);
+            this.chartMyWorkSheet.Series.Add(series23);
+            this.chartMyWorkSheet.Series.Add(series24);
             this.chartMyWorkSheet.Size = new System.Drawing.Size(862, 394);
             this.chartMyWorkSheet.TabIndex = 5;
             // 
@@ -821,6 +833,92 @@
             this.labelReactivationHeader.TabIndex = 3;
             this.labelReactivationHeader.Text = "Booking";
             // 
+            // radioButtonThisMonth
+            // 
+            this.radioButtonThisMonth.AutoSize = true;
+            this.radioButtonThisMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.radioButtonThisMonth.ForeColor = System.Drawing.Color.White;
+            this.radioButtonThisMonth.Location = new System.Drawing.Point(1204, 28);
+            this.radioButtonThisMonth.Name = "radioButtonThisMonth";
+            this.radioButtonThisMonth.Size = new System.Drawing.Size(123, 24);
+            this.radioButtonThisMonth.TabIndex = 15;
+            this.radioButtonThisMonth.TabStop = true;
+            this.radioButtonThisMonth.Text = "This Month";
+            this.radioButtonThisMonth.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonThisWeek
+            // 
+            this.radioButtonThisWeek.AutoSize = true;
+            this.radioButtonThisWeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.radioButtonThisWeek.ForeColor = System.Drawing.Color.White;
+            this.radioButtonThisWeek.Location = new System.Drawing.Point(1204, 58);
+            this.radioButtonThisWeek.Name = "radioButtonThisWeek";
+            this.radioButtonThisWeek.Size = new System.Drawing.Size(118, 24);
+            this.radioButtonThisWeek.TabIndex = 16;
+            this.radioButtonThisWeek.TabStop = true;
+            this.radioButtonThisWeek.Text = "This Week";
+            this.radioButtonThisWeek.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonToday
+            // 
+            this.radioButtonToday.AutoSize = true;
+            this.radioButtonToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.radioButtonToday.ForeColor = System.Drawing.Color.White;
+            this.radioButtonToday.Location = new System.Drawing.Point(1204, 88);
+            this.radioButtonToday.Name = "radioButtonToday";
+            this.radioButtonToday.Size = new System.Drawing.Size(80, 24);
+            this.radioButtonToday.TabIndex = 17;
+            this.radioButtonToday.TabStop = true;
+            this.radioButtonToday.Text = "Today";
+            this.radioButtonToday.UseVisualStyleBackColor = true;
+            this.radioButtonToday.CheckedChanged += new System.EventHandler(this.RadioButtonToday_CheckedChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(1204, 136);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(142, 27);
+            this.dateTimePicker1.TabIndex = 18;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(1352, 141);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(30, 20);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "To";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(1204, 178);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(142, 27);
+            this.dateTimePicker2.TabIndex = 20;
+            // 
+            // buttonFilter
+            // 
+            this.buttonFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.buttonFilter.ForeColor = System.Drawing.Color.White;
+            this.buttonFilter.Image = ((System.Drawing.Image)(resources.GetObject("buttonFilter.Image")));
+            this.buttonFilter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonFilter.Location = new System.Drawing.Point(1204, 223);
+            this.buttonFilter.Name = "buttonFilter";
+            this.buttonFilter.Size = new System.Drawing.Size(88, 39);
+            this.buttonFilter.TabIndex = 21;
+            this.buttonFilter.Text = "Filter";
+            this.buttonFilter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.buttonFilter.UseVisualStyleBackColor = true;
+            // 
             // MyWorkSheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -920,5 +1018,12 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown timeHR;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.RadioButton radioButtonToday;
+        private System.Windows.Forms.RadioButton radioButtonThisWeek;
+        private System.Windows.Forms.RadioButton radioButtonThisMonth;
+        private System.Windows.Forms.Button buttonFilter;
     }
 }

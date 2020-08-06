@@ -22,11 +22,18 @@ namespace Skyzer_Production.Client.WorkSheet
         private DataTable dbTable;
         private SqlDataReader reader;
 
-        private int myTotalBooked = 0;
-        private int myTotalServiced = 0;
-        private int myTotalProduction = 0;
-        private int myTotalDispatched = 0;
-        private int myTotalRetured = 0;
+        private int myTotalBooked;
+        private int myTotalQuot;
+        private int myTotalRepaired;
+        private int myTotalReActivated;
+        private int myTotalTested;
+        private int myTotalSWLoaded;
+        private int myTotalPaperWorked;
+        private int myTotalKeyLoaded;
+        private int myTotalLogOn;
+        private int myTotalDispatched;
+        private int myTotalSold;
+        private int myTotalReturned;
 
         public MyWorkSheet()
         {
@@ -35,12 +42,18 @@ namespace Skyzer_Production.Client.WorkSheet
             conn = new SqlConnection();
             conn = db.getConn();
             labelDate.Text = DateTime.Now.ToString("dd.MM.yyy");
-
             myTotalBooked = 0;
-            myTotalServiced = 0;
-            myTotalProduction = 0;
+            myTotalQuot = 0;
+            myTotalRepaired = 0;
+            myTotalReActivated = 0;
+            myTotalTested = 0;
+            myTotalSWLoaded = 0;
+            myTotalPaperWorked = 0;
+            myTotalKeyLoaded = 0;
+            myTotalLogOn = 0;
             myTotalDispatched = 0;
-            myTotalRetured = 0;
+            myTotalSold = 0;
+            myTotalReturned = 0;
             chart();
 
         }
@@ -165,7 +178,7 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Open();
                 sql = "insert into MyDispatched (Department, [User], Dispatched, Sold, Date, HR) " +
-                    "values (@department, @user, @dispatched, @returned, @sold, @date, @hr)";
+                    "values (@department, @user, @dispatched, @sold, @date, @hr)";
                 cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@department", Departments.DISPATCH);
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
@@ -240,14 +253,99 @@ namespace Skyzer_Production.Client.WorkSheet
 
         private void chart()
         {
-            // Get from db
-            chartMyWorkSheet.Series["My work"].Points.Clear();
-            chartMyWorkSheet.Series["My work"].Points.AddXY("Booking", getMyTotalBooked());
-            chartMyWorkSheet.Series["My work"].Points[0].Color = Color.FromArgb(84, 187, 78);
-                       
-            chartMyWorkSheet.Series["My work"].Points.AddXY("Service", getMyTotalServiced());
-            chartMyWorkSheet.Series["My work"].Points[1].Color = Color.FromArgb(172, 89, 207);
+            // set values to varibales
+            getMyTotalBooked();
+            getMyTotalServiced();
+            getMyTotalProduction();
+            getMyTotalDispatched();
+            getMyTotalRetured();
 
+            // Set XY for all
+            chartMyWorkSheet.Series["Booked"].Points.Clear();
+            chartMyWorkSheet.Series["Quot"].Points.Clear();
+            chartMyWorkSheet.Series["Repaired"].Points.Clear();
+            chartMyWorkSheet.Series["Re-activated"].Points.Clear();
+            chartMyWorkSheet.Series["Tested"].Points.Clear();
+            chartMyWorkSheet.Series["S/W Loaded"].Points.Clear();
+            chartMyWorkSheet.Series["Paper Work"].Points.Clear();
+            chartMyWorkSheet.Series["Key Loaded"].Points.Clear();
+            chartMyWorkSheet.Series["Log On"].Points.Clear();
+            chartMyWorkSheet.Series["Dispatched"].Points.Clear();
+            chartMyWorkSheet.Series["Sold"].Points.Clear();
+            chartMyWorkSheet.Series["Returned"].Points.Clear();
+
+            chartMyWorkSheet.Series["Booked"].Points.AddXY("Booking", myTotalBooked);
+            chartMyWorkSheet.Series["Booked"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Booked"].Points.AddXY("Production", 0);
+            chartMyWorkSheet.Series["Booked"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Booked"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Quot"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Quot"].Points.AddXY("Service", myTotalQuot);
+            chartMyWorkSheet.Series["Quot"].Points.AddXY("Production", 0);
+            chartMyWorkSheet.Series["Quot"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Quot"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Repaired"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Repaired"].Points.AddXY("Service", myTotalRepaired); //
+            chartMyWorkSheet.Series["Repaired"].Points.AddXY("Production", 0);
+            chartMyWorkSheet.Series["Repaired"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Repaired"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Production", myTotalReActivated);//
+            chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Tested"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Tested"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Tested"].Points.AddXY("Production", myTotalTested);//
+            chartMyWorkSheet.Series["Tested"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Tested"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Production", myTotalSWLoaded);//
+            chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Production", myTotalPaperWorked);//
+            chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Production", myTotalKeyLoaded);//
+            chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Log On"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Log On"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Log On"].Points.AddXY("Production", myTotalLogOn);//
+            chartMyWorkSheet.Series["Log On"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Log On"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Production", 0);
+            chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Dispatch", myTotalDispatched);//
+            chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Sold"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Sold"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Sold"].Points.AddXY("Production", 0);
+            chartMyWorkSheet.Series["Sold"].Points.AddXY("Dispatch", myTotalSold);//
+            chartMyWorkSheet.Series["Sold"].Points.AddXY("Return", 0);
+
+            chartMyWorkSheet.Series["Returned"].Points.AddXY("Booking", 0);
+            chartMyWorkSheet.Series["Returned"].Points.AddXY("Service", 0);
+            chartMyWorkSheet.Series["Returned"].Points.AddXY("Production", 0);
+            chartMyWorkSheet.Series["Returned"].Points.AddXY("Dispatch", 0);
+            chartMyWorkSheet.Series["Returned"].Points.AddXY("Return", myTotalReturned);//
+            /*
             chartMyWorkSheet.Series["My work"].Points.AddXY("Production", getMyTotalProduction());
             chartMyWorkSheet.Series["My work"].Points[2].Color = Color.FromArgb(112, 175, 228);
 
@@ -256,9 +354,10 @@ namespace Skyzer_Production.Client.WorkSheet
 
             chartMyWorkSheet.Series["My work"].Points.AddXY("Return", getMyTotalRetured());
             chartMyWorkSheet.Series["My work"].Points[4].Color = Color.FromArgb(191, 123, 162);
+            */
         }
 
-        private int getMyTotalBooked()
+        private void getMyTotalBooked()
         {
             try
             {
@@ -285,15 +384,14 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
             }
-
-            return myTotalBooked;
         }
 
-        private int getMyTotalServiced()
+        private void getMyTotalServiced()
         {
             try
             {
-                myTotalServiced = 0;
+                myTotalQuot = 0;
+                myTotalRepaired = 0;
                 conn.Open();
                 sql = "Select * from MyServiced where Department = @department and [User] = @usr";
                 cmd = new SqlCommand(sql, conn);
@@ -301,11 +399,10 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
 
-
                 while (reader.Read())
                 {
-                    myTotalServiced += int.Parse(reader["Quot"].ToString()) 
-                        + int.Parse(reader["Repaired"].ToString());
+                    myTotalQuot += int.Parse(reader["Quot"].ToString());
+                    myTotalRepaired += int.Parse(reader["Repaired"].ToString());
                 }
 
             }
@@ -317,15 +414,21 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
             }
-
-            return myTotalServiced;
         }
 
-        private int getMyTotalProduction()
+       
+        
+        private void getMyTotalProduction()
         {
             try
             {
-                myTotalProduction = 0;
+                myTotalReActivated = 0;
+                myTotalTested = 0;
+                myTotalSWLoaded = 0;
+                myTotalPaperWorked = 0;
+                myTotalKeyLoaded = 0;
+                myTotalLogOn = 0;
+
                 conn.Open();
                 sql = "Select * from MyProduction where Department = @department and [User] = @usr";
                 cmd = new SqlCommand(sql, conn);
@@ -333,17 +436,15 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@usr", LoginInfo.UserID);
                 reader = cmd.ExecuteReader();
 
-
                 while (reader.Read())
                 {
-                    myTotalProduction += int.Parse(reader["Re-act"].ToString())
-                        + int.Parse(reader["Test"].ToString())
-                        + int.Parse(reader["SWLoad"].ToString())
-                        + int.Parse(reader["PaperWork"].ToString())
-                        + int.Parse(reader["KeyLoad"].ToString())
-                        + int.Parse(reader["LogOn"].ToString())
-                        + int.Parse(reader["LogOn"].ToString())
-                        + int.Parse(reader["LogOn"].ToString());
+                    myTotalReActivated += int.Parse(reader["Re-act"].ToString());
+                    myTotalTested += int.Parse(reader["Test"].ToString());
+                    myTotalSWLoaded += int.Parse(reader["SWLoad"].ToString());
+                    myTotalPaperWorked += int.Parse(reader["PaperWork"].ToString());
+                    myTotalKeyLoaded += int.Parse(reader["KeyLoad"].ToString());
+                    myTotalLogOn += int.Parse(reader["LogOn"].ToString());
+
                 }
 
             }
@@ -355,15 +456,16 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
             }
-
-            return myTotalProduction;
         }
+        
+       
 
-        private int getMyTotalDispatched()
+        private void getMyTotalDispatched()
         {
             try
             {
                 myTotalDispatched = 0;
+                myTotalSold = 0;
                 conn.Open();
                 sql = "Select * from MyDispatched where Department = @department and [User] = @usr";
                 cmd = new SqlCommand(sql, conn);
@@ -374,8 +476,8 @@ namespace Skyzer_Production.Client.WorkSheet
 
                 while (reader.Read())
                 {
-                    myTotalDispatched += int.Parse(reader["Dispatched"].ToString())
-                        + int.Parse(reader["Sold"].ToString());
+                    myTotalDispatched += int.Parse(reader["Dispatched"].ToString());
+                    myTotalSold += int.Parse(reader["Sold"].ToString());
                 }
 
             }
@@ -387,15 +489,13 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
             }
-
-            return myTotalDispatched;
         }
 
-        private int getMyTotalRetured()
+        private void getMyTotalRetured()
         {
             try
             {
-                myTotalRetured = 0;
+                myTotalReturned = 0;
                 conn.Open();
                 sql = "Select * from MyReturned where Department = @department and [User] = @usr";
                 cmd = new SqlCommand(sql, conn);
@@ -406,7 +506,7 @@ namespace Skyzer_Production.Client.WorkSheet
 
                 while (reader.Read())
                 {
-                    myTotalRetured += int.Parse(reader["Total"].ToString());
+                    myTotalReturned += int.Parse(reader["Total"].ToString());
                 }
 
             }
@@ -418,8 +518,6 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
             }
-
-            return myTotalRetured;
         }
 
     }

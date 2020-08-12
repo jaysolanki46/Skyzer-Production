@@ -79,7 +79,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@department", Departments.BOOKING);
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@total", numericUpDownBookedTotal.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("MM/dd/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -93,6 +93,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 conn.Close();
                 reset();
                 chart(false, false, true, false);
+                radioButtonToday.Checked = true;
             }
         }
 
@@ -112,7 +113,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@quot", numericUpDownServicedQuot.Value);
                 cmd.Parameters.AddWithValue("@repaired", numericUpDownServicedRepaired.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("MM/dd/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -128,6 +129,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 conn.Close();
                 reset();
                 chart(false, false, true, false);
+                radioButtonToday.Checked = true;
             }
         }
 
@@ -147,7 +149,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@paperWork", numericUpDownProductionPaperWork.Value);
                 cmd.Parameters.AddWithValue("@keyLoad", numericUpDownProductionKeyLoad.Value);
                 cmd.Parameters.AddWithValue("@logOn", numericUpDownProductionLogOn.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("MM/dd/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -168,7 +170,8 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-               chart(false, false, true, false);
+                chart(false, false, true, false);
+                radioButtonToday.Checked = true;
             }
         }
 
@@ -184,7 +187,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@dispatched", numericUpDownDispatchedDispatched.Value);
                 cmd.Parameters.AddWithValue("@sold", numericUpDownDispatchedSold.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("MM/dd/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -201,7 +204,8 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-               chart(false, false, true, false);
+                chart(false, false, true, false);
+                radioButtonToday.Checked = true;
             }
         }
 
@@ -215,7 +219,7 @@ namespace Skyzer_Production.Client.WorkSheet
                 cmd.Parameters.AddWithValue("@department", Departments.RETURN);
                 cmd.Parameters.AddWithValue("@user", LoginInfo.UserID);
                 cmd.Parameters.AddWithValue("@total", numericUpDownReturedTotal.Value);
-                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("dd/MM/yyyy"));
+                cmd.Parameters.AddWithValue("@date", monthCalendarMyWorkSheet.SelectionRange.Start.ToString("MM/dd/yyyy"));
                 cmd.Parameters.AddWithValue("@hr", timeHR.Value);
                 cmd.ExecuteNonQuery();
 
@@ -230,7 +234,8 @@ namespace Skyzer_Production.Client.WorkSheet
             {
                 conn.Close();
                 reset();
-               chart(false, false, true, false);
+                chart(false, false, true, false);
+                radioButtonToday.Checked = true;
             }
         }
 
@@ -367,7 +372,9 @@ namespace Skyzer_Production.Client.WorkSheet
 
                 if (isThisMonth)
                 {
-
+                    sql = "Select * from MyBooked where Department = @department and [User] = @usr  and MONTH(Date) = @month";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@month", DateTime.Now.ToString("MM"));
                 }
                 else if (isThisWeek)
                 {
@@ -377,7 +384,7 @@ namespace Skyzer_Production.Client.WorkSheet
                     
                     sql = "Select * from MyBooked where Department = @department and [User] = @usr  and Date = @date";
                     cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("MM/dd/yyyy"));
 
                 } else if (isFilter)
                 {
@@ -414,7 +421,9 @@ namespace Skyzer_Production.Client.WorkSheet
 
                 if (isThisMonth)
                 {
-
+                    sql = "Select * from MyServiced where Department = @department and [User] = @usr  and MONTH(Date) = @month";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@month", DateTime.Now.ToString("MM"));
                 }
                 else if (isThisWeek)
                 {
@@ -424,7 +433,7 @@ namespace Skyzer_Production.Client.WorkSheet
 
                     sql = "Select * from MyServiced where Department = @department and [User] = @usr  and Date = @date";
                     cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("MM/dd/yyyy"));
 
                 }
                 else if (isFilter)
@@ -467,7 +476,9 @@ namespace Skyzer_Production.Client.WorkSheet
                 conn.Open();
                 if (isThisMonth)
                 {
-
+                    sql = "Select * from MyProduction where Department = @department and [User] = @usr  and MONTH(Date) = @month";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@month", DateTime.Now.ToString("MM"));
                 }
                 else if (isThisWeek)
                 {
@@ -477,7 +488,7 @@ namespace Skyzer_Production.Client.WorkSheet
 
                     sql = "Select * from MyProduction where Department = @department and [User] = @usr  and Date = @date";
                     cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("MM/dd/yyyy"));
 
                 }
                 else if (isFilter)
@@ -520,7 +531,9 @@ namespace Skyzer_Production.Client.WorkSheet
                 conn.Open();
                 if (isThisMonth)
                 {
-
+                    sql = "Select * from MyDispatched where Department = @department and [User] = @usr  and MONTH(Date) = @month";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@month", DateTime.Now.ToString("MM"));
                 }
                 else if (isThisWeek)
                 {
@@ -530,7 +543,7 @@ namespace Skyzer_Production.Client.WorkSheet
 
                     sql = "Select * from MyDispatched where Department = @department and [User] = @usr  and Date = @date";
                     cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("MM/dd/yyyy"));
 
                 }
                 else if (isFilter)
@@ -568,7 +581,9 @@ namespace Skyzer_Production.Client.WorkSheet
                 conn.Open();
                 if (isThisMonth)
                 {
-
+                    sql = "Select * from MyReturned where Department = @department and [User] = @usr  and MONTH(Date) = @month";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@month", DateTime.Now.ToString("MM"));
                 }
                 else if (isThisWeek)
                 {
@@ -578,7 +593,7 @@ namespace Skyzer_Production.Client.WorkSheet
 
                     sql = "Select * from MyReturned where Department = @department and [User] = @usr  and Date = @date";
                     cmd = new SqlCommand(sql, conn);
-                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("dd-MM-yyyy"));
+                    cmd.Parameters.AddWithValue("@date", System.DateTime.Now.ToString("MM/dd/yyyy"));
 
                 }
                 else if (isFilter)
@@ -610,6 +625,11 @@ namespace Skyzer_Production.Client.WorkSheet
         private void RadioButtonToday_CheckedChanged(object sender, EventArgs e)
         {
             chart(false, false, true, false);
+        }
+
+        private void RadioButtonThisMonth_CheckedChanged(object sender, EventArgs e)
+        {
+            chart(true, false, false, false);
         }
     }
 }

@@ -279,77 +279,138 @@ namespace Skyzer_Production.Client.WorkSheet
             chartMyWorkSheet.Series["Sold"].Points.Clear();
             chartMyWorkSheet.Series["Returned"].Points.Clear();
 
-            chartMyWorkSheet.Series["Booked"].Points.AddXY("Booking", myTotalBooked);
+            int booked = chartMyWorkSheet.Series["Booked"].Points.AddXY("Booked", myTotalBooked);
             chartMyWorkSheet.Series["Booked"].Points.AddXY("Service", 0);
             chartMyWorkSheet.Series["Booked"].Points.AddXY("Production", 0);
             chartMyWorkSheet.Series["Booked"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Booked"].Points.AddXY("Return", 0);
 
+            if(myTotalBooked > 0)
+            {
+                chartMyWorkSheet.Series["Booked"].Points[booked].Label = "Booking:" + myTotalBooked.ToString();
+            }
+            
+
             chartMyWorkSheet.Series["Quot"].Points.AddXY("Booking", 0);
-            chartMyWorkSheet.Series["Quot"].Points.AddXY("Service", myTotalQuot);
+            int quot = chartMyWorkSheet.Series["Quot"].Points.AddXY("Service", myTotalQuot);
             chartMyWorkSheet.Series["Quot"].Points.AddXY("Production", 0);
             chartMyWorkSheet.Series["Quot"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Quot"].Points.AddXY("Return", 0);
 
+            if(myTotalQuot > 0)
+            {
+                chartMyWorkSheet.Series["Quot"].Points[quot].Label = "Quot:" + myTotalQuot.ToString();
+            }
+
             chartMyWorkSheet.Series["Repaired"].Points.AddXY("Booking", 0);
-            chartMyWorkSheet.Series["Repaired"].Points.AddXY("Service", myTotalRepaired); //
+            int repaired = chartMyWorkSheet.Series["Repaired"].Points.AddXY("Service", myTotalRepaired); //
             chartMyWorkSheet.Series["Repaired"].Points.AddXY("Production", 0);
             chartMyWorkSheet.Series["Repaired"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Repaired"].Points.AddXY("Return", 0);
 
+            if (myTotalRepaired > 0)
+            {
+                chartMyWorkSheet.Series["Repaired"].Points[repaired].Label = "Repaired:" + myTotalRepaired.ToString();
+            }
+
             chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Service", 0);
-            chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Production", myTotalReActivated);//
+            int reactivated = chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Production", myTotalReActivated);//
             chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Re-activated"].Points.AddXY("Return", 0);
 
+            if (myTotalReActivated > 0)
+            {
+                chartMyWorkSheet.Series["Re-activated"].Points[reactivated].Label = "Re-activated:" + myTotalReActivated.ToString();
+            }
+
             chartMyWorkSheet.Series["Tested"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Tested"].Points.AddXY("Service", 0);
-            chartMyWorkSheet.Series["Tested"].Points.AddXY("Production", myTotalTested);//
+            int tested = chartMyWorkSheet.Series["Tested"].Points.AddXY("Production", myTotalTested);//
             chartMyWorkSheet.Series["Tested"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Tested"].Points.AddXY("Return", 0);
 
+            if (myTotalTested > 0)
+            {
+                chartMyWorkSheet.Series["Tested"].Points[tested].Label = "Tested:" + myTotalTested.ToString();
+            }
+
             chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Service", 0);
-            chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Production", myTotalSWLoaded);//
+            int swLoaded = chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Production", myTotalSWLoaded);//
             chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["S/W Loaded"].Points.AddXY("Return", 0);
 
+            if (myTotalSWLoaded > 0)
+            {
+                chartMyWorkSheet.Series["S/W Loaded"].Points[swLoaded].Label = "S/W Loaded:" + myTotalSWLoaded.ToString();
+            }
+
             chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Service", 0);
-            chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Production", myTotalPaperWorked);//
+            int paper = chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Production", myTotalPaperWorked);//
             chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Paper Work"].Points.AddXY("Return", 0);
 
+            if (myTotalPaperWorked > 0)
+            {
+                chartMyWorkSheet.Series["Paper Work"].Points[paper].Label = "Paper Work:" + myTotalPaperWorked.ToString();
+            }
+
             chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Service", 0);
-            chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Production", myTotalKeyLoaded);//
+            int keyLoaded = chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Production", myTotalKeyLoaded);//
             chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Key Loaded"].Points.AddXY("Return", 0);
 
+            if (myTotalKeyLoaded > 0)
+            {
+                chartMyWorkSheet.Series["Key Loaded"].Points[keyLoaded].Label = "Key Loaded:" + myTotalKeyLoaded.ToString();
+            }
+
             chartMyWorkSheet.Series["Log On"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Log On"].Points.AddXY("Service", 0);
-            chartMyWorkSheet.Series["Log On"].Points.AddXY("Production", myTotalLogOn);//
+            int logOn = chartMyWorkSheet.Series["Log On"].Points.AddXY("Production", myTotalLogOn);//
             chartMyWorkSheet.Series["Log On"].Points.AddXY("Dispatch", 0);
             chartMyWorkSheet.Series["Log On"].Points.AddXY("Return", 0);
+
+            if (myTotalLogOn > 0)
+            {
+                chartMyWorkSheet.Series["Log On"].Points[logOn].Label = "Log On:" + myTotalLogOn.ToString();
+            }
 
             chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Service", 0);
             chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Production", 0);
-            chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Dispatch", myTotalDispatched);//
+            int dispatched = chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Dispatch", myTotalDispatched);//
             chartMyWorkSheet.Series["Dispatched"].Points.AddXY("Return", 0);
+
+            if (myTotalDispatched > 0)
+            {
+                chartMyWorkSheet.Series["Dispatched"].Points[dispatched].Label = "Dispatch:" + myTotalDispatched.ToString();
+            }
 
             chartMyWorkSheet.Series["Sold"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Sold"].Points.AddXY("Service", 0);
             chartMyWorkSheet.Series["Sold"].Points.AddXY("Production", 0);
-            chartMyWorkSheet.Series["Sold"].Points.AddXY("Dispatch", myTotalSold);//
+            int sold = chartMyWorkSheet.Series["Sold"].Points.AddXY("Dispatch", myTotalSold);//
             chartMyWorkSheet.Series["Sold"].Points.AddXY("Return", 0);
+
+            if (myTotalSold > 0)
+            {
+                chartMyWorkSheet.Series["Sold"].Points[sold].Label = "Sold:" + myTotalSold.ToString();
+            }
 
             chartMyWorkSheet.Series["Returned"].Points.AddXY("Booking", 0);
             chartMyWorkSheet.Series["Returned"].Points.AddXY("Service", 0);
             chartMyWorkSheet.Series["Returned"].Points.AddXY("Production", 0);
             chartMyWorkSheet.Series["Returned"].Points.AddXY("Dispatch", 0);
-            chartMyWorkSheet.Series["Returned"].Points.AddXY("Return", myTotalReturned);//
+            int returned = chartMyWorkSheet.Series["Returned"].Points.AddXY("Return", myTotalReturned);//
+
+            if (myTotalReturned > 0)
+            {
+                chartMyWorkSheet.Series["Returned"].Points[returned].Label = "Returned:" + myTotalReturned.ToString();
+            }
             /*
             chartMyWorkSheet.Series["My work"].Points.AddXY("Production", getMyTotalProduction());
             chartMyWorkSheet.Series["My work"].Points[2].Color = Color.FromArgb(112, 175, 228);

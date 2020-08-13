@@ -47,11 +47,10 @@
             this.labelHeader = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonFilter = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
             this.radioButtonToday = new System.Windows.Forms.RadioButton();
-            this.radioButtonThisWeek = new System.Windows.Forms.RadioButton();
             this.radioButtonThisMonth = new System.Windows.Forms.RadioButton();
             this.timeHR = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
@@ -155,11 +154,10 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(77)))), ((int)(((byte)(93)))));
             this.panel1.Controls.Add(this.buttonFilter);
-            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.dateTimePickerEnd);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.dateTimePickerStart);
             this.panel1.Controls.Add(this.radioButtonToday);
-            this.panel1.Controls.Add(this.radioButtonThisWeek);
             this.panel1.Controls.Add(this.radioButtonThisMonth);
             this.panel1.Controls.Add(this.timeHR);
             this.panel1.Controls.Add(this.label20);
@@ -185,7 +183,7 @@
             this.buttonFilter.ForeColor = System.Drawing.Color.White;
             this.buttonFilter.Image = ((System.Drawing.Image)(resources.GetObject("buttonFilter.Image")));
             this.buttonFilter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonFilter.Location = new System.Drawing.Point(1204, 223);
+            this.buttonFilter.Location = new System.Drawing.Point(1204, 188);
             this.buttonFilter.Name = "buttonFilter";
             this.buttonFilter.Size = new System.Drawing.Size(88, 39);
             this.buttonFilter.TabIndex = 21;
@@ -193,15 +191,16 @@
             this.buttonFilter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.buttonFilter.UseVisualStyleBackColor = true;
+            this.buttonFilter.Click += new System.EventHandler(this.ButtonFilter_Click);
             // 
-            // dateTimePicker2
+            // dateTimePickerEnd
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(1204, 178);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(142, 27);
-            this.dateTimePicker2.TabIndex = 20;
+            this.dateTimePickerEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.dateTimePickerEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerEnd.Location = new System.Drawing.Point(1204, 143);
+            this.dateTimePickerEnd.Name = "dateTimePickerEnd";
+            this.dateTimePickerEnd.Size = new System.Drawing.Size(142, 27);
+            this.dateTimePickerEnd.TabIndex = 20;
             // 
             // label14
             // 
@@ -214,15 +213,15 @@
             this.label14.TabIndex = 19;
             this.label14.Text = "To";
             // 
-            // dateTimePicker1
+            // dateTimePickerStart
             // 
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(1204, 136);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(142, 27);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePickerStart.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePickerStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
+            this.dateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerStart.Location = new System.Drawing.Point(1204, 101);
+            this.dateTimePickerStart.Name = "dateTimePickerStart";
+            this.dateTimePickerStart.Size = new System.Drawing.Size(142, 27);
+            this.dateTimePickerStart.TabIndex = 18;
             // 
             // radioButtonToday
             // 
@@ -230,7 +229,7 @@
             this.radioButtonToday.Checked = true;
             this.radioButtonToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
             this.radioButtonToday.ForeColor = System.Drawing.Color.White;
-            this.radioButtonToday.Location = new System.Drawing.Point(1204, 88);
+            this.radioButtonToday.Location = new System.Drawing.Point(1204, 58);
             this.radioButtonToday.Name = "radioButtonToday";
             this.radioButtonToday.Size = new System.Drawing.Size(80, 24);
             this.radioButtonToday.TabIndex = 17;
@@ -238,18 +237,6 @@
             this.radioButtonToday.Text = "Today";
             this.radioButtonToday.UseVisualStyleBackColor = true;
             this.radioButtonToday.CheckedChanged += new System.EventHandler(this.RadioButtonToday_CheckedChanged);
-            // 
-            // radioButtonThisWeek
-            // 
-            this.radioButtonThisWeek.AutoSize = true;
-            this.radioButtonThisWeek.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.radioButtonThisWeek.ForeColor = System.Drawing.Color.White;
-            this.radioButtonThisWeek.Location = new System.Drawing.Point(1204, 58);
-            this.radioButtonThisWeek.Name = "radioButtonThisWeek";
-            this.radioButtonThisWeek.Size = new System.Drawing.Size(118, 24);
-            this.radioButtonThisWeek.TabIndex = 16;
-            this.radioButtonThisWeek.Text = "This Week";
-            this.radioButtonThisWeek.UseVisualStyleBackColor = true;
             // 
             // radioButtonThisMonth
             // 
@@ -267,7 +254,7 @@
             // timeHR
             // 
             this.timeHR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold);
-            this.timeHR.Location = new System.Drawing.Point(131, 365);
+            this.timeHR.Location = new System.Drawing.Point(111, 254);
             this.timeHR.Maximum = new decimal(new int[] {
             12,
             0,
@@ -292,11 +279,11 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(87, 367);
+            this.label20.Location = new System.Drawing.Point(42, 256);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 21);
+            this.label20.Size = new System.Drawing.Size(63, 21);
             this.label20.TabIndex = 9;
-            this.label20.Text = "HR:";
+            this.label20.Text = "Hours:";
             // 
             // panel6
             // 
@@ -376,7 +363,7 @@
             this.labelDate.AutoSize = true;
             this.labelDate.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.labelDate.ForeColor = System.Drawing.Color.White;
-            this.labelDate.Location = new System.Drawing.Point(127, 327);
+            this.labelDate.Location = new System.Drawing.Point(107, 216);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(116, 21);
             this.labelDate.TabIndex = 7;
@@ -387,7 +374,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 327);
+            this.label1.Location = new System.Drawing.Point(52, 216);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 21);
             this.label1.TabIndex = 6;
@@ -475,7 +462,7 @@
             // monthCalendarMyWorkSheet
             // 
             this.monthCalendarMyWorkSheet.Font = new System.Drawing.Font("Franklin Gothic Book", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monthCalendarMyWorkSheet.Location = new System.Drawing.Point(45, 111);
+            this.monthCalendarMyWorkSheet.Location = new System.Drawing.Point(51, 0);
             this.monthCalendarMyWorkSheet.Name = "monthCalendarMyWorkSheet";
             this.monthCalendarMyWorkSheet.TabIndex = 4;
             this.monthCalendarMyWorkSheet.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.MonthCalendarMyWorkSheet_DateSelected);
@@ -1018,11 +1005,10 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown timeHR;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePickerEnd;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerStart;
         private System.Windows.Forms.RadioButton radioButtonToday;
-        private System.Windows.Forms.RadioButton radioButtonThisWeek;
         private System.Windows.Forms.RadioButton radioButtonThisMonth;
         private System.Windows.Forms.Button buttonFilter;
     }
